@@ -109,7 +109,7 @@ export default function Home() {
             </h1>
             <p className="text-lg font-open-sans font-light mb-10 text-[#323E7E]">
               Every small action matters. Every delay costs a life. <br /> We
-              can&apos;t wa&apos; won&apos;t. &apos;
+              can&apos;t wait. We won&apos;t.
             </p>
             <div className="mb-16">
               <Link
@@ -216,10 +216,10 @@ export default function Home() {
         <div className="info">
           <div className="info grid grid-cols-2 gap-6 mt-2">
             {/* Left Column - Stories */}
-            <div className="bg-[#F8F9FF] rounded-3xl p-8 text-center flex flex-col justify-evenly items-center">
+            <div className="bg-[#F8F9FF] rounded-3xl p-8 text-center flex flex-col justify-evenly items-center overflow-hidden">
               <div className="mb-8">
                 <h2 className="text-3xl text-black font-bold text-center font-platypi">
-                  Some stories can't <br /><span className="text-[#323E7E] italic">wait</span>
+                  Some stories can&apos;t <br /><span className="text-[#323E7E] italic">wait</span>
                 </h2>
               </div>
 
@@ -298,7 +298,7 @@ export default function Home() {
               </div>
 
               <button className="w-40 mt-8 bg-white border border-gray-200 rounded-full px-6 py-4 text-sm hover:bg-gray-50 transition-colors">
-                Let's help them
+                Let&apos;s help them
               </button>
             </div>
 
@@ -313,7 +313,7 @@ export default function Home() {
               />
               <div className="px-14 absolute top-0 text-center w-full p-6 text-black">
                 <h1 className="text-4xl font-extrabold font-platypi mb-5">
-                  Faces <span className="text-[#323E7E]">we</span> <i>can’t <br /> <span className="text-[#1F9446]">forget</span></i>
+                  Faces <span className="text-[#323E7E]">we</span> <i>can&apos;t <br /> <span className="text-[#1F9446]">forget</span></i>
                 </h1>
               </div>
             </div>
