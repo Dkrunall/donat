@@ -52,7 +52,7 @@ export default function Home() {
               <br /> And built from hope.
             </h1>
             <p className="text-lg font-open-sans font-light mb-10">
-              Let'ld Together
+              Let&apos;ld Together
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function Home() {
             </h1>
             <p className="text-lg font-open-sans font-light mb-10 text-[#323E7E]">
               Every small action matters. Every delay costs a life. <br /> We
-              can't wa' won't. '
+              can&apos;t wa&apos; won&apos;t. &apos;
             </p>
             <div className="mb-16">
               <Link
