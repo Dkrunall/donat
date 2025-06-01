@@ -61,7 +61,7 @@ export default function Home() {
           <Header />
         </div>
 
-        <div className="hero min-h-[500px] md:h-[550px] w-full flex flex-col items-center justify-between px-6 md:px-20 bg-[url(/hero-main.png)] bg-bottom bg-cover md:py-0 md:flex-row">
+        <div className="hero min-h-[500px] md:h-[550px] w-full flex flex-col items-center justify-between px-6 md:px-20 bg-[url(/hero-main.png)] bg-bottom bg-cover md:py-0 md:flex-row relative"> {/* Added relative positioning */}
           <div className="hero-content w-full h-full flex flex-col items-center justify-between md:flex-row">
             <div className="text-center md:text-left pt-4 md:pt-0 mb-6 md:mb-0">
               <h1 className="text-4xl md:text-5xl font-extrabold font-platypi text-[#323E7E] pt-10 mb-2 md:mb-0">
@@ -70,14 +70,26 @@ export default function Home() {
               <p className="text-2xl md:text-2xl font-open-sans font-normal mt-2 mb-6 md:mb-8">
                 Dream without fear
               </p>
-              <Link
-                href="/"
-                className="font-platypi text-lg md:text-base bg-white px-10 py-4 md:px-6 md:py-2 rounded-full inline-block"
-              >
-                Become Part
-              </Link>
+              <div className="hidden md:block"> {/* Only show on desktop */}
+                <Link
+                  href="/"
+                  className="font-platypi text-lg md:text-base bg-white px-10 py-4 md:px-6 md:py-2 rounded-full inline-block"
+                >
+                  Become Part
+                </Link>
+              </div>
             </div>
             <Image src="/hearth.png" alt="hero" height={430} width={500} className="" />
+          </div>
+          
+          {/* Mobile-only link positioned at the bottom */}
+          <div className="block md:hidden absolute bottom-8 w-full text-center">
+            <Link
+              href="/"
+              className="font-platypi text-lg bg-white px-10 py-4 rounded-full inline-block"
+            >
+              Become Part
+            </Link>
           </div>
         </div>
 
@@ -117,7 +129,7 @@ export default function Home() {
               The future <br /> depends on us.
             </h1>
             <p className="text-sm md:text-lg text-center md:text-left font-open-sans font-light mb-4 md:mb-5 text-[#323E7E]">
-              Every small action matters. Every delay costs a life. <br className="hidden md:block" /> We can't wait. We won't.
+              Every small action matters. Every delay costs a life. <br className="hidden md:block" /> We can&apos;t wait. We won&apos;t.
             </p>
             <div className="mb-8 md:mb-16">
               <Link
@@ -145,7 +157,7 @@ export default function Home() {
                   width={280}
                   height={312}
                   sizes="100vw"
-                  className="md:w-[400px] md:h-[260px]"
+                  className="md:w-[550px] md:h-[330px]"
                 />
               </div>
               <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-4 md:gap-2">
