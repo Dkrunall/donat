@@ -403,7 +403,7 @@ export default function JoinUs() {
               </h2>
               
               <p className="text-base md:text-lg font-open-sans mb-8">
-                Tell us who you are, and we'll find a place for you.
+                Tell us who you are, and we&apos;ll find a place for you.
               </p>
               <div className="flex flex-wrap gap-4">
               <Link
@@ -466,7 +466,7 @@ export default function JoinUs() {
                 />
               </div>
               <p className="text-base font-open-sans italic mb-4">
-                "I had no idea what to expect, but I'm leaving with a new
+                "I had no idea what to expect, but I&apos;m leaving with a new
                 perspective."
               </p>
               <h4 className="text-lg font-platypi font-bold text-[#323E7E]">

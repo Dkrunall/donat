@@ -35,10 +35,10 @@ export default function WhatWeDo() {
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0">
             <div className="text-center">
               <h1 className="text-2xl md:text-5xl font-extrabold font-platypi text-white leading-tight">
-                We don't just care. We act.
+                We don&apos;t just care. We act.
               </h1>
               <p className="text-base md:text-2xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-                Every day, we're on the ground making real change happen.{" "}
+                Every day, we&apos;re on the ground making real change happen.{" "}
                 <br className="hidden md:block" />
                 Because words without action are just empty promises.
               </p>
@@ -52,7 +52,7 @@ export default function WhatWeDo() {
             Campaigns That Create Change
           </h2>
           <p className="text-base md:text-lg font-open-sans text-center max-w-3xl mx-auto mb-8">
-            We don't just talk about problems—we solve them. One life, one
+            We don&apos;t just talk about problems—we solve them. One life, one
             family, one village at a time.
           </p>
 
@@ -179,7 +179,7 @@ export default function WhatWeDo() {
               <span className="text-[#323E7E]">Run Every Day</span>
             </h2>
             <p className="text-base md:text-lg font-open-sans">
-              We've built sustainable, ongoing projects that <br />
+              We&apos;ve built sustainable, ongoing projects that <br />
               go beyond one-time help. These are the <br /> heartbeats of Anant
               Aman:
             </p>

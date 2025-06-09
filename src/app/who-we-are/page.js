@@ -269,7 +269,7 @@ export default function WhoWeAre() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-2xl font-platypi font-bold mb-1">Our Volunteers</h3>
                   <div className="bg-white/20 backdrop-blur-sm rounded-full py-1 px-4 inline-block mb-4">
-                    <p className="text-sm font-open-sans">The heart & hands of our work (that's you!)</p>
+                    <p className="text-sm font-open-sans">The heart & hands of our work (that&apos;s you!)</p>
                   </div>
                   <p className="text-base font-open-sans italic">"Join us, change lives."</p>
                 </div>

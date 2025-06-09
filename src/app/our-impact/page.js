@@ -289,7 +289,7 @@ export default function OurImpact() {
                 <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 md:mb-5 mx-auto md:mx-0 flex items-center justify-center overflow-hidden">
                   <Image
                     src="/p1.png"
-                    alt="Seema's story"
+                    alt="Seema&apos;s story"
                     width={80}
                     height={80}
                     className="object-cover"
@@ -306,7 +306,7 @@ export default function OurImpact() {
                 <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 md:mb-5 mx-auto md:mx-0 flex items-center justify-center overflow-hidden">
                   <Image
                     src="/p1.png"
-                    alt="Rahul's mother's story"
+                    alt="Rahul&apos;s mother&apos;s story"
                     width={80}
                     height={80}
                     className="object-cover"
@@ -323,7 +323,7 @@ export default function OurImpact() {
                 <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 md:mb-5 mx-auto md:mx-0 flex items-center justify-center overflow-hidden">
                   <Image
                     src="/p1.png"
-                    alt="Neha's story"
+                    alt="Neha&apos;s story"
                     width={80}
                     height={80}
                     className="object-cover"

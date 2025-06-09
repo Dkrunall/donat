@@ -46,7 +46,7 @@ export default function BabuKiRasoi() {
           {/* Positioned text at bottom right */}
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
             <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
-              Babu Ki Rasoi started as a <span className="font-semibold">humble initiative</span> but has <span className="font-semibold">grown to serve 45,000+ meals</span>. When people are hungry, they don't need words — they need food. This is not just food. This is <span className="font-semibold">dignity on a plate</span>.
+              Babu Ki Rasoi started as a <span className="font-semibold">humble initiative</span> but has <span className="font-semibold">grown to serve 45,000+ meals</span>. When people are hungry, they don&apos;t need words — they need food. This is not just food. This is <span className="font-semibold">dignity on a plate</span>.
             </p>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function BabuKiRasoi() {
               
               <div className="space-y-6">
                 <p className="text-sm md:text-base font-open-sans text-gray-700">
-                  Hunger isn't just physical — it's emotional, it's psychological, it's dehumanizing.
+                  Hunger isn&apos;t just physical — it&apos;s emotional, it&apos;s psychological, it&apos;s dehumanizing.
                 </p>
                 
                 <p className="text-sm md:text-base font-open-sans text-gray-700">
@@ -178,7 +178,7 @@ export default function BabuKiRasoi() {
                 {/* Testimonial */}
                 <div className="mb-10">
                   <h2 className="text-2xl md:text-3xl font-platypi font-bold text-[#323E7E] mb-6 leading-tight">
-                    "We hadn't eaten in two days. Then someone said, 'Babu Ki Rasoi is coming.' That was the first full meal my children had that week.
+                    "We hadn&apos;t eaten in two days. Then someone said, &apos;Babu Ki Rasoi is coming.&apos; That was the first full meal my children had that week.
                   </h2>
                   <p className="text-lg font-medium text-gray-700 mb-2">Seema, mother of 3</p>
                   <span className="inline-block bg-[#E6E9F5] text-[#323E7E] text-sm font-medium px-4 py-1 rounded-full">Real Story</span>
