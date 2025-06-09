@@ -466,8 +466,8 @@ export default function JoinUs() {
                 />
               </div>
               <p className="text-base font-open-sans italic mb-4">
-                "I had no idea what to expect, but I&apos;m leaving with a new
-                perspective."
+                &quot;I had no idea what to expect, but I&apos;m leaving with a new
+                perspective.&quot;
               </p>
               <h4 className="text-lg font-platypi font-bold text-[#323E7E]">
                 Rahul M.
@@ -488,7 +488,7 @@ export default function JoinUs() {
                 />
               </div>
               <p className="text-base font-open-sans italic mb-4">
-                "I joined for a certificate, I stayed because I found purpose."
+                &quot;I joined for a certificate, I stayed because I found purpose.&quot;
               </p>
               <h4 className="text-lg font-platypi font-bold text-[#323E7E]">
                 Ananya K.

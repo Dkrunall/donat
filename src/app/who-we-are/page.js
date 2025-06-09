@@ -204,7 +204,7 @@ export default function WhoWeAre() {
                   Moved by their plight, he didn&apos;t just help them. He rolled up his sleeves and created Anant Aman Social Welfare Society — a home for hope, action, and dignity.
                 </p>
                 <p className="text-base md:text-lg font-open-sans mb-4">
-                  Born in a small village in Madhya Pradesh, his belief — <span className="italic">"If not us, who?"</span> — still drives every child fed, every life touched, and every hand held today.
+                  Born in a small village in Madhya Pradesh, his belief — <span className="italic">&quot;If not us, who?&quot;</span> — still drives every child fed, every life touched, and every hand held today.
                 </p>
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function WhoWeAre() {
                   <div className="bg-white/20 backdrop-blur-sm rounded-full py-1 px-4 inline-block mb-4">
                     <p className="text-sm font-open-sans">Founder & President</p>
                   </div>
-                  <p className="text-base font-open-sans italic">"Compassion without action is wasted."</p>
+                  <p className="text-base font-open-sans italic">&quot;Compassion without action is wasted.&quot;</p>
                 </div>
               </div>
               
@@ -251,7 +251,7 @@ export default function WhoWeAre() {
                   <div className="bg-white/20 backdrop-blur-sm rounded-full py-1 px-4 inline-block mb-4">
                     <p className="text-sm font-open-sans">Joint Secretary</p>
                   </div>
-                  <p className="text-base font-open-sans italic">"Every life deserves a chance."</p>
+                  <p className="text-base font-open-sans italic">&quot;Every life deserves a chance.&quot;</p>
                 </div>
               </div>
               
@@ -271,7 +271,7 @@ export default function WhoWeAre() {
                   <div className="bg-white/20 backdrop-blur-sm rounded-full py-1 px-4 inline-block mb-4">
                     <p className="text-sm font-open-sans">The heart & hands of our work (that&apos;s you!)</p>
                   </div>
-                  <p className="text-base font-open-sans italic">"Join us, change lives."</p>
+                  <p className="text-base font-open-sans italic">&quot;Join us, change lives.&quot;</p>
                 </div>
               </div>
             </div>
