@@ -38,7 +38,7 @@ export default function BabuKiRasoi() {
                 One plate. One purpose.
               </h1>
               <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-                Launched on <span className="font-extrabold">Guru Purnima - July 13, 2013</span>, Babu Ki Rasoi began with a simple question: <span className="font-extrabold">"Why should anyone sleep hungry?"</span>
+                Launched on <span className="font-extrabold">Guru Purnima - July 13, 2013</span>, Babu Ki Rasoi began with a simple question: <span className="font-extrabold">&quot;Why should anyone sleep hungry?&quot;</span>
               </p>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function BabuKiRasoi() {
                 {/* Testimonial */}
                 <div className="mb-10">
                   <h2 className="text-2xl md:text-3xl font-platypi font-bold text-[#323E7E] mb-6 leading-tight">
-                    "We hadn&apos;t eaten in two days. Then someone said, &apos;Babu Ki Rasoi is coming.&apos; That was the first full meal my children had that week.
+                    &quot;We hadn&apos;t eaten in two days. Then someone said, &apos;Babu Ki Rasoi is coming.&apos; That was the first full meal my children had that week.
                   </h2>
                   <p className="text-lg font-medium text-gray-700 mb-2">Seema, mother of 3</p>
                   <span className="inline-block bg-[#E6E9F5] text-[#323E7E] text-sm font-medium px-4 py-1 rounded-full">Real Story</span>

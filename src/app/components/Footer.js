@@ -4,30 +4,6 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="mt-2 rounded-3xl">
-      <div className="join-section relative mt-2">
-        <Image
-          src="/footer.png"
-          alt="Next.js Logo"
-          width={1920}
-          height={500}
-          sizes="100vw"
-          className="w-full h-auto object-cover"
-        />
-        <div className="hidden md:flex px-4 md:px-14 absolute top-8 md:top-14 left-0 w-full p-4 md:p-6 text-[#323E7E] flex-col items-center">
-          <h1 className="text-2xl md:text-4xl font-extrabold font-platypi mb-3 md:mb-5 text-white text-center">
-            Help for their beautiful <br /> future.
-          </h1>
-          <div className="mb-8 md:mb-16 mt-6 md:mt-10 text-center">
-            <Link
-              href="/"
-              className="font-platypi text-sm md:text-base bg-white px-4 md:px-6 py-2 rounded-full"
-            >
-              Show Some Support
-            </Link>
-          </div>
-        </div>
-      </div>
-
       {/* Mobile-only footer */}
       <div className="block md:hidden px-4 py-6">
         {/* Main navigation links */}

@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import InfiniteCarousel from "./components/InfiniteCarousel";
-import Campings from './components/Campings';
+import Campings from "./components/Campings";
 
 export default function Home() {
   const [offset, setOffset] = useState(0);
@@ -61,7 +61,9 @@ export default function Home() {
           <Header />
         </div>
 
-        <div className="hero min-h-[500px] md:h-[550px] w-full flex flex-col items-center justify-between px-6 md:px-20 bg-[url(/hero-main.png)] bg-bottom bg-cover md:py-0 md:flex-row relative"> {/* Added relative positioning */}
+        <div className="hero min-h-[500px] md:h-[550px] w-full flex flex-col items-center justify-between px-6 md:px-20 bg-[url(/hero-main.png)] bg-bottom bg-cover md:py-0 md:flex-row relative">
+          {" "}
+          {/* Added relative positioning */}
           <div className="hero-content w-full h-full flex flex-col items-center justify-between md:flex-row">
             <div className="text-center md:text-left pt-4 md:pt-0 mb-6 md:mb-0">
               <h1 className="text-4xl md:text-5xl font-extrabold font-platypi text-[#323E7E] pt-10 mb-2 md:mb-0">
@@ -70,7 +72,9 @@ export default function Home() {
               <p className="text-2xl md:text-2xl font-open-sans font-normal mt-2 mb-6 md:mb-8">
                 Dream without fear
               </p>
-              <div className="hidden md:block"> {/* Only show on desktop */}
+              <div className="hidden md:block">
+                {" "}
+                {/* Only show on desktop */}
                 <Link
                   href="/"
                   className="font-platypi text-lg md:text-base bg-white px-10 py-4 md:px-6 md:py-2 rounded-full inline-block"
@@ -79,9 +83,14 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <Image src="/hearth.png" alt="hero" height={430} width={500} className="" />
+            <Image
+              src="/hearth.png"
+              alt="hero"
+              height={430}
+              width={500}
+              className=""
+            />
           </div>
-          
           {/* Mobile-only link positioned at the bottom */}
           <div className="block md:hidden absolute bottom-8 w-full text-center">
             <Link
@@ -101,7 +110,8 @@ export default function Home() {
               </h1>
               <p className="text-base md:text-2xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
                 And these are just the known stories. So many others suffer.{" "}
-                <br className="hidden md:block" /> Without food. Without care. Without anyone knowing.
+                <br className="hidden md:block" /> Without food. Without care.
+                Without anyone knowing.
               </p>
             </div>
           </div>
@@ -129,7 +139,9 @@ export default function Home() {
               The future <br /> depends on us.
             </h1>
             <p className="text-sm md:text-lg text-center md:text-left font-open-sans font-light mb-4 md:mb-5 text-[#323E7E]">
-              Every small action matters. Every delay costs a life. <br className="hidden md:block" /> We can&apos;t wait. We won&apos;t.
+              Every small action matters. Every delay costs a life.{" "}
+              <br className="hidden md:block" /> We can&apos;t wait. We
+              won&apos;t.
             </p>
             <div className="mb-8 md:mb-16">
               <Link
@@ -185,12 +197,12 @@ export default function Home() {
               Daily Drives For..
             </p>
             <div className="campings-carousel w-full overflow-x-auto whitespace-nowrap scrollbar-hide md:overflow-x-hidden md:overflow-y-visible md:whitespace-normal md:hidden">
-                <div className="inline-flex md:flex md:flex-wrap md:justify-start md:gap-4">
-                  <Campings />
-                </div>
+              <div className="inline-flex md:flex md:flex-wrap md:justify-start md:gap-4">
+                <Campings />
+              </div>
             </div>
             <div className="hidden md:block">
-              <Campings/>
+              <Campings />
             </div>
           </div>
         </div>
@@ -205,36 +217,60 @@ export default function Home() {
               {/* Meals Served Card */}
               <div className="bg-[#1F9446] p-4 rounded-2xl text-white w-full aspect-square flex flex-col justify-center items-center md:w-[250px] md:h-auto md:p-6">
                 <div className="mb-2">
-                  <Image src="/icon1.png" alt="meals" width={30} height={30} className="md:w-[50px] md:h-[50px]" />
+                  <Image
+                    src="/icon1.png"
+                    alt="meals"
+                    width={30}
+                    height={30}
+                    className="md:w-[50px] md:h-[50px]"
+                  />
                 </div>
                 <div class="text-center">
-                  <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">55k +</h4>
+                  <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
+                    55k +
+                  </h4>
                   <p className="text-xs md:text-lg">Meals Served</p>
                 </div>
               </div>
               {/* Lives Reached Card */}
               <div className="bg-[#8B6144] p-4 rounded-2xl text-white w-full aspect-square flex flex-col justify-center items-center md:w-[250px] md:h-auto md:p-6">
                 <div className="mb-2">
-                  <Image src="/icon2.png" alt="lives" width={30} height={30} className="md:w-[50px] md:h-[50px]" />
+                  <Image
+                    src="/icon2.png"
+                    alt="lives"
+                    width={30}
+                    height={30}
+                    className="md:w-[50px] md:h-[50px]"
+                  />
                 </div>
                 <div class="text-center">
-                  <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">50k +</h4>
+                  <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
+                    50k +
+                  </h4>
                   <p className="text-xs md:text-lg">Lives reached</p>
                 </div>
               </div>
               {/* Kids Educated Card */}
               <div className="bg-[#323E7E] p-4 rounded-2xl text-white w-full aspect-square flex flex-col justify-center items-center md:w-[250px] md:h-auto md:p-6">
                 <div className="mb-2">
-                  <Image src="/icon3.png" alt="education" width={30} height={30} className="md:w-[50px] md:h-[50px]" />
+                  <Image
+                    src="/icon3.png"
+                    alt="education"
+                    width={30}
+                    height={30}
+                    className="md:w-[50px] md:h-[50px]"
+                  />
                 </div>
                 <div class="text-center">
-                  <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">3.5k +</h4>
+                  <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
+                    3.5k +
+                  </h4>
                   <p className="text-xs md:text-lg">Kids Educated</p>
                 </div>
               </div>
               {/* Support Card */}
-            
-                <Image src="/ss.png" alt="logo" width={250} height={300} />
+
+              <Image src="/ss.png" alt="logo" width={250} height={300} />
             </div>
           </div>
         </div>
@@ -245,7 +281,8 @@ export default function Home() {
             <div className="bg-[#F8F9FF] rounded-3xl p-6 md:p-8 text-center flex flex-col justify-evenly items-center overflow-hidden min-h-[400px]">
               <div className="mb-4 md:mb-8">
                 <h2 className="text-xl md:text-3xl text-black font-bold text-center font-platypi">
-                  Some stories can&apos;t <br /><span className="text-[#323E7E] italic">wait</span>
+                  Some stories can&apos;t <br />
+                  <span className="text-[#323E7E] italic">wait</span>
                 </h2>
               </div>
 
@@ -255,34 +292,82 @@ export default function Home() {
                   <div className="story-slider">
                     {/* First set of items */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Armaan needs cancer treatment
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
 
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Armaan needs cancer treatment
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -290,34 +375,82 @@ export default function Home() {
                   <div className="story-slider">
                     {/* First set of items */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Armaan needs cancer treatment
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
 
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Armaan needs cancer treatment
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image src="/p1.png" alt="profile" width={40} height={40} className="rounded-full md:w-[50px] md:h-[50px]" />
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -340,7 +473,11 @@ export default function Home() {
               />
               <div className="px-4 md:px-14 absolute top-0 text-center w-full p-4 md:p-6 text-black">
                 <h1 className="text-2xl md:text-4xl font-extrabold font-platypi mb-3 md:mb-5">
-                  Faces <span className="text-[#323E7E]">we</span> <i>can&apos;t <br /> <span className="text-[#1F9446]">forget</span></i>
+                  Faces <span className="text-[#323E7E]">we</span>{" "}
+                  <i>
+                    can&apos;t <br />{" "}
+                    <span className="text-[#1F9446]">forget</span>
+                  </i>
                 </h1>
               </div>
             </div>
@@ -358,6 +495,29 @@ export default function Home() {
             </p>
             <InfiniteCarousel direction="forward" />
             <InfiniteCarousel direction="reverse" />
+          </div>
+        </div>
+        <div className="join-section relative mt-2">
+          <Image
+            src="/footer.png"
+            alt="Next.js Logo"
+            width={1920}
+            height={500}
+            sizes="100vw"
+            className="w-full h-auto object-cover"
+          />
+          <div className="hidden md:flex px-4 md:px-14 absolute top-8 md:top-14 left-0 w-full p-4 md:p-6 text-[#323E7E] flex-col items-center">
+            <h1 className="text-2xl md:text-4xl font-extrabold font-platypi mb-3 md:mb-5 text-white text-center">
+              Help for their beautiful <br /> future.
+            </h1>
+            <div className="mb-8 md:mb-16 mt-6 md:mt-10 text-center">
+              <Link
+                href="/"
+                className="font-platypi text-sm md:text-base bg-white px-4 md:px-6 py-2 rounded-full"
+              >
+                Show Some Support
+              </Link>
+            </div>
           </div>
         </div>
         <Footer />
