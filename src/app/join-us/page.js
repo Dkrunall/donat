@@ -53,7 +53,6 @@ export default function JoinUs() {
         </div>
 
         {/* Why Join Us Section */}
-        {/* Why Join Us Section */}
         <div id="why-join" className="my-12">
           <div className="flex flex-col md:flex md:flex-row items-center gap-2">
             {/* Left Column - Image */}

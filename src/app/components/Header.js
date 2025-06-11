@@ -47,8 +47,8 @@ export default function Header() {
                 </div>
               </Link>
 
-              <Link href="/donate" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-shadow relative h-[132px]">
-                <h3 className="text-[#39447B] text-xl font-bold mb-2">Donate</h3>
+              <Link href="/contact-us" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-shadow relative h-[132px]">
+                <h3 className="text-[#39447B] text-xl font-bold mb-2">Contact Us</h3>
                 <div className="absolute bottom-4 right-4">
                   <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                 </div>
@@ -61,8 +61,8 @@ export default function Header() {
                 </div>
               </Link>
 
-              <Link href="/faqs" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-shadow relative h-[132px]">
-                <h3 className="text-[#39447B] text-xl font-bold mb-2">FAQs</h3>
+              <Link href="/insights" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-shadow relative h-[132px]">
+                <h3 className="text-[#39447B] text-xl font-bold mb-2">Insights</h3>
                 <div className="absolute bottom-4 right-4">
                   <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                 </div>
