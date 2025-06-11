@@ -182,7 +182,7 @@ export default function WallOfLove() {
               Want to be part of these stories?
             </h2>
             <p className="text-base md:text-lg font-open-sans mb-8 text-center max-w-2xl">
-              You can be the reason that someone's life changes. And it will
+              You can be the reason that someone&apos;s life changes. And it will
               change yours too.
             </p>
             <Link

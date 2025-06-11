@@ -35,7 +35,7 @@ export default function ContactUs() {
           {/* Let's Connect Section */}
           <div className="text-center mb-12 md:mb-16">
             <h1 className="text-3xl md:text-5xl font-bold font-platypi text-[#323E7E] mb-4">
-              Let's connect — your next
+              Let&apos;s connect — your next
               <br />
               message might change a life.
             </h1>

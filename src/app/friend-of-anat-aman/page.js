@@ -93,7 +93,7 @@ export default function FriendOfAnatAman() {
                     ></path>
                   </svg>
                   <p className="text-base font-open-sans text-gray-600">
-                    We don't just post
+                    We don&apos;t just post
                   </p>
                 </li>
                 <li className="flex items-center">
@@ -109,7 +109,7 @@ export default function FriendOfAnatAman() {
                     ></path>
                   </svg>
                   <p className="text-base font-open-sans text-gray-600">
-                    We don't just plan
+                    We don&apos;t just plan
                   </p>
                 </li>
               </ul>
@@ -117,7 +117,7 @@ export default function FriendOfAnatAman() {
               <p className="text-lg md:text-xl font-open-sans text-gray-700 mt-8">
                 We show up. Speak up. And stand for something meaningful. The
                 difference between talking about impact, and having impact —
-                it's in your hands.
+                it&apos;s in your hands.
               </p>
             </div>
           </div>
