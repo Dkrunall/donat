@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import localFont from 'next/font/local';
 import "./globals.css";
+import MobileNavigation from "./components/MobileNavigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${openSans.variable} ${platypi.variable} antialiased`}
       >
         {children}
+        <MobileNavigation />
       </body>
     </html>
   );

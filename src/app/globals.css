@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add padding to the bottom of the body to prevent content from being hidden behind the mobile navigation */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 60px;
+  }
+}
+
 @keyframes carousel-scroll {
   from {
     transform: translateX(0);
