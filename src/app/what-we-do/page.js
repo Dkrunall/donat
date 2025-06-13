@@ -31,7 +31,7 @@ export default function WhatWeDo() {
         </div>
 
         {/* Hero Section */}
-        <div className="info min-h-[700px] md:h-[90vh] w-full bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-10 relative overflow-hidden">
+        <div className="info min-h-[700px] md:h-[90vh] w-full bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
               src="/wwd.png" 

@@ -32,7 +32,7 @@ export default function WallOfLove() {
         </div>
 
         {/* Hero Section */}
-        <div className="relative h-[500px] md:h-[600px] w-full rounded-3xl overflow-hidden mb-16 -mt-5">
+        <div className="relative h-[500px] md:h-[600px] w-full rounded-3xl overflow-hidden mb-16 -mt-0 md:-mt-10">
           <Image
             src="/info.png"
             alt="Wall of Love"

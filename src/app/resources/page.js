@@ -31,7 +31,7 @@ export default function Resources() {
         </div>
 
         {/* Hero Section */}
-        <div className="info min-h-[400px] md:h-[60vh] w-full rounded-3xl flex flex-col justify-center -mt-10">
+        <div className="info min-h-[400px] md:h-[60vh] w-full rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10">
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0">
             <div className="text-center">
               <h1 className="text-2xl md:text-5xl font-extrabold font-platypi text-[#323E7E] leading-tight">

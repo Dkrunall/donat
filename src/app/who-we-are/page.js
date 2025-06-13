@@ -30,7 +30,7 @@ export default function WhoWeAre() {
           <Header />
         </div>
 
-        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/wwr.png)] bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-10">
+        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/wwr.png)] bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10">
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0">
             <div className="text-center">
               <h1 className="text-2xl md:text-5xl font-extrabold font-platypi text-white leading-tight">

@@ -31,7 +31,7 @@ export default function OurImpact() {
         </div>
 
         {/* Hero Section */}
-        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/Our\ Impact.png)] bg-center bg-cover rounded-3xl flex flex-col justify-center items-center -mt-10 relative">
+        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/Our\ Impact.png)] bg-center bg-cover rounded-3xl flex flex-col justify-center items-center -mt-0 md:-mt-10 relative">
           <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 rounded-3xl"></div>{" "}
           {/* Overlay for better text readability */}
           <div className="info-content w-full h-full flex flex-col items-center justify-center px-6 md:px-8 py-10 md:py-0 z-10">
