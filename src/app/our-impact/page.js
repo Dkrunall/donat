@@ -405,7 +405,7 @@ export default function OurImpact() {
               <div className="bg-[#F5F7FA] rounded-2xl p-6 flex items-end h-96">
                 <p className="text-base md:text-lg font-medium leading-relaxed">
                   <span className="text-[#4A5AAA] font-bold">
-                    Rahul's mother
+                    Rahul&apos;s mother
                   </span>{" "}
                   was diagnosed with cancer in Stage 1 because of a CAPP camp.
                 </p>
@@ -422,7 +422,7 @@ export default function OurImpact() {
           </div>
 
           <p className="text-center text-gray-700 text-base md:text-lg font-open-sans italic mt-8 md:mt-10 px-4 md:px-16">
-            "We never thought someone would care. Anant Aman showed up."
+            &ldquo;We never thought someone would care. Anant Aman showed up.&rdquo;
           </p>
         </div>
 
