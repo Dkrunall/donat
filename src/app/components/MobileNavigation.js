@@ -71,28 +71,36 @@ export default function MobileNavigation() {
       {isMenuOpen && (
         <div className="absolute bottom-full left-0 right-0 mb-2 p-3 bg-[#F8F7FF] shadow-lg rounded-xl border border-gray-200">
           <div className="grid grid-cols-2 gap-3">
-            <Link href="/join-us" className="bg-white p-4 rounded-lg shadow flex flex-col justify-between items-start hover:shadow-md transition-shadow">
-              <span className="text-sm font-semibold text-[#3F3D56]">Join Us (Intern/Volunteer)</span>
-              <div className="mt-auto pt-2">
-                <svg className="w-5 h-5 text-black bg-gray-200 rounded-full p-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            <Link href="/join-us" className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24">
+              <span className="text-base font-bold text-[#3F3D56]">Join Us<br/>(Intern/<br/>Volunteer)</span>
+              <div className="absolute bottom-3 right-3">
+                <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
+                </div>
               </div>
             </Link>
-            <Link href="/donate" className="bg-white p-4 rounded-lg shadow flex flex-col justify-between items-start hover:shadow-md transition-shadow">
-              <span className="text-sm font-semibold text-[#3F3D56]">Donate</span>
-              <div className="mt-auto pt-2">
-                <svg className="w-5 h-5 text-black bg-gray-200 rounded-full p-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            <Link href="/contact-us" className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24">
+              <span className="text-base font-bold text-[#3F3D56]">Contact Us</span>
+              <div className="absolute bottom-3 right-3">
+                <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
+                </div>
               </div>
             </Link>
-            <Link href="/resources" className="bg-white p-4 rounded-lg shadow flex flex-col justify-between items-start hover:shadow-md transition-shadow">
-              <span className="text-sm font-semibold text-[#3F3D56]">Resources</span>
-              <div className="mt-auto pt-2">
-                <svg className="w-5 h-5 text-black bg-gray-200 rounded-full p-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            <Link href="/resources" className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24">
+              <span className="text-base font-bold text-[#3F3D56]">Resources</span>
+              <div className="absolute bottom-3 right-3">
+                <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
+                </div>
               </div>
             </Link>
-            <Link href="/faq" className="bg-white p-4 rounded-lg shadow flex flex-col justify-between items-start hover:shadow-md transition-shadow">
-              <span className="text-sm font-semibold text-[#3F3D56]">FAQs</span>
-              <div className="mt-auto pt-2">
-                <svg className="w-5 h-5 text-black bg-gray-200 rounded-full p-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            <Link href="/our-impact" className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24">
+              <span className="text-base font-bold text-[#3F3D56]">Insights</span>
+              <div className="absolute bottom-3 right-3">
+                <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
+                </div>
               </div>
             </Link>
           </div>
