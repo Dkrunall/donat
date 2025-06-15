@@ -62,7 +62,7 @@ export default function OurImpact() {
           </h2>
 
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
               {/* Statistic 1 */}
               <div className="flex flex-col items-center text-center bg-white rounded-3xl border border-[#E9ECFF] p-6 shadow-sm">
                 <div className="mb-4">
