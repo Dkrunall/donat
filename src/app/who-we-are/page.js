@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import InfiniteCarousel from "../components/InfiniteCarousel";
 
 export default function WhoWeAre() {
   const [offset, setOffset] = useState(0);
@@ -25,7 +26,7 @@ export default function WhoWeAre() {
 
   return (
     <>
-      <div className="p-1.5 md:p-1.5">
+      <div className="px-1.5 md:px-1.5">
         <div className="sticky top-0 z-50 bg-white">
           <Header />
         </div>
@@ -157,19 +158,9 @@ export default function WhoWeAre() {
               Because transparency matters — <br className="hidden md:block" />
               and so does trust.
             </p>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gray-50 rounded-xl p-4 flex items-center justify-center">
-                <Image src="/partners/1.png" alt="Amity University" width={120} height={60} className="object-contain" />
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 flex items-center justify-center">
-                <Image src="/partners/2.png" alt="Acropolis" width={120} height={60} className="object-contain" />
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 flex items-center justify-center">
-                <Image src="/partners/3.png" alt="Symbiosis" width={120} height={60} className="object-contain" />
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 flex items-center justify-center">
-                <Image src="/partners/4.png" alt="Medi-Caps University" width={120} height={60} className="object-contain" />
-              </div>
+            <div className="">
+            <InfiniteCarousel direction="forward" />
+            <InfiniteCarousel direction="reverse" />
             </div>
           </div>
         </div>

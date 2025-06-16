@@ -26,7 +26,7 @@ const platypi = localFont({
 });
 
 export const metadata = {
-  title: "Anant Aman",
+  title: "Anant Aman Social Welfare Society",
   description: "Social Welfare Society",
 };
 

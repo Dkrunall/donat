@@ -10,11 +10,11 @@ export default function Footer() {
         <div className="flex flex-col items-start w-full mb-6">
           <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Home</Link>
           <hr className="w-full border-[#efefef]" />
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Who We Are</Link>
+          <Link href="/who-we-are" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Who We Are</Link>
           <hr className="w-full border-[#efefef]" />
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">What We Do</Link>
+          <Link href="/what-we-do" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">What We Do</Link>
           <hr className="w-full border-[#efefef]" />
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Cancer Awareness & Prevention Program (CAPP)</Link>
+          <Link href="/capp" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Cancer Awareness & Prevention Program (CAPP)</Link>
           <hr className="w-full border-[#efefef]" />
           <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Get Involved</Link>
           <hr className="w-full border-[#efefef]" />
@@ -53,7 +53,7 @@ export default function Footer() {
           </p>
           <hr className="w-full mb-4 md:mb-0" />
           <div className="flex flex-col md:flex-row items-center md:justify-between w-full mt-4 md:mt-5 gap-2 md:gap-0">
-            <Link href="/" className="text-sm md:text-md font-open-sans font-normal">Contact Us</Link>
+            <Link href="/contact-us" className="text-sm md:text-md font-open-sans font-normal">Contact Us</Link>
             <Link href="/" className="text-sm md:text-md font-open-sans font-normal">Privacy Policy</Link>
             <Link href="/" className="text-sm md:text-md font-open-sans font-normal">Terms & Conditions</Link>
           </div>
@@ -65,23 +65,23 @@ export default function Footer() {
         <div className="footer-column-2 w-full md:w-1/2 flex flex-col items-center md:items-start mt-8 md:mt-0">
           <h1 className="text-lg md:text-[20px] font-open-sans font-normal text-[#323E7E] mb-4 md:mb-8">Social Buzz</h1>
           <div className="flex flex-col md:flex-row items-center gap-3 mb-3 md:mb-5">
-            <Link href="/" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Instagram</Link>
-            <Link href="/" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Facebook</Link>
+            <Link href="https://instagram.com/anantamansws" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Instagram</Link>
+            <Link href="https://facebook.com/AnantAmanSws" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Facebook</Link>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-3">
-            <Link href="/" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Linkedin</Link>
-            <Link href="/" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Youtube</Link>
+            <Link href="https://www.linkedin.com/company/anantamansws/" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Linkedin</Link>
+            <Link href="https://www.youtube.com/@anantamansws" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Youtube</Link>
           </div>
         </div>
 
         <div className="footer-column-3 w-full md:w-1/2 flex flex-col items-center md:items-start mt-8 md:mt-0">
           <Link href="/" className="text-sm md:text-md font-open-sans font-normal">Home</Link>
           <hr className="w-full mb-2 mt-2" />
-          <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Who We Are</Link>
+          <Link href="/who-we-are" className="text-sm md:text-md font-open-sans font-normal mb-2">Who We Are</Link>
           <hr className="w-full mb-2 mt-2" />
-          <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">What We Do</Link>
+          <Link href="/what-we-do" className="text-sm md:text-md font-open-sans font-normal mb-2">What We Do</Link>
           <hr className="w-full mb-2 mt-2" />
-          <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Cancer Awareness & Prevention Program (CAPP)</Link>
+          <Link href="/capp" className="text-sm md:text-md font-open-sans font-normal mb-2">Cancer Awareness & Prevention Program (CAPP)</Link>
           <hr className="w-full mb-2 mt-2" />
           <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Get Involved</Link>
           <hr className="w-full mb-2 mt-2" />

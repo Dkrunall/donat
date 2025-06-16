@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <header className="mt-2 rounded-3xl relative hidden md:block">
       <div className="bg-gradient-to-br from-[#E0E5FF] to-[#B3BFFF] h-20 flex items-center justify-between rounded-t-3xl rounded-tr-3xl px-14">
+        <Link href="/">
         <Image src="/logo.png" alt="hero" height={60} width={200} />
+        </Link>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="font-platypi text-base bg-white px-6 py-2 rounded-full hover:bg-gray-50 transition-colors"

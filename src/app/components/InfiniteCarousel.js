@@ -6,7 +6,9 @@ const partners = [
   { src: '/partners/3.png', alt: 'Partner 3' },
   { src: '/partners/4.png', alt: 'Partner 4' },
   { src: '/partners/5.png', alt: 'Partner 5' },
-  { src: '/partners/1.png', alt: 'Partner 6' },
+  { src: '/partners/upes.png', alt: 'Partner 6' },
+  { src: '/partners/pu.png', alt: 'Partner 7' },
+  { src: '/partners/medi.png', alt: 'Partner 8' },
   // Add more partners as needed
 ];
 

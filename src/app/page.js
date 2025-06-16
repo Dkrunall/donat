@@ -225,7 +225,7 @@ export default function Home() {
                     className="md:w-[50px] md:h-[50px]"
                   />
                 </div>
-                <div class="text-center">
+                <div className="text-center">
                   <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
                     55k +
                   </h4>
@@ -243,7 +243,7 @@ export default function Home() {
                     className="md:w-[50px] md:h-[50px]"
                   />
                 </div>
-                <div class="text-center">
+                <div className="text-center">
                   <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
                     50k +
                   </h4>
@@ -261,7 +261,7 @@ export default function Home() {
                     className="md:w-[50px] md:h-[50px]"
                   />
                 </div>
-                <div class="text-center">
+                <div className="text-center">
                   <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
                     3.5k +
                   </h4>
@@ -371,7 +371,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="story-container mb-4">
+                <div className="story-container reverse mb-4">
                   <div className="story-slider">
                     {/* First set of items */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">

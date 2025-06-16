@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import InfiniteCarousel from "../components/InfiniteCarousel";
 
 export default function OurImpact() {
   const [offset, setOffset] = useState(0);
@@ -25,7 +26,7 @@ export default function OurImpact() {
 
   return (
     <>
-      <div className="p-1.5 md:p-1.5">
+      <div className="px-1.5 md:px-1.5">
         <div className="sticky top-0 z-50 bg-white">
           <Header />
         </div>
@@ -438,43 +439,9 @@ export default function OurImpact() {
                 <p className="text-gray-600 text-base mb-6 md:mb-8">
                   They believed in us. And still do.
                 </p>
-                <div className="grid grid-cols-2 gap-4 md:gap-6 items-center">
-                  <div className="flex justify-center items-center p-3 md:p-4 bg-white rounded-lg border border-gray-100 h-16 md:h-20">
-                    <Image
-                      src="/partners/1.png"
-                      alt="Amity University Logo"
-                      width={100}
-                      height={50}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center p-3 md:p-4 bg-white rounded-lg border border-gray-100 h-16 md:h-20">
-                    <Image
-                      src="/partners/2.png"
-                      alt="Acropolis Institutions Logo"
-                      width={100}
-                      height={50}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center p-3 md:p-4 bg-white rounded-lg border border-gray-100 h-16 md:h-20">
-                    <Image
-                      src="/partners/3.png"
-                      alt="Symbiosis University Logo"
-                      width={100}
-                      height={50}
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center p-3 md:p-4 bg-white rounded-lg border border-gray-100 h-16 md:h-20">
-                    <Image
-                      src="/partners/4.png"
-                      alt="Medicaps University Logo"
-                      width={100}
-                      height={50}
-                      className="object-contain"
-                    />
-                  </div>
+                <div className="">
+                <InfiniteCarousel direction="forward" />
+                <InfiniteCarousel direction="reverse" />
                 </div>
               </div>
 

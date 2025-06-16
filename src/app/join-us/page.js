@@ -25,7 +25,7 @@ export default function JoinUs() {
 
   return (
     <>
-      <div className="p-1.5 md:p-1.5">
+      <div className="px-1.5 md:px-1.5">
         <div className="sticky top-0 z-50 bg-white">
           <Header />
         </div>

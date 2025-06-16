@@ -44,15 +44,35 @@
   }
 }
 
+@keyframes story-slide-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .story-container {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
+.story-container.reverse .story-slider {
+  animation: story-slide-reverse 30s linear infinite;
+  float: right;
+}
+
+.story-container.reverse::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .story-slider {
   display: inline-flex;
-  animation: story-slide 15s linear infinite;
+  animation: story-slide 30s linear infinite;
   padding: 0 1rem;
 }
 
