@@ -41,7 +41,7 @@ export default function PopupForm({ isOpen, onClose }) {
         </button>
 
         <h2 className="text-2xl font-platypi font-bold mb-2">Want to write to us directly?</h2>
-        <p className="text-gray-600 mb-6">Fill the form and we'll get back to you shortly.</p>
+        <p className="text-gray-600 mb-6">Fill the form and we&apos;ll get back to you shortly.</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
