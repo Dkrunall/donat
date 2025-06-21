@@ -19,8 +19,6 @@ export default function Footer() {
           <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Get Involved</Link>
           <hr className="w-full border-[#efefef]" />
           <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Media & Highlights</Link>
-          <hr className="w-full border-[#efefef]" />
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Blog</Link>
         </div>
 
         {/* Contact and policy links */}
@@ -86,8 +84,6 @@ export default function Footer() {
           <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Get Involved</Link>
           <hr className="w-full mb-2 mt-2" />
           <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Media & Highlights</Link>
-          <hr className="w-full mb-2 mt-2" />
-          <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Blog</Link>
         </div>
       </div>
     </footer>

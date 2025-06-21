@@ -155,7 +155,7 @@ export default function WhoWeAre() {
               12A, 80G, Niti Aayog & CSR-1.
             </h2>
             <p className="text-base md:text-lg font-open-sans text-gray-700 mb-8">
-              Because transparency matters — <br className="hidden md:block" />
+              Because transparency matters, <br className="hidden md:block" />
               and so does trust.
             </p>
             <div className="">
@@ -186,16 +186,16 @@ export default function WhoWeAre() {
               Founder&apos;s Story
             </h2>
             <p className="text-lg md:text-xl font-platypi italic text-[#323E7E] mb-6">
-              It began with a vision — and became a movement.
+              It began with a vision, and became a movement.
             </p>
                 <p className="text-base md:text-lg font-open-sans mb-4">
                   In 2013, Mr. Hemant Agarwal was walking home when he saw 7 children hungry, often scrounging for leftover food.
                 </p>
                 <p className="text-base md:text-lg font-open-sans mb-4">
-                  Moved by their plight, he didn&apos;t just help them. He rolled up his sleeves and created Anant Aman Social Welfare Society — a home for hope, action, and dignity.
+                  Moved by their plight, he didn&apos;t just help them. He rolled up his sleeves and created Anant Aman Social Welfare Society, a home for hope, action, and dignity.
                 </p>
                 <p className="text-base md:text-lg font-open-sans mb-4">
-                  Born in a small village in Madhya Pradesh, his belief — <span className="italic">&quot;If not us, who?&quot;</span> — still drives every child fed, every life touched, and every hand held today.
+                  Born in a small village in Madhya Pradesh, his belief, <span className="italic">&quot;If not us, who?&quot;</span>, still drives every child fed, every life touched, and every hand held today.
                 </p>
               </div>
             </div>

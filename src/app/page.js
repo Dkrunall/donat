@@ -52,7 +52,7 @@ export default function Home() {
               <br /> And built from hope.
             </h1>
             <p className="text-base md:text-lg font-open-sans font-normal mb-6 md:mb-10 text-center md:text-left">
-              Let&apos;s Together
+              Let&apos;s Build Together
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function Home() {
                 {" "}
                 {/* Only show on desktop */}
                 <Link
-                  href="/"
+                  href="/join-us"
                   className="font-platypi text-lg md:text-base bg-white px-10 py-4 md:px-6 md:py-2 rounded-full inline-block"
                 >
                   Become Part
@@ -145,7 +145,7 @@ export default function Home() {
             </p>
             <div className="mb-8 md:mb-16">
               <Link
-                href="/"
+                href="/join-us"
                 className="font-platypi text-sm md:text-base bg-white px-6 py-2.5 md:px-6 md:py-2 rounded-full inline-block"
               >
                 Do Together
@@ -330,6 +330,32 @@ export default function Home() {
                       </span>
                     </div>
 
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Armaan needs cancer treatment
+                      </span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Armaan needs cancer treatment
+                      </span>
+                    </div>
+
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <Image
@@ -413,6 +439,19 @@ export default function Home() {
                       </span>
                     </div>
 
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Armaan needs cancer treatment
+                      </span>
+                    </div>
+
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <Image
@@ -424,6 +463,32 @@ export default function Home() {
                       />
                       <span className="text-xs md:text-sm">
                         Armaan needs cancer treatment
+                      </span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
+                      </span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                      <Image
+                        src="/p1.png"
+                        alt="profile"
+                        width={40}
+                        height={40}
+                        className="rounded-full md:w-[50px] md:h-[50px]"
+                      />
+                      <span className="text-xs md:text-sm">
+                        Seema needs books for school
                       </span>
                     </div>
 

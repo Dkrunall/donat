@@ -5,9 +5,11 @@ import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import PopupForm from "../components/PopupForm";
 
 export default function ContactUs() {
   const [offset, setOffset] = useState(0);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +37,7 @@ export default function ContactUs() {
           {/* Let's Connect Section */}
           <div className="text-center mb-12 md:mb-16">
             <h1 className="text-3xl md:text-5xl font-bold font-platypi text-[#323E7E] mb-4">
-              Let&apos;s connect — your next
+              Let&apos;s connect, your next
               <br />
               message might change a life.
             </h1>
@@ -162,12 +164,12 @@ export default function ContactUs() {
               </p>
               <div className="flex items-center justify-center flex-col md:flex-row gap-5 w-full">
                 <div className="w-fit">
-                  <Link
-                    href="/contact-form"
+                  <button
+                    onClick={() => setIsPopupOpen(true)}
                     className="block w-full text-center bg-white text-[#323E7E] py-3 px-3 rounded-full hover:bg-gray-100 transition duration-300 font-medium"
                   >
                     Fill the Form
-                  </Link>
+                  </button>
                 </div>
 
                 <div className="w-fit">
@@ -235,6 +237,7 @@ export default function ContactUs() {
         </div>
 
         <Footer />
+        <PopupForm isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
       </div>
     </>
   );

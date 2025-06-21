@@ -46,7 +46,7 @@ export default function CancerAwarenessProgram() {
           {/* Positioned text at bottom right */}
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
             <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
-              Every year in India, over <span className="font-semibold">14 lakh people are diagnosed with cancer</span>. 10 lakh die — many because it was detected too late. It&apos;s our fight to change that.
+              Every year in India, over <span className="font-semibold">14 lakh people are diagnosed with cancer</span>. 10 lakh die, many because it was detected too late. It&apos;s our fight to change that.
             </p>
           </div>
         </div>

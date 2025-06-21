@@ -5,9 +5,11 @@ import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import PopupForm from "../components/PopupForm";
 
 export default function JoinUs() {
   const [offset, setOffset] = useState(0);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -188,12 +190,12 @@ export default function JoinUs() {
                 </li>
               </ul>
               <div className="mt-auto text-center">
-                <Link
-                  href="#apply-volunteer"
-                  className="text-base font-open-sans text-[#323E7E] bg-white px-6 py-3 rounded-full inline-block shadow-sm border border-[#323E7E]"
+                <button
+                  onClick={() => setIsPopupOpen(true)}
+                  className="text-base font-open-sans text-[#323E7E] bg-white px-6 py-3 rounded-full inline-block shadow-sm border border-[#323E7E] cursor-pointer"
                 >
                   Join as Volunteer
-                </Link>
+                </button>
               </div>
             </div>
 
@@ -245,17 +247,17 @@ export default function JoinUs() {
                 </li>
               </ul>
               <div className="mt-auto text-center">
-                <Link
-                  href="#apply-intern"
-                  className="text-base font-open-sans text-[#323E7E] bg-white px-6 py-3 rounded-full inline-block shadow-sm border border-[#323E7E]"
+                <button
+                  onClick={() => setIsPopupOpen(true)}
+                  className="text-base font-open-sans text-[#323E7E] bg-white px-6 py-3 rounded-full inline-block shadow-sm border border-[#323E7E] cursor-pointer"
                 >
                   Join as Intern
-                </Link>
+                </button>
               </div>
             </div>
 
             {/* Role 3 */}
-            <div className="bg-white rounded-3xl p-6 md:p-8 shadow-sm">
+            <div className="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
               <h3 className="text-xl md:text-2xl font-platypi font-bold text-[#323E7E] mb-6">
                 Campaign Ambassador (Remote)
               </h3>
@@ -292,12 +294,12 @@ export default function JoinUs() {
                 </li>
               </ul>
               <div className="mt-auto text-center">
-                <Link
-                  href="#apply-ambassador"
-                  className="text-base font-open-sans text-[#323E7E] bg-white px-6 py-3 rounded-full inline-block shadow-sm border border-[#323E7E]"
+                <button
+                  onClick={() => setIsPopupOpen(true)}
+                  className="text-base font-open-sans text-[#323E7E] bg-white px-6 py-3 rounded-full inline-block shadow-sm border border-[#323E7E] cursor-pointer"
                 >
-                  Join as Volunteer
-                </Link>
+                  Join as Ambassador
+                </button>
               </div>
             </div>
           </div>
@@ -375,12 +377,12 @@ export default function JoinUs() {
             </div>
 
             <div className="text-center">
-              <Link
-                href="#apply-form"
-                className="font-platypi text-base bg-white border border-[#323E7E] text-[#323E7E] px-8 py-3 rounded-full inline-block hover:bg-gray-50 transition-all"
+              <button
+                onClick={() => setIsPopupOpen(true)}
+                className="font-platypi text-base bg-white border border-[#323E7E] text-[#323E7E] px-8 py-3 rounded-full inline-block hover:bg-gray-50 transition-all cursor-pointer"
               >
                 Be a Part
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -405,12 +407,12 @@ export default function JoinUs() {
                 Tell us who you are, and we&apos;ll find a place for you.
               </p>
               <div className="flex flex-wrap gap-4">
-              <Link
-                href="#apply-form"
-                className="font-platypi text-base bg-white border border-[#323E7E] text-[#323E7E] px-8 py-3 rounded-full inline-block hover:bg-gray-50 transition-all"
+              <button
+                onClick={() => setIsPopupOpen(true)}
+                className="font-platypi text-base bg-white border border-[#323E7E] text-[#323E7E] px-8 py-3 rounded-full inline-block hover:bg-gray-50 transition-all cursor-pointer"
               >
                 Fill the Form
-              </Link>
+              </button>
               
               <Link
                 href="https://chat.whatsapp.com/example"
@@ -499,6 +501,7 @@ export default function JoinUs() {
           </div>
         </div>
         <Footer />
+        <PopupForm isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
       </div>
     </>
   );

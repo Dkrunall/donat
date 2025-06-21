@@ -52,7 +52,7 @@ export default function WhatWeDo() {
             Campaigns That Create Change
           </h2>
           <p className="text-base md:text-lg font-open-sans text-center max-w-3xl mx-auto mb-8">
-            We don&apos;t just talk about problems—we solve them. One life, one
+            We don&apos;t just talk about problems, we solve them. One life, one
             family, one village at a time.
           </p>
 
@@ -251,12 +251,12 @@ export default function WhatWeDo() {
                     Free health camps in underserved areas
                   </span>
                   <span className="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
-                    ...more
+                  Free health camps in underserved areas
                   </span>
                 </div>
 
                 <Link
-                  href="/"
+                  href="/capp"
                   className="font-platypi text-sm md:text-base bg-[#4285F4] text-white px-6 py-2 rounded-full inline-block hover:bg-[#3b78e7] transition-colors duration-300"
                 >
                   Explore CAPP
@@ -278,7 +278,7 @@ export default function WhatWeDo() {
               dedicate their time, skills, and hearts to our mission.
             </p>
             <Link
-              href="/"
+              href="/join-us"
               className="font-platypi text-base bg-white text-[#323E7E] px-8 py-3 rounded-full inline-block"
             >
               Join Our Team
@@ -402,7 +402,7 @@ export default function WhatWeDo() {
                 </div>
               </div>
               <Link
-                href="/"
+                href="/join-us"
                 className="bg-[#323E7E] text-white py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:bg-[#263166] transition-colors"
               >
                 Become Part
