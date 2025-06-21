@@ -73,28 +73,28 @@ export default function Header() {
 
             {/* what we do click items */}
             <div className={`w-1/2 grid grid-cols-2 gap-4 ${!showWhatWeDo ? 'hidden' : ''}`}>
-              <Link href="/babu-ki-rasoi" className={`bg-white rounded-xl p-4 border ${isActive('/babu-ki-rasoi') ? 'border-[#39447B] shadow-lg bg-[#39447B] text-white' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
-                <h3 className={`${isActive('/babu-ki-rasoi') ? 'text-white' : 'text-[#39447B]'} text-lg font-bold mb-2`}>Babu Ki Rasoi</h3>
+              <Link href="/babu-ki-rasoi" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-all relative h-[132px]">
+                <h3 className="text-[#39447B] text-lg font-bold mb-2">Babu Ki Rasoi</h3>
                 <div className="absolute bottom-4 right-4">
                   <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                 </div>
               </Link>
 
-              <Link href="/capp" className={`bg-white rounded-xl p-4 border ${isActive('/capp') ? 'border-[#39447B] shadow-lg bg-[#39447B] text-white' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
+              <Link href="/capp" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-all relative h-[132px]">
                 <h3 className={`${isActive('/capp') ? 'text-white' : 'text-[#39447B]'} text-lg font-bold mb-2`}>Cancer Awareness & <br/> Prevention Program (CAPP)</h3>
                 <div className="absolute bottom-4 right-4">
                   <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                 </div>
               </Link>
 
-              <Link href="/friend-of-anat-aman" className={`bg-white rounded-xl p-4 border ${isActive('/friend-of-anat-aman') ? 'border-[#39447B] shadow-lg bg-[#39447B] text-white' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
+              <Link href="/friend-of-anat-aman" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-all relative h-[132px]">
                 <h3 className={`${isActive('/friend-of-anat-aman') ? 'text-white' : 'text-[#39447B]'} text-lg font-bold mb-2`}>Friends of Anant Aman</h3>
                 <div className="absolute bottom-4 right-4">
                   <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                 </div>
               </Link>
 
-              <Link href="/kala-darpan" className={`bg-white rounded-xl p-4 border ${isActive('/kala-darpan') ? 'border-[#39447B] shadow-lg bg-[#39447B] text-white' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
+              <Link href="/kala-darpan" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-all relative h-[132px]">
                 <h3 className={`${isActive('/kala-darpan') ? 'text-white' : 'text-[#39447B]'} text-lg font-bold mb-2`}>Kala Darpan</h3>
                 <div className="absolute bottom-4 right-4">
                   <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
@@ -104,8 +104,8 @@ export default function Header() {
 
             {/* get involved click items */}
             <div className={`w-1/2 grid grid-cols-2 gap-4 ${!showGetInvolved ? 'hidden' : ''}`}>
-              <Link href="/join-us" className={`bg-white rounded-xl p-4 border ${isActive('/join-us') ? 'border-[#39447B] shadow-lg bg-[#39447B] text-white' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
-                <h3 className={`${isActive('/join-us') ? 'text-white' : 'text-[#39447B]'} text-lg font-bold mb-2`}>Join Us <br /> (Intern/Volunteer)</h3>
+              <Link href="/join-us" className="bg-white rounded-xl p-4 border border-[#E3E3E3] shadow-md hover:shadow-lg transition-all relative h-[132px]">
+                <h3 className="text-[#39447B] text-lg font-bold mb-2">Join Us <br /> (Intern/Volunteer)</h3>
                 <div className="absolute bottom-4 right-4">
                   <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                 </div>

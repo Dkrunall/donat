@@ -63,10 +63,12 @@ const Campings = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 sm:gap-6 px-4 max-w-7xl mx-auto">
-      {campaigns.map((campaign, index) => (
-        <CampingCard key={index} {...campaign} />
-      ))}
+    <div className="overflow-x-auto md:overflow-visible pb-4 hide-scrollbar">
+      <div className="flex flex-nowrap md:flex-wrap md:justify-center gap-4 sm:gap-6 px-4 max-w-7xl mx-auto">
+        {campaigns.map((campaign, index) => (
+          <CampingCard key={index} {...campaign} />
+        ))}
+      </div>
     </div>
   );
 };

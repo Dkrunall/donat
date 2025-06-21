@@ -43,7 +43,7 @@ export default function FriendOfAnatAman() {
                 Not just a club. A cause. A{""} community
               </h1>
               <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-                Friends of Anant Aman — Where Friendships Fuel Change
+                Friends of Anant Aman, Where Friendships Fuel Change
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function FriendOfAnatAman() {
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
             <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
               FAA is where young hearts and smart minds come together to change
-              lives — not someday, but right now.
+              lives, not someday, but right now.
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function FriendOfAnatAman() {
 
               <p className="text-lg md:text-xl font-open-sans text-gray-700 mt-8">
                 We show up. Speak up. And stand for something meaningful. The
-                difference between talking about impact, and having impact —
+                difference between talking about impact, and having impact,
                 it&apos;s in your hands.
               </p>
             </div>
@@ -215,7 +215,7 @@ export default function FriendOfAnatAman() {
               </div>
               <div className="absolute inset-0 bg-black bg-opacity-20 flex items-end justify-center p-10">
                 <p className="text-lg text-white font-open-sans font-extrabold">
-                  Visit schools, slums, hospitals — and create change
+                  Visit schools, slums, hospitals, and create change
                 </p>
               </div>
             </div>

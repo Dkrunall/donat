@@ -43,7 +43,7 @@ export default function KalaDarpan() {
                 Where art speaks, and society listens.
               </h1>
               <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-              KalaDarpan is not just an art exhibition — it’s a celebration of expression, identity, and culture. Organized annually by Anant Aman Social Welfare Society, KalaDarpan brings together artists from across the country to showcase their creativity and perspectives through various forms of art
+              KalaDarpan is not just an art exhibition, it’s a celebration of expression, identity, and culture. Organized annually by Anant Aman Social Welfare Society, KalaDarpan brings together artists from across the country to showcase their creativity and perspectives through various forms of art
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function KalaDarpan() {
           {/* Positioned text at bottom right */}
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
             <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
-            From bold brushstrokes to subtle stories, from traditional to modern — every piece displayed under KalaDarpan holds a voice. And we are here to listen.
+            From bold brushstrokes to subtle stories, from traditional to modern, every piece displayed under KalaDarpan holds a voice. And we are here to listen.
             </p>
           </div>
         </div>
