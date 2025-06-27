@@ -139,7 +139,7 @@ export default function BabuKiRasoi() {
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
                 <OptimizedImage 
-                  src="/cc2.png" 
+                  src="/bkr2.jpg" 
                   alt="1000+ families supported" 
                   fill 
                   className="object-cover"

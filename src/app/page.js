@@ -40,7 +40,7 @@ export default function Home() {
               src="https://www.youtube.com/embed/HeOTorjAl0s?autoplay=1&mute=1&loop=1&playlist=HeOTorjAl0s&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
               title="Hero Video"
               className="w-full h-full object-contain"
-              style={{ border: 'none' }}
+              style={{ border: "none" }}
               allow="autoplay; encrypted-media"
             />
           </div>
@@ -271,7 +271,12 @@ export default function Home() {
               {/* Support Card */}
 
               <Link href="/join-us">
-              <OptimizedImage src="/ss.png" alt="Support illustration" width={250} height={300} />
+                <OptimizedImage
+                  src="/ss.png"
+                  alt="Support illustration"
+                  width={250}
+                  height={300}
+                />
               </Link>
             </div>
           </div>
@@ -511,7 +516,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="/join-us" className="w-32 md:w-40 mt-4 md:mt-8 bg-white border border-gray-200 rounded-full px-4 md:px-6 py-3 md:py-4 text-xs md:text-sm hover:bg-gray-50 transition-colors">
+              <Link
+                href="/join-us"
+                className="w-32 md:w-40 mt-4 md:mt-8 bg-white border border-gray-200 rounded-full px-4 md:px-6 py-3 md:py-4 text-xs md:text-sm hover:bg-gray-50 transition-colors"
+              >
                 Let&apos;s help them
               </Link>
             </div>
@@ -526,7 +534,7 @@ export default function Home() {
                 sizes="100vw"
                 className="object-cover w-full h-full"
               />
-              <div className="px-4 md:px-14 absolute top-0 text-center w-full p-4 md:p-6 text-black">
+              <div className="px-4 md:px-14 absolute inset-0 text-center w-full p-4 md:p-6 text-black flex flex-col justify-between">
                 <h1 className="text-2xl md:text-4xl font-extrabold font-platypi mb-3 md:mb-5">
                   Faces <span className="text-[#323E7E]">we</span>{" "}
                   <i>
@@ -534,6 +542,14 @@ export default function Home() {
                     <span className="text-[#1F9446]">forget</span>
                   </i>
                 </h1>
+                <div className="mb-10">
+                  <Link
+                    href="/wall-of-love"
+                    className="w-32 md:w-40 mt-4 md:mt-8 bg-white border border-gray-200 rounded-full px-4 md:px-6 py-3 md:py-4 text-xs md:text-sm hover:bg-gray-50 transition-colors"
+                  >
+                    Wall of Love
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

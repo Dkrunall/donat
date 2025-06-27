@@ -132,7 +132,7 @@ export default function CancerAwarenessProgram() {
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
                 <OptimizedImage 
-                  src="/cc1.png" 
+                  src="/cancer2.jpg" 
                   alt="100+ awareness camps" 
                   fill 
                   className="object-cover"
@@ -148,7 +148,7 @@ export default function CancerAwarenessProgram() {
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
                 <OptimizedImage 
-                  src="/cc2.png" 
+                  src="/cancer1.jpg" 
                   alt="1,500+ early detections" 
                   fill 
                   className="object-cover"
@@ -164,7 +164,7 @@ export default function CancerAwarenessProgram() {
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
                 <OptimizedImage 
-                  src="/cc3.png" 
+                  src="/cancer3.jpg" 
                   alt="50,000+ people reached" 
                   fill 
                   className="object-cover"
@@ -180,7 +180,7 @@ export default function CancerAwarenessProgram() {
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
                 <OptimizedImage 
-                  src="/ccc4.png" 
+                  src="/cancer4.jpg" 
                   alt="10,000+ given emotional & medical guidance" 
                   fill 
                   className="object-cover"

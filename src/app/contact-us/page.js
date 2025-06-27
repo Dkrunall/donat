@@ -135,7 +135,7 @@ export default function ContactUs() {
                 <div className="bg-[#E8EDFF] rounded-full flex items-center gap-3">
                   <div className="h-12 w-12 bg-[#fff] rounded-full"></div>
                   <p className="text-sm text-gray-700 pr-3">
-                    Anant Aman SWS, Indore, Madhya Pradesh
+                    311, Apollo Sq. Building, above CCD, JanjeerwalaSq, indore
                   </p>
                 </div>
               </div>
@@ -207,25 +207,25 @@ export default function ContactUs() {
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
                   <Link
-                    href="/"
+                    href="https://www.instagram.com/anantamansws/"
                     className="bg-white text-[#273373] py-2 px-8 rounded-full text-center "
                   >
                     Instagram
                   </Link>
                   <Link
-                    href="/"
+                    href="https://facebook.com/AnantAmanSws"
                     className="bg-white text-[#273373] py-2 px-8 rounded-full text-center "
                   >
                     Facebook
                   </Link>
                   <Link
-                    href="/"
+                    href="https://www.linkedin.com/company/anantamansws/"
                     className="bg-white text-[#273373] py-2 px-8 rounded-full text-center "
                   >
                     LinkedIn
                   </Link>
                   <Link
-                    href="/"
+                    href="https://www.youtube.com/@anantamansws"
                     className="bg-white text-[#273373] py-2 px-8 rounded-full text-center "
                   >
                     Youtube

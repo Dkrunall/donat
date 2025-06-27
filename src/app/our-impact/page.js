@@ -47,7 +47,7 @@ export default function OurImpact() {
           {/* Positioned text at bottom right */}
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
             <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
-            Every meal served, every child educated, every life saved  —{" "}
+              Every meal served, every child educated, every life saved,{" "}
               <span className="font-bold">
                 {" "}
                 was because someone like you chose to care.
@@ -58,7 +58,7 @@ export default function OurImpact() {
 
         {/* Impact Statistics Section */}
         <div className="py-12 md:py-16">
-          <h2 className="text-3xl md:text-4xl font-platypi font-bold text-black text-center mb-10 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-platypi font-bold text-[#323E7E] mt-2 w-full text-center mb-10 md:mb-12">
             Our Impact
           </h2>
 
@@ -217,7 +217,7 @@ export default function OurImpact() {
 
         {/* Year-Wise Timeline Section */}
         <div className="py-12 md:py-16 bg-[#F0F3FF] rounded-3xl my-8 md:my-10 md:mx-auto">
-          <h2 className="text-3xl md:text-4xl font-platypi font-bold text-black text-center mb-10 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-platypi font-bold text-[#323E7E] mt-2 w-full text-center mb-10 md:mb-12">
             Year-Wise <span className="text-[#4A5AAA]">Timeline</span>
           </h2>
 
@@ -234,7 +234,7 @@ export default function OurImpact() {
               {/* Timeline Item 1 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
                 <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
-                  <p className="text-[13px] text-gray-600 leading-relaxed">
+                  <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Cancer awareness programs launched in rural MP
                   </p>
                 </div>
@@ -247,7 +247,7 @@ export default function OurImpact() {
               {/* Timeline Item 2 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
                 <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
-                  <p className="text-[13px] text-gray-600 leading-relaxed">
+                  <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     COVID lockdown: 10,000+ ration kits distributed.
                   </p>
                 </div>
@@ -260,7 +260,7 @@ export default function OurImpact() {
               {/* Timeline Item 3 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
                 <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
-                  <p className="text-[13px] text-gray-600 leading-relaxed">
+                  <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Anant Aman SWS was born. Started with education drives in
                     slums.
                   </p>
@@ -274,7 +274,7 @@ export default function OurImpact() {
               {/* Timeline Item 4 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
                 <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
-                  <p className="text-[13px] text-gray-600 leading-relaxed">
+                  <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Cancer awareness programs launched in rural MP
                   </p>
                 </div>
@@ -287,7 +287,7 @@ export default function OurImpact() {
               {/* Timeline Item 5 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
                 <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
-                  <p className="text-[13px] text-gray-600 leading-relaxed">
+                  <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Cancer awareness programs in rural MP
                   </p>
                 </div>
@@ -304,16 +304,18 @@ export default function OurImpact() {
             <div className="relative">
               {/* Vertical Timeline Line */}
               <div className="absolute left-4 top-0 bottom-0 w-1 bg-gray-300"></div>
-              
+
               {/* Mobile Timeline Items */}
               <div className="space-y-8">
                 {/* Mobile Timeline Item 1 */}
                 <div className="flex items-start">
                   <div className="bg-[#4A5AAA] h-5 w-5 rounded-full z-10 border-2 border-white mt-4 mr-4 relative left-2"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-[#323E7E] mb-2">Year 2022</p>
+                    <p className="text-sm font-semibold text-[#323E7E] mb-2">
+                      Year 2022
+                    </p>
                     <div className="bg-[#E0E5FF] p-4 rounded-lg">
-                      <p className="text-[13px] text-gray-600 leading-relaxed">
+                      <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                         Cancer awareness programs launched in rural MP
                       </p>
                     </div>
@@ -324,7 +326,9 @@ export default function OurImpact() {
                 <div className="flex items-start">
                   <div className="bg-[#4A5AAA] h-5 w-5 rounded-full z-10 border-2 border-white mt-4 mr-4 relative left-2"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-[#323E7E] mb-2">Year 2024</p>
+                    <p className="text-sm font-semibold text-[#323E7E] mb-2">
+                      Year 2024
+                    </p>
                     <div className="bg-[#E0E5FF] p-4 rounded-lg">
                       <p className="text-[13px] text-gray-600 leading-relaxed">
                         COVID lockdown: 10,000+ ration kits distributed.
@@ -337,10 +341,13 @@ export default function OurImpact() {
                 <div className="flex items-start">
                   <div className="bg-[#4A5AAA] h-5 w-5 rounded-full z-10 border-2 border-white mt-4 mr-4 relative left-2"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-[#323E7E] mb-2">Year 2013</p>
+                    <p className="text-sm font-semibold text-[#323E7E] mb-2">
+                      Year 2013
+                    </p>
                     <div className="bg-[#E0E5FF] p-4 rounded-lg">
                       <p className="text-[13px] text-gray-600 leading-relaxed">
-                        Anant Aman SWS was born. Started with education drives in slums.
+                        Anant Aman SWS was born. Started with education drives
+                        in slums.
                       </p>
                     </div>
                   </div>
@@ -350,7 +357,9 @@ export default function OurImpact() {
                 <div className="flex items-start">
                   <div className="bg-[#4A5AAA] h-5 w-5 rounded-full z-10 border-2 border-white mt-4 mr-4 relative left-2"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-[#323E7E] mb-2">Year 2015</p>
+                    <p className="text-sm font-semibold text-[#323E7E] mb-2">
+                      Year 2015
+                    </p>
                     <div className="bg-[#E0E5FF] p-4 rounded-lg">
                       <p className="text-[13px] text-gray-600 leading-relaxed">
                         Cancer awareness programs launched in rural MP
@@ -363,7 +372,9 @@ export default function OurImpact() {
                 <div className="flex items-start">
                   <div className="bg-[#4A5AAA] h-5 w-5 rounded-full z-10 border-2 border-white mt-4 mr-4 relative left-2"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-[#323E7E] mb-2">Year 2020</p>
+                    <p className="text-sm font-semibold text-[#323E7E] mb-2">
+                      Year 2020
+                    </p>
                     <div className="bg-[#E0E5FF] p-4 rounded-lg">
                       <p className="text-[13px] text-gray-600 leading-relaxed">
                         Cancer awareness programs in rural MP
@@ -376,195 +387,239 @@ export default function OurImpact() {
           </div>
 
           <div className="text-center mt-8 md:mt-10">
-              <Link
-                href="/resources"
-                className="font-platypi text-sm md:text-base bg-white text-[#323E7E] px-6 py-2 rounded-full inline-block shadow-md hover:bg-gray-100 transition-colors duration-300 border border-gray-300"
-              >
-                Download Annual Report
-              </Link>
+            <Link
+              href="/resources"
+              className="font-platypi text-sm md:text-base bg-white text-[#323E7E] px-6 py-2 rounded-full inline-block shadow-md hover:bg-gray-100 transition-colors duration-300 border border-gray-300"
+            >
+              Download Annual Report
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Faces Behind the Numbers Section */}
+      <div className="py-12 md:py-16">
+        <h2 className="text-3xl md:text-4xl font-platypi font-bold text-[#323E7E] mt-2 w-full text-center mb-10 md:mb-12">
+          Faces Behind the <span className="text-[#4A5AAA]">Numbers</span>
+        </h2>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {/* Story 1 */}
+            <div className="bg-[#F5F7FA] rounded-2xl p-6 flex items-end h-96">
+              <p className="text-base md:text-lg font-medium leading-relaxed">
+                <span className="text-[#4A5AAA] font-bold">Seema</span>, a
+                mother of 3, got her first full meal from Babu Ki Rasoi.
+              </p>
+            </div>
+
+            {/* Story 2 */}
+            <div className="bg-[#F5F7FA] rounded-2xl p-6 flex items-end h-96">
+              <p className="text-base md:text-lg font-medium leading-relaxed">
+                <span className="text-[#4A5AAA] font-bold">
+                  Rahul&apos;s mother
+                </span>{" "}
+                was diagnosed with cancer in Stage 1 because of a CAPP camp.
+              </p>
+            </div>
+
+            {/* Story 3 */}
+            <div className="bg-[#F5F7FA] rounded-2xl flex items-end p-6 h-96">
+              <p className="text-base md:text-lg font-medium leading-relaxed">
+                <span className="text-[#4A5AAA] font-bold">Neha</span>, 14, goes
+                to school because someone paid her fees.
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Faces Behind the Numbers Section */}
-        <div className="py-12 md:py-16">
-          <h2 className="text-3xl md:text-4xl font-platypi font-bold text-black text-center mb-10 md:mb-12">
-            Faces Behind the <span className="text-[#4A5AAA]">Numbers</span>
-          </h2>
+        <p className="text-center text-gray-700 text-base md:text-lg font-open-sans italic mt-8 md:mt-10 px-4 md:px-16">
+          &ldquo;We never thought someone would care. Anant Aman showed
+          up.&rdquo;
+        </p>
+      </div>
 
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              {/* Story 1 */}
-              <div className="bg-[#F5F7FA] rounded-2xl p-6 flex items-end h-96">
-                <p className="text-base md:text-lg font-medium leading-relaxed">
-                  <span className="text-[#4A5AAA] font-bold">Seema</span>, a
-                  mother of 3, got her first full meal from Babu Ki Rasoi.
-                </p>
-              </div>
-
-              {/* Story 2 */}
-              <div className="bg-[#F5F7FA] rounded-2xl p-6 flex items-end h-96">
-                <p className="text-base md:text-lg font-medium leading-relaxed">
-                  <span className="text-[#4A5AAA] font-bold">
-                    Rahul&apos;s mother
-                  </span>{" "}
-                  was diagnosed with cancer in Stage 1 because of a CAPP camp.
-                </p>
-              </div>
-
-              {/* Story 3 */}
-              <div className="bg-[#F5F7FA] rounded-2xl flex items-end p-6 h-96">
-                <p className="text-base md:text-lg font-medium leading-relaxed">
-                  <span className="text-[#4A5AAA] font-bold">Neha</span>, 14,
-                  goes to school because someone paid her fees.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-center text-gray-700 text-base md:text-lg font-open-sans italic mt-8 md:mt-10 px-4 md:px-16">
-            &ldquo;We never thought someone would care. Anant Aman showed up.&rdquo;
-          </p>
-        </div>
-
-        {/* Our Partners in Impact Section */}
-        <div className="py-12 md:py-16">
-          <div className="px-2 md:px-3">
-            <div className="flex flex-col md:flex-row gap-3 items-stretch">
-              {/* Left Column: Text and Logos */}
-              <div className="w-full md:w-1/2 bg-white rounded-xl p-6 md:p-8 shadow-sm border border-gray-100">
-                <h2 className="text-2xl font-platypi font-bold text-[#323E7E] mb-2">
-                  Our Partners in Impact
-                </h2>
-                <p className="text-gray-600 text-base mb-6 md:mb-8">
-                  They believed in us. And still do.
-                </p>
-                <div className="">
+      {/* Our Partners in Impact Section */}
+      <div className="py-12 md:py-16">
+        <div className="px-2 md:px-3">
+          <div className="flex flex-col md:flex-row gap-3 items-stretch">
+            {/* Left Column: Text and Logos */}
+            <div className="w-full md:w-1/2 bg-white rounded-xl p-6 md:p-8 shadow-sm border border-gray-100">
+              <h2 className="text-2xl font-platypi font-bold text-[#323E7E] mb-2">
+                Our Partners in Impact
+              </h2>
+              <p className="text-gray-600 text-base mb-6 md:mb-8">
+                They believed in us. And still do.
+              </p>
+              <div className="">
                 <InfiniteCarousel direction="forward" />
                 <InfiniteCarousel direction="reverse" />
-                </div>
               </div>
+            </div>
 
-              {/* Right Column: Partner Descriptions */}
-              <div className="w-full md:w-1/2 bg-[#323E7E] text-white rounded-xl p-6 md:p-8 flex flex-col justify-center">
-                <div className="mb-6 md:mb-8">
-                  <div className="flex items-center mb-2">
-                    <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
-                    <h3 className="text-lg md:text-xl font-platypi font-semibold">
-                      Amity University
-                    </h3>
+            {/* Right Column: Partner Descriptions */}
+            <div className="w-full md:w-1/2 bg-[#323E7E] text-white rounded-xl p-6 md:p-8 flex flex-col justify-center">
+              {/* Fixed height container with overflow hidden for vertical slider */}
+              <div className="h-[320px] overflow-hidden relative">
+                {/* Inner div with animation */}
+                <div className="animate-scroll hover:pause-animation">
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Amity University
+                      </h3>
+                    </div>
                   </div>
-                  <p className="text-sm font-open-sans opacity-90 leading-relaxed ml-6 md:ml-7">
-                    We believe art is a form of activism, emotion, and
-                    connection. Through KalaDarpan, we aim to:
-                  </p>
-                </div>
-                <div className="mb-6 md:mb-8">
-                  <div className="flex items-center mb-2">
-                    <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
-                    <h3 className="text-lg md:text-xl font-platypi font-semibold">
-                      Acropolis Institution
-                    </h3>
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Acropolis Institution
+                      </h3>
+                    </div>
                   </div>
-                  <p className="text-sm font-open-sans opacity-90 leading-relaxed ml-6 md:ml-7">
-                    We believe art is a form of activism, emotion, and
-                    connection. Through KalaDarpan, we aim to:
-                  </p>
-                </div>
-                <div>
-                  <div className="flex items-center mb-2">
-                    <span className="w-3 h-3 md:w-4 md:h-4 bg-gray-400 rounded-full mr-3"></span>
-                    <h3 className="text-lg md:text-xl font-platypi font-semibold text-gray-400">
-                      Acropolis Institution
-                    </h3>
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Acropolis Institution
+                      </h3>
+                    </div>
                   </div>
-                  <p className="text-sm font-open-sans opacity-0 leading-relaxed ml-6 md:ml-7">
-                    We believe art is a form of activism, emotion, and
-                    connection. Through KalaDarpan, we aim to:
-                  </p>
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Acropolis Institution
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Acropolis Institution
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Acropolis Institution
+                      </h3>
+                    </div>
+                  </div>
+
+                  {/* Duplicate content for continuous scrolling */}
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Amity University
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Acropolis Institution
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex items-center mb-2">
+                      <span className="w-3 h-3 md:w-4 md:h-4 bg-blue-200 rounded-full mr-3"></span>
+                      <h3 className="text-lg md:text-xl font-platypi font-semibold">
+                        Acropolis Institution
+                      </h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* You Can Be Part of the Next Story Section */}
-        <div className="py-12 md:py-16 bg-white">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-platypi font-bold mb-4 md:mb-6">
-              You Can Be Part of the{" "}
-              <span className="text-[#323E7E]">Next Story</span>
-            </h2>
-            <div className="mb-8 md:mb-10">
-              <Link
-                href="/get-involved"
-                className="font-open-sans text-sm bg-[#E6E8F5] text-[#323E7E] px-5 py-2 md:px-6 rounded-full inline-block hover:bg-[#d1d5eb] transition-colors font-medium"
-              >
-                You can
-              </Link>
-            </div>
+      {/* You Can Be Part of the Next Story Section */}
+      <div className="py-12 md:py-16">
+        <div className="px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-platypi font-bold mb-4 md:mb-6 text-[#323E7E]">
+            Next Story
+          </h2>
+          <div className="mb-8 md:mb-10">
+            <Link
+              href="/get-involved"
+              className="font-open-sans text-sm bg-[#E6E8F5] text-[#323E7E] px-5 py-2 md:px-6 rounded-full inline-block hover:bg-[#d1d5eb] transition-colors font-medium"
+            >
+              You can
+            </Link>
+          </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-stretch">
-              {/* Card 1 */}
-              <div className="bg-white rounded-lg md:rounded-xl overflow-hidden border border-gray-100 flex flex-col">
-                <div className="relative h-48 md:h-60 lg:h-52">
-                  <OptimizedImage
-                    src="/wwd.png"
-                    alt="Become a volunteer"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-4 flex-grow flex flex-col justify-center">
-                  <p className="font-open-sans text-center text-gray-700 text-sm">
-                    Become a volunteer
-                  </p>
-                </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 items-start">
+            {/* Card 1 */}
+            <div className="flex flex-col items-center">
+              <div className="relative h-80 w-full rounded-2xl overflow-hidden shadow-lg">
+                <OptimizedImage
+                  src="/wwd.png"
+                  alt="Become a volunteer"
+                  fill
+                  className="object-cover"
+                />
               </div>
-
-              {/* Card 2 */}
-              <div className="bg-white rounded-lg md:rounded-xl overflow-hidden border border-gray-100 flex flex-col">
-                <div className="relative h-48 md:h-60 lg:h-52">
-                  <OptimizedImage
-                    src="/wwd.png"
-                    alt="Sponsor a campaign"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-4 flex-grow flex flex-col justify-center">
-                  <p className="font-open-sans text-center text-gray-700 text-sm">
-                    Sponsor a campaign
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 3 */}
-              <div className="bg-white rounded-lg md:rounded-xl overflow-hidden border border-gray-100 flex flex-col">
-                <div className="relative h-48 md:h-60 lg:h-52">
-                  <OptimizedImage
-                    src="/wwd.png"
-                    alt="Start a fundraiser"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-4 flex-grow flex flex-col justify-center">
-                  <p className="font-open-sans text-center text-gray-700 text-sm">
-                    Start a fundraiser
-                  </p>
-                </div>
-              </div>
-
-              {/* Text Card */}
-              <div className="bg-white rounded-lg md:rounded-xl border border-gray-100 p-4 md:p-6 flex flex-col justify-center items-center text-center h-full">
-                <p className="font-platypi text-base md:text-lg text-[#323E7E] font-semibold leading-tight">
-                  The next number on this page could be because of you.
+              <div className="bg-white rounded-full text-black mt-2 w-full py-3 px-6 border border-[#E3E3E3]">
+                <p className="font-platypi text-center text-sm font-medium">
+                  Become a volunteer
                 </p>
               </div>
             </div>
+
+            {/* Card 2 */}
+            <div className="flex flex-col items-center">
+              <div className="relative h-80 w-full rounded-2xl overflow-hidden border border-[#E3E3E3]">
+                <OptimizedImage
+                  src="/wwd.png"
+                  alt="Sponsor a campaign"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="bg-white rounded-full text-black mt-2 w-full py-3 px-6 border border-[#E3E3E3]">
+                <p className="font-platypi text-center text-sm font-medium">
+                  Sponsor a campaign
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="flex flex-col items-center">
+              <div className="relative h-80 w-full rounded-2xl overflow-hidden shadow-lg">
+                <OptimizedImage
+                  src="/wwd.png"
+                  alt="Start a fundraiser"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="bg-white rounded-full text-black mt-2 w-full py-3 px-6 border border-[#E3E3E3]">
+                <p className="font-platypi text-center text-sm font-medium">
+                  Start a fundraiser
+                </p>
+              </div>
+            </div>
+
+            {/* Text Card */}
+            <div className="rounded-2xl border border-[#E3E3E3] p-6 flex flex-col justify-center h-80">
+              <p className="font-open-sans text-2xl md:text-2xl text-[#323E7E] font-extrabold leading-tight">
+                The next number on this page could be because of you.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
       <Footer />
     </>
   );

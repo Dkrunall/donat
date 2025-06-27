@@ -24,35 +24,33 @@ export const OptimizedImage = ({
   className,
   ...props
 }) => {
-  if (isCloudinaryUrl(src)) {
-    // Extract public ID from Cloudinary URL
-    const publicId = src.split('/').pop().split('.')[0];
-    return (
-      <CldImage
-        src={publicId}
-        alt={alt}
-        width={width}
-        height={height}
-        sizes={sizes}
-        priority={priority}
-        className={className}
-        {...props}
-      />
-    );
+  console.log('Image source:', src);
+
+  const imageProps = {
+    src,
+    alt,
+    sizes,
+    quality,
+    priority,
+    className,
+    ...props,
+  };
+
+  if (fill) {
+    imageProps.fill = true;
+  } else {
+    imageProps.width = width;
+    imageProps.height = height;
   }
 
-  return (
-    <Image
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-      fill={fill}
-      sizes={sizes}
-      quality={quality}
-      priority={priority}
-      className={className}
-      {...props}
-    />
-  );
+  // Check if the URL is already a Cloudinary URL
+  if (isCloudinaryUrl(src)) {
+    console.log('Using existing Cloudinary URL');
+    const publicId = src.split('/').pop().split('.')[0];
+    return <CldImage {...imageProps} src={publicId} />;
+  }
+
+  // Fallback to next/image for other cases
+  console.log('Using next/image for local or other image');
+  return <Image {...imageProps} />;
 };

@@ -36,7 +36,8 @@ export default function FriendOfAnatAman() {
         </div>
 
         {/* Hero Section */}
-        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/foaa.png)] bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10 relative overflow-hidden">
+        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/foaa1.jpg)] bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10 relative overflow-hidden">
+          <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0 relative z-10">
             <div className="text-center max-w-3xl">
               <h1 className="text-4xl md:text-6xl font-extrabold font-platypi text-white leading-tight z-20">
@@ -64,7 +65,7 @@ export default function FriendOfAnatAman() {
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-[350px] md:h-[450px]">
                 <OptimizedImage
-                  src="/foaa1.png"
+                  src="/foaa3.jpeg"
                   alt="Tree with many people"
                   fill
                   className="object-cover rounded-2xl"
@@ -125,8 +126,9 @@ export default function FriendOfAnatAman() {
 
         {/* Why FAA Exists Section */}
         <div id="why-join" className="my-12">
-          <div className="bg-[url(/foaa2.png)] bg-center bg-cover rounded-3xl h-[700px] text-white overflow-hidden">
-            <div className="h-full max-w-7xl mx-auto px-6 md:px-8 flex flex-col items-center justify-center">
+          <div className="relative bg-[url(/foaa6.jpg)] bg-center bg-cover rounded-3xl h-[700px] text-white overflow-hidden">
+            <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
+            <div className="relative z-10 h-full max-w-7xl mx-auto px-6 md:px-8 flex flex-col items-center justify-center">
               <div className="text-center">
                 <h2 className="text-4xl md:text-5xl font-platypi font-bold mb-6">
                   Past Events
@@ -156,7 +158,7 @@ export default function FriendOfAnatAman() {
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
                 <OptimizedImage
-                  src="/wol.png"
+                  src="/foaa5.jpeg"
                   alt="Gallery Image 1"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -173,7 +175,7 @@ export default function FriendOfAnatAman() {
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
                 <OptimizedImage
-                  src="/wol.png"
+                  src="/foaa7.jpg"
                   alt="Gallery Image 2"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -207,7 +209,7 @@ export default function FriendOfAnatAman() {
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
                 <OptimizedImage
-                  src="/wol.png"
+                  src="/cancer2.jpg"
                   alt="Gallery Image 4"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -327,7 +329,7 @@ export default function FriendOfAnatAman() {
 
           {/* Right Column - Content */}
           <div className="w-full relative h-[400px] md:h-[470px] rounded-3xl overflow-hidden md:w-2/5">
-            <OptimizedImage src="/kd2.png" alt="Join Us" fill className="object-cover" />
+            <OptimizedImage src="/why-foaa.jpg" alt="Join Us" fill className="object-cover" />
           </div>
         </div>
 

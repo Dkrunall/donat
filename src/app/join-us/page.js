@@ -40,7 +40,7 @@ export default function JoinUs() {
                 Want to make a real difference? Start here.
               </h1>
               <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-                You don’t need superpowers to save lives. Just heart.
+                You don{" "}t need superpowers to save lives. Just heart.
               </p>
             </div>
           </div>
@@ -48,8 +48,8 @@ export default function JoinUs() {
           {/* Positioned text at bottom right */}
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
             <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
-              Whether you’re a student, professional, creator, or dreamer — <span className="font-bold"> if
-              you’ve got the will to help, we’ve got the work that needs you.</span>
+              Whether you{" "}re a student, professional, creator, or dreamer, <span className="font-bold"> if
+              you{" "}ve got the will to help, we{" "}ve got the work that needs you.</span>
             </p>
           </div>
         </div>
