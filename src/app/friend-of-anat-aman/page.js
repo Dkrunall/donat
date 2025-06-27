@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -63,7 +63,7 @@ export default function FriendOfAnatAman() {
             {/* Left side - Image */}
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-[350px] md:h-[450px]">
-                <Image
+                <OptimizedImage
                   src="/foaa1.png"
                   alt="Tree with many people"
                   fill
@@ -155,7 +155,7 @@ export default function FriendOfAnatAman() {
             {/* Gallery Item 1 */}
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
-                <Image
+                <OptimizedImage
                   src="/wol.png"
                   alt="Gallery Image 1"
                   fill
@@ -172,7 +172,7 @@ export default function FriendOfAnatAman() {
             {/* Gallery Item 2 */}
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
-                <Image
+                <OptimizedImage
                   src="/wol.png"
                   alt="Gallery Image 2"
                   fill
@@ -189,7 +189,7 @@ export default function FriendOfAnatAman() {
             {/* Gallery Item 3 */}
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
-                <Image
+                <OptimizedImage
                   src="/wol.png"
                   alt="Gallery Image 3"
                   fill
@@ -206,7 +206,7 @@ export default function FriendOfAnatAman() {
             {/* Gallery Item 4 */}
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
-                <Image
+                <OptimizedImage
                   src="/wol.png"
                   alt="Gallery Image 4"
                   fill
@@ -327,7 +327,7 @@ export default function FriendOfAnatAman() {
 
           {/* Right Column - Content */}
           <div className="w-full relative h-[400px] md:h-[470px] rounded-3xl overflow-hidden md:w-2/5">
-            <Image src="/kd2.png" alt="Join Us" fill className="object-cover" />
+            <OptimizedImage src="/kd2.png" alt="Join Us" fill className="object-cover" />
           </div>
         </div>
 

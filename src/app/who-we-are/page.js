@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -58,7 +58,7 @@ export default function WhoWeAre() {
             {/* Card 1 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative">
               <div className="relative h-48 md:h-64">
-                <Image 
+                <OptimizedImage 
                   src="/wwsf1.png" 
                   alt="Feed the hungry" 
                   fill 
@@ -75,7 +75,7 @@ export default function WhoWeAre() {
             {/* Card 2 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative">
               <div className="relative h-48 md:h-64">
-                <Image 
+                <OptimizedImage 
                   src="/wwsf2.png" 
                   alt="Educate the forgotten" 
                   fill 
@@ -92,7 +92,7 @@ export default function WhoWeAre() {
             {/* Card 3 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative">
               <div className="relative h-48 md:h-64">
-                <Image 
+                <OptimizedImage 
                   src="/wwsf3.png" 
                   alt="Prevent what can be cured" 
                   fill 
@@ -109,7 +109,7 @@ export default function WhoWeAre() {
             {/* Card 4 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative">
               <div className="relative h-48 md:h-64">
-                <Image 
+                <OptimizedImage 
                   src="/wwsf4.png" 
                   alt="Empower the youth to care" 
                   fill 
@@ -171,11 +171,11 @@ export default function WhoWeAre() {
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-full md:w-1/3">
                 <div className="rounded-2xl overflow-hidden">
-                  <Image 
-                    src="/founder.png" 
+                  <OptimizedImage 
+                    src="/founder1.png" 
                     alt="Founder" 
                     width={400} 
-                    height={500} 
+                    height={400} 
                     className="object-cover w-full"
                   />
                 </div>
@@ -209,11 +209,11 @@ export default function WhoWeAre() {
               {/* Person 1 */}
               <div className="relative rounded-2xl overflow-hidden group">
                 <div className="relative h-[450px]">
-                  <Image 
-                    src="/founder.png" 
+                  <OptimizedImage 
+                    src="/founder1.png" 
                     alt="Mr. Hemant Gupta" 
                     fill 
-                    className="object-cover"
+                    className="object-cover bg-bottom"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
                 </div>
@@ -229,7 +229,7 @@ export default function WhoWeAre() {
               {/* Person 2 */}
               <div className="relative rounded-2xl overflow-hidden group">
                 <div className="relative h-[450px]">
-                  <Image 
+                  <OptimizedImage 
                     src="/partners/2.png" 
                     alt="Mr. Bhushan Pungliya" 
                     fill 
@@ -249,7 +249,7 @@ export default function WhoWeAre() {
               {/* Person 3 - Volunteers */}
               <div className="relative rounded-2xl overflow-hidden group">
                 <div className="relative h-[450px]">
-                  <Image 
+                  <OptimizedImage 
                     src="/join.png" 
                     alt="Our Volunteers" 
                     fill 

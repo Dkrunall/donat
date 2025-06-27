@@ -1,16 +1,17 @@
-import Image from "next/image";
 import Link from "next/link";
+import { OptimizedImage } from "../utils/cloudinary";
 
 const CampingCard = ({ title, subtitle, mealsCount, buttonText, imageSrc, link }) => (
   <div className="relative w-[300px] h-[340px] sm:w-[320px] sm:h-[360px] md:w-[320px] md:h-[360px] rounded-3xl overflow-hidden group cursor-pointer flex-shrink-0 shadow-lg">
-    <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
-    <Image
+    <OptimizedImage
       src={imageSrc || "/bkr.png"}
       alt={title}
       fill
-      className="object-cover"
+      className="object-cover z-0"
+      sizes="(max-width: 640px) 300px, (max-width: 768px) 320px, 320px"
     />
-    <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5 text-white z-10">
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10"></div>
+    <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5 text-white z-20">
       <div>
         <h2 className="text-xl sm:text-2xl font-bold mb-1">{title}</h2>
         <p className="text-sm sm:text-base opacity-90">{subtitle}</p>
@@ -26,7 +27,7 @@ const CampingCard = ({ title, subtitle, mealsCount, buttonText, imageSrc, link }
             <span className="text-[#323E7E] text-sm sm:text-base">
               {buttonText}
             </span>
-            <Image src="/file.svg" alt="icon" width={16} height={16} />
+            <OptimizedImage src="/file.svg" alt="icon" width={16} height={16} />
           </Link>
         </div>
       </div>
@@ -41,7 +42,7 @@ const Campings = () => {
       subtitle: "No one should sleep hungry.",
       mealsCount: "55k+",
       buttonText: "Sponsor a meal for them",
-      imageSrc: "/bkr.png",
+      imageSrc: "/bkr1.jpg",
       link: "/babu-ki-rasoi",
     },
     {
@@ -49,7 +50,7 @@ const Campings = () => {
       subtitle: "No one should sleep hungry.",
       mealsCount: "55k+",
       buttonText: "Cancer",
-      imageSrc: "/bkr.png",
+      imageSrc: "/cancer1.jpg",
       link: "/capp",
     },
     {
@@ -57,7 +58,7 @@ const Campings = () => {
       subtitle: "No one should sleep hungry.",
       mealsCount: "55k+",
       buttonText: "Friends Of Anat Aman",
-      imageSrc: "/bkr.png",
+      imageSrc: "/foaa.jpg",
       link: "/friends-of-anat-aman",
     },
   ];

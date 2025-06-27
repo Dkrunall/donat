@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -508,7 +508,7 @@ export default function OurImpact() {
               {/* Card 1 */}
               <div className="bg-white rounded-lg md:rounded-xl overflow-hidden border border-gray-100 flex flex-col">
                 <div className="relative h-48 md:h-60 lg:h-52">
-                  <Image
+                  <OptimizedImage
                     src="/wwd.png"
                     alt="Become a volunteer"
                     fill
@@ -525,7 +525,7 @@ export default function OurImpact() {
               {/* Card 2 */}
               <div className="bg-white rounded-lg md:rounded-xl overflow-hidden border border-gray-100 flex flex-col">
                 <div className="relative h-48 md:h-60 lg:h-52">
-                  <Image
+                  <OptimizedImage
                     src="/wwd.png"
                     alt="Sponsor a campaign"
                     fill
@@ -542,7 +542,7 @@ export default function OurImpact() {
               {/* Card 3 */}
               <div className="bg-white rounded-lg md:rounded-xl overflow-hidden border border-gray-100 flex flex-col">
                 <div className="relative h-48 md:h-60 lg:h-52">
-                  <Image
+                  <OptimizedImage
                     src="/wwd.png"
                     alt="Start a fundraiser"
                     fill

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -122,7 +122,7 @@ export default function JoinUs() {
             
             {/* Right Column - Content */}
             <div className="w-full relative h-[400px] md:h-[470px] rounded-3xl overflow-hidden md:w-2/5">
-              <Image
+              <OptimizedImage
                 src="/jus.png"
                 alt="Join Us"
                 fill
@@ -390,7 +390,7 @@ export default function JoinUs() {
           <div id="get-started" className="bg-[#F8F9FF] rounded-3xl p-8 md:p-10 flex flex-col justify-between">
             <div className="flex items-center flex-col">
               <div className="flex justify-center mb-6">
-                <Image
+                <OptimizedImage
                   src="/jusf.png"
                   alt="Globe"
                   width={60}
@@ -438,7 +438,7 @@ export default function JoinUs() {
             {/* Testimonial 1 */}
             <div className="bg-[#F8F9FF] rounded-2xl p-6">
               <div className="relative h-40 md:h-48 rounded-xl overflow-hidden mb-6">
-                <Image
+                <OptimizedImage
                   src="/work.png"
                   alt="Volunteer"
                   fill
@@ -459,7 +459,7 @@ export default function JoinUs() {
             {/* Testimonial 2 */}
             <div className="bg-[#F8F9FF] rounded-2xl p-6">
               <div className="relative h-40 md:h-48 rounded-xl overflow-hidden mb-6">
-                <Image
+                <OptimizedImage
                   src="/work.png"
                   alt="Volunteer"
                   fill
@@ -481,7 +481,7 @@ export default function JoinUs() {
             {/* Testimonial 3 */}
             <div className="bg-[#F8F9FF] rounded-2xl p-6">
               <div className="relative h-40 md:h-48 rounded-xl overflow-hidden mb-6">
-                <Image
+                <OptimizedImage
                   src="/work.png"
                   alt="Volunteer"
                   fill

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -62,7 +62,7 @@ export default function KalaDarpan() {
             {/* Left side - Image */}
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-[350px] md:h-[450px]">
-                <Image
+                <OptimizedImage
                   src="/kd1.png"
                   alt="Colorful face paint art"
                   fill
@@ -228,7 +228,7 @@ export default function KalaDarpan() {
 
               {/* Stat 4 */}
               <div className="bg-white rounded-xl p-6 text-gray-700 border border-gray-200 shadow-lg flex flex-col">
-                <Image
+                <OptimizedImage
                   src="/jusf.png"
                   alt="Logo"
                   width={40}
@@ -267,7 +267,7 @@ export default function KalaDarpan() {
 
             {/* Right Column - Content */}
             <div className="w-full relative h-[400px] md:h-[470px] rounded-3xl overflow-hidden md:w-2/5">
-              <Image
+              <OptimizedImage
                 src="/kd2.png"
                 alt="Join Us"
                 fill
@@ -287,7 +287,7 @@ export default function KalaDarpan() {
               {/* Artist 1 */}
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="relative h-[300px]">
-                  <Image
+                  <OptimizedImage
                     src="/p1.png"
                     alt="Artist Testimonial 1"
                     fill
@@ -316,7 +316,7 @@ export default function KalaDarpan() {
               {/* Artist 2 */}
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="relative h-[300px]">
-                  <Image
+                  <OptimizedImage
                     src="/founder.png"
                     alt="Artist Testimonial 2"
                     fill
@@ -343,7 +343,7 @@ export default function KalaDarpan() {
               {/* Artist 3 */}
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="relative h-[300px]">
-                  <Image
+                  <OptimizedImage
                     src="/p1.png"
                     alt="Artist Testimonial 3"
                     fill
@@ -394,7 +394,7 @@ export default function KalaDarpan() {
             {/* Option 1 */}
             <div className="flex flex-col items-center">
               <div className="relative h-[250px] md:h-[350px] w-full rounded-xl overflow-hidden mb-4">
-                <Image
+                <OptimizedImage
                   src="/wol1.png"
                   alt="Become a volunteer"
                   fill
@@ -409,7 +409,7 @@ export default function KalaDarpan() {
             {/* Option 2 */}
             <div className="flex flex-col items-center">
               <div className="relative h-[250px] md:h-[350px] w-full rounded-xl overflow-hidden mb-4">
-                <Image
+                <OptimizedImage
                   src="/wol1.png"
                   alt="Sponsor a campaign"
                   fill
@@ -424,7 +424,7 @@ export default function KalaDarpan() {
             {/* Option 3 */}
             <div className="flex flex-col items-center">
               <div className="relative h-[250px] md:h-[350px] w-full rounded-xl overflow-hidden mb-4">
-                <Image
+                <OptimizedImage
                   src="/wol1.png"
                   alt="Start a fundraiser"
                   fill
@@ -439,7 +439,7 @@ export default function KalaDarpan() {
             {/* Option 4 */}
             <div className="flex flex-col items-center">
               <div className="relative h-[250px] md:h-[350px] w-full rounded-xl overflow-hidden mb-4">
-                <Image
+                <OptimizedImage
                   src="/wol1.png"
                   alt="Start a fundraiser"
                   fill

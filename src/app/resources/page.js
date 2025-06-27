@@ -31,16 +31,14 @@ export default function Resources() {
         </div>
 
         {/* Hero Section */}
-        <div className="info min-h-[400px] md:h-[60vh] w-full rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10">
-          <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0">
-            <div className="text-center">
-              <h1 className="text-2xl md:text-5xl font-extrabold font-platypi text-[#323E7E] leading-tight">
-                Tools, materials, and guides to <br /> help you do better.
-              </h1>
-              <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-[#323E7E] leading-relaxed max-w-3xl mx-auto">
-                Whether you&apos;re a volunteer, educator, NGO, or curious citizen — here&apos;s everything you need to learn, support, and create impact.
-              </p>
-            </div>
+        <div className="info min-h-[400px] md:h-[60vh] w-full rounded-3xl flex-col -mt-0 md:-mt-10 h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0">
+          <div className="text-center">
+            <h1 className="text-2xl md:text-5xl font-extrabold font-platypi text-[#323E7E] leading-tight">
+              Tools, materials, and guides to <br /> help you do better.
+            </h1>
+            <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-[#323E7E] leading-relaxed max-w-3xl mx-auto">
+              Whether you&apos;re a volunteer, educator, NGO, or curious citizen — here&apos;s everything you need to learn, support, and create impact.
+            </p>
           </div>
         </div>
 
@@ -54,14 +52,15 @@ export default function Resources() {
             {/* Material 1 */}
             <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Cancer Early Detection Poster
+                Awareness Session Script
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                PDF format, 5MB, Size: 8.5in x 11in
+                PDF format, For conducting awareness sessions with students
               </p>
               <Link
-                href="/"
+                href="/resources/Awareness Session Script for Students - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download PDF
               </Link>
@@ -70,14 +69,15 @@ export default function Resources() {
             {/* Material 2 */}
             <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Cancer Early Detection Poster
+                CAPP Session Script
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                PDF format, 5MB, Size: 8.5in x 11in
+                PDF format, Cancer Awareness and Prevention Program guide
               </p>
               <Link
-                href="/"
+                href="/resources/CAPP Session Script - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download PDF
               </Link>
@@ -86,14 +86,15 @@ export default function Resources() {
             {/* Material 3 */}
             <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Cancer Early Detection Poster
+                Impact Report
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                PDF format, 5MB, Size: 8.5in x 11in
+                PDF format, Annual impact report Apr 2023 - Mar 2024
               </p>
               <Link
-                href="/"
+                href="/resources/Impact Report Apr 23 - Mar 24 - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download PDF
               </Link>
@@ -106,19 +107,19 @@ export default function Resources() {
           <h2 className="text-2xl md:text-3xl font-platypi font-bold text-black text-center mb-10">
             Volunteer Toolkit
           </h2>
-          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Toolkit 1 */}
             <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Cancer Early Detection Poster
+                Volunteer Handbook
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                PDF format, 5MB, Size: 8.5in x 11in
+                PDF format, Complete guide for volunteers
               </p>
               <Link
-                href="/"
+                href="/resources/Volunteer Handbook - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download PDF
               </Link>
@@ -127,14 +128,15 @@ export default function Resources() {
             {/* Toolkit 2 */}
             <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Cancer Early Detection Poster
+                Babu Ki Rasoi Toolkit
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                PDF format, 5MB, Size: 8.5in x 11in
+                PDF format, Guide for Babu Ki Rasoi initiative
               </p>
               <Link
-                href="/"
+                href="/resources/Babu Ki Rasoi Toolkit - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download PDF
               </Link>
@@ -143,14 +145,15 @@ export default function Resources() {
             {/* Toolkit 3 */}
             <div className="bg-white rounded-2xl p-6 shadow-md">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Cancer Early Detection Poster
+                CSR Partnership Proposal Kit
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                PDF format, 5MB, Size: 8.5in x 11in
+                PDF format, Guide for corporate partnerships
               </p>
               <Link
-                href="/"
+                href="/resources/CSR Partnership Proposal Kit - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download PDF
               </Link>
@@ -158,40 +161,42 @@ export default function Resources() {
           </div>
         </div>
 
-        {/* Workshop Slides Section */}
-        <div className="py-10 md:py-14 px-6 md:px-20 my-6">
+        {/* Special Programs & Partnerships Section */}
+        <div className="py-10 md:py-14 px-6 md:px-20 bg-gradient-to-r from-[#F8F9FF] to-[#F0F4FF] rounded-3xl my-6">
           <h2 className="text-2xl md:text-3xl font-platypi font-bold text-black text-center mb-10">
-            Volunteer Toolkit
+            Special Programs & Partnerships
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Workshop 1 */}
-            <div className="bg-[#F8F9FF] rounded-2xl p-6 shadow-md">
+            {/* Program 1 */}
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Workshop Slides: Cancer Awareness in Schools
+                Hospital Partnership Model
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                Simplified, engaging slides with volunteer training (soon).
+                Guide for establishing partnerships with hospitals and healthcare institutions
               </p>
               <Link
-                href="/"
+                href="/resources/Hospital Partnership Model - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download PDF
               </Link>
             </div>
             
-            {/* Workshop 2 */}
-            <div className="bg-[#F8F9FF] rounded-2xl p-6 shadow-md">
+            {/* Program 2 */}
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Join FAA Club (Youth Kit)
+                FAA Youth Kit
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                What FAA is, why it matters, and how to start a unit in your college.
+                What FAA is, why it matters, and how to start a unit in your college
               </p>
               <Link
-                href="/"
+                href="/resources/FAA Youth Kit  - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
+                target="_blank"
               >
                 Download Kit
               </Link>
@@ -309,7 +314,7 @@ export default function Resources() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-[#323E7E] flex-shrink-0"></div>
-                  <p className="text-sm font-open-sans">Something meaningful</p>
+                  <p className="text-sm font-open-sans">Something meaningful?</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-[#323E7E] flex-shrink-0"></div>

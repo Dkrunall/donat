@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -61,7 +61,7 @@ export default function WhatWeDo() {
             {/* Campaign 1 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
-                <Image
+                <OptimizedImage
                   src="/wwsf1.png"
                   alt="Feed the hungry"
                   fill
@@ -78,7 +78,7 @@ export default function WhatWeDo() {
             {/* Campaign 2 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
-                <Image
+                <OptimizedImage
                   src="/wwsf2.png"
                   alt="Child Education Center"
                   fill
@@ -95,7 +95,7 @@ export default function WhatWeDo() {
             {/* Campaign 3 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
-                <Image
+                <OptimizedImage
                   src="/wwsf3.png"
                   alt="Women Empowerment"
                   fill
@@ -112,7 +112,7 @@ export default function WhatWeDo() {
             {/* Campaign 4 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
-                <Image
+                <OptimizedImage
                   src="/wwsf4.png"
                   alt="Medical Assistance"
                   fill
@@ -129,7 +129,7 @@ export default function WhatWeDo() {
             {/* Campaign 5 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
-                <Image
+                <OptimizedImage
                   src="/wwsf1.png"
                   alt="Rural Development"
                   fill
@@ -146,7 +146,7 @@ export default function WhatWeDo() {
             {/* Campaign 6 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
-                <Image
+                <OptimizedImage
                   src="/wwsf2.png"
                   alt="Disaster Relief"
                   fill
@@ -189,7 +189,7 @@ export default function WhatWeDo() {
             {/* Babu Ki Rasoi Card */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-64">
-                <Image
+                <OptimizedImage
                   src="/Babu Ki Rasoi.png"
                   alt="Babu Ki Rasoi"
                   fill
@@ -231,7 +231,7 @@ export default function WhatWeDo() {
             {/* CAPP Card */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-64">
-                <Image
+                <OptimizedImage
                   src="/Group 83.png"
                   alt="Cancer Awareness & Prevention Program"
                   fill
@@ -299,7 +299,7 @@ export default function WhatWeDo() {
             {/* Collaboration 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-48 md:h-80">
-                <Image
+                <OptimizedImage
                   src="/wwdc1.png"
                   alt="Schools and colleges"
                   fill
@@ -316,7 +316,7 @@ export default function WhatWeDo() {
             {/* Collaboration 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-48 md:h-80">
-                <Image
+                <OptimizedImage
                   src="/wwdc2.png"
                   alt="Hospitals and dispensaries"
                   fill
@@ -333,7 +333,7 @@ export default function WhatWeDo() {
             {/* Collaboration 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-48 md:h-80">
-                <Image
+                <OptimizedImage
                   src="/wwdc3.png"
                   alt="Corporates and businesses"
                   fill
@@ -388,7 +388,7 @@ export default function WhatWeDo() {
             <div className="text-center">
               <div className="mb-8 bg-white rounded-2xl overflow-hidden shadow-md">
                 <div className="relative h-48 md:h-64">
-                  <Image
+                  <OptimizedImage
                     src="/wwsf1.png"
                     alt="Become a Volunteer"
                     fill
@@ -413,7 +413,7 @@ export default function WhatWeDo() {
             <div className="text-center">
               <div className="mb-8 bg-white rounded-2xl overflow-hidden shadow-md">
                 <div className="relative h-48 md:h-64">
-                  <Image
+                  <OptimizedImage
                     src="/wwsf2.png"
                     alt="Sponsor a Campaign"
                     fill
@@ -438,7 +438,7 @@ export default function WhatWeDo() {
             <div className="text-center">
               <div className="mb-8 bg-white rounded-2xl overflow-hidden shadow-md">
                 <div className="relative h-48 md:h-64">
-                  <Image
+                  <OptimizedImage
                     src="/wwsf3.png"
                     alt="Donate Funds"
                     fill

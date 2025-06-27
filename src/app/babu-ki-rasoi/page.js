@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -122,7 +122,7 @@ export default function BabuKiRasoi() {
             {/* Campaign 1 */}
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
-                <Image 
+                <OptimizedImage 
                   src="/cc1.png" 
                   alt="55,000+ meals served" 
                   fill 
@@ -138,7 +138,7 @@ export default function BabuKiRasoi() {
             {/* Campaign 2 */}
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
-                <Image 
+                <OptimizedImage 
                   src="/cc2.png" 
                   alt="1000+ families supported" 
                   fill 
@@ -154,7 +154,7 @@ export default function BabuKiRasoi() {
             {/* Campaign 3 */}
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
-                <Image 
+                <OptimizedImage 
                   src="/cc3.png" 
                   alt="2+ years of consistent operations" 
                   fill 
@@ -234,7 +234,7 @@ export default function BabuKiRasoi() {
               
               {/* Right side - Image */}
               <div className="w-full md:w-1/2 relative h-64 md:h-auto">
-                <Image 
+                <OptimizedImage 
                   src="/ccc4.png" 
                   alt="Child with food" 
                   fill 

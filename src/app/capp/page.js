@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "../utils/cloudinary";
 import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
@@ -131,7 +131,7 @@ export default function CancerAwarenessProgram() {
             {/* Impact 1 */}
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
-                <Image 
+                <OptimizedImage 
                   src="/cc1.png" 
                   alt="100+ awareness camps" 
                   fill 
@@ -147,7 +147,7 @@ export default function CancerAwarenessProgram() {
             {/* Impact 2 */}
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
-                <Image 
+                <OptimizedImage 
                   src="/cc2.png" 
                   alt="1,500+ early detections" 
                   fill 
@@ -163,7 +163,7 @@ export default function CancerAwarenessProgram() {
             {/* Impact 3 */}
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
-                <Image 
+                <OptimizedImage 
                   src="/cc3.png" 
                   alt="50,000+ people reached" 
                   fill 
@@ -179,7 +179,7 @@ export default function CancerAwarenessProgram() {
             {/* Impact 4 */}
             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-60 md:h-80">
-                <Image 
+                <OptimizedImage 
                   src="/ccc4.png" 
                   alt="10,000+ given emotional & medical guidance" 
                   fill 
@@ -259,7 +259,7 @@ export default function CancerAwarenessProgram() {
               
               {/* Right side - Image */}
               <div className="w-full md:w-1/2 relative h-64 md:h-auto">
-                <Image 
+                <OptimizedImage 
                   src="/capp2.png" 
                   alt="Cancer awareness program" 
                   fill 

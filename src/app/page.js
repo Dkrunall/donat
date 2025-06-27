@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { OptimizedImage } from "./utils/cloudinary";
 import Link from "next/link";
 import Header from "./components/Header";
 import { useEffect, useState } from "react";
@@ -36,16 +36,16 @@ export default function Home() {
               transition: "transform 0.2s cubic-bezier(0.2, 0, 0.3, 1)",
             }}
           >
-            <Image
-              src="/herogif.gif"
-              alt="Next.js Logo"
-              width={1920}
-              height={1080}
-              sizes="100vw"
-              className="object-cover w-full h-full"
-              priority
+            <iframe
+              src="https://www.youtube.com/embed/HeOTorjAl0s?autoplay=1&mute=1&loop=1&playlist=HeOTorjAl0s&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+              title="Hero Video"
+              className="w-full h-full object-contain"
+              style={{ border: 'none' }}
+              allow="autoplay; encrypted-media"
             />
           </div>
+          {/* Light black overlay for better text visibility */}
+          <div className="absolute inset-0 bg-black bg-opacity-30 z-5"></div>
           <div className="px-6 md:px-14 absolute bottom-0 left-0 w-full p-6 md:p-6 text-white z-10">
             <h1 className="text-2xl md:text-4xl text-center md:text-left font-extrabold font-platypi mb-6 md:mb-10">
               We were born from pain.
@@ -83,9 +83,9 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <Image
+            <OptimizedImage
               src="/hearth.png"
-              alt="hero"
+              alt="Heart illustration"
               height={430}
               width={500}
               className=""
@@ -118,17 +118,17 @@ export default function Home() {
         </div>
 
         <div className="join-section relative mt-2 min-h-[500px] md:h-[600px]">
-          <Image
+          <OptimizedImage
             src="/join.png"
-            alt="Next.js Logo"
+            alt="Join us banner"
             width={1920}
             height={800}
             sizes="100vw"
             className="object-cover w-full h-full hidden md:block"
           />
-          <Image
+          <OptimizedImage
             src="/join-mobile.png"
-            alt="Next.js Logo"
+            alt="Join us mobile banner"
             width={768}
             height={700}
             sizes="100vw"
@@ -163,9 +163,9 @@ export default function Home() {
           <div className="bg-[#E6DDC9] rounded-b-3xl py-8 md:py-20 px-6 md:px-10">
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-2">
               <div className="w-full md:w-auto flex justify-center">
-                <Image
+                <OptimizedImage
                   src="/work.png"
-                  alt="Next.js Logo"
+                  alt="Work illustration"
                   width={280}
                   height={312}
                   sizes="100vw"
@@ -217,7 +217,7 @@ export default function Home() {
               {/* Meals Served Card */}
               <div className="bg-[#1F9446] p-4 rounded-2xl text-white w-full aspect-square flex flex-col justify-center items-center md:w-[250px] md:h-auto md:p-6">
                 <div className="mb-2">
-                  <Image
+                  <OptimizedImage
                     src="/icon1.png"
                     alt="meals"
                     width={30}
@@ -235,7 +235,7 @@ export default function Home() {
               {/* Lives Reached Card */}
               <div className="bg-[#8B6144] p-4 rounded-2xl text-white w-full aspect-square flex flex-col justify-center items-center md:w-[250px] md:h-auto md:p-6">
                 <div className="mb-2">
-                  <Image
+                  <OptimizedImage
                     src="/icon2.png"
                     alt="lives"
                     width={30}
@@ -253,7 +253,7 @@ export default function Home() {
               {/* Kids Educated Card */}
               <div className="bg-[#323E7E] p-4 rounded-2xl text-white w-full aspect-square flex flex-col justify-center items-center md:w-[250px] md:h-auto md:p-6">
                 <div className="mb-2">
-                  <Image
+                  <OptimizedImage
                     src="/icon3.png"
                     alt="education"
                     width={30}
@@ -270,7 +270,9 @@ export default function Home() {
               </div>
               {/* Support Card */}
 
-              <Image src="/ss.png" alt="logo" width={250} height={300} />
+              <Link href="/join-us">
+              <OptimizedImage src="/ss.png" alt="Support illustration" width={250} height={300} />
+              </Link>
             </div>
           </div>
         </div>
@@ -291,23 +293,11 @@ export default function Home() {
                 <div className="story-container mb-4">
                   <div className="story-slider">
                     {/* First set of items */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Armaan needs cancer treatment
-                      </span>
-                    </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
+                      <OptimizedImage
                         src="/p1.png"
-                        alt="profile"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -318,9 +308,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p2.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -331,9 +321,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p3.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -344,9 +334,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p4.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -358,9 +348,9 @@ export default function Home() {
 
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p5.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -371,9 +361,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
+                      <OptimizedImage
                         src="/p1.png"
-                        alt="profile"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -384,9 +374,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p2.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -401,9 +391,9 @@ export default function Home() {
                   <div className="story-slider">
                     {/* First set of items */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
+                      <OptimizedImage
                         src="/p1.png"
-                        alt="profile"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -414,9 +404,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p2.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -427,9 +417,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p3.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -440,9 +430,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p4.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -454,9 +444,9 @@ export default function Home() {
 
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p5.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -467,9 +457,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
+                      <OptimizedImage
                         src="/p1.png"
-                        alt="profile"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -480,9 +470,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p2.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -493,9 +483,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p3.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -506,9 +496,9 @@ export default function Home() {
                     </div>
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
-                      <Image
-                        src="/p1.png"
-                        alt="profile"
+                      <OptimizedImage
+                        src="/p4.jpg"
+                        alt="Profile picture"
                         width={40}
                         height={40}
                         className="rounded-full md:w-[50px] md:h-[50px]"
@@ -521,16 +511,16 @@ export default function Home() {
                 </div>
               </div>
 
-              <button className="w-32 md:w-40 mt-4 md:mt-8 bg-white border border-gray-200 rounded-full px-4 md:px-6 py-3 md:py-4 text-xs md:text-sm hover:bg-gray-50 transition-colors">
+              <Link href="/join-us" className="w-32 md:w-40 mt-4 md:mt-8 bg-white border border-gray-200 rounded-full px-4 md:px-6 py-3 md:py-4 text-xs md:text-sm hover:bg-gray-50 transition-colors">
                 Let&apos;s help them
-              </button>
+              </Link>
             </div>
 
             {/* Right Column - Faces */}
-            <div className="bg-white rounded-3xl overflow-hidden relative min-h-[300px] md:h-auto">
-              <Image
+            <div className="bg-gradient-to-b from-[#F6F6F6] to-[#EBEEFF] rounded-3xl overflow-hidden relative min-h-[300px] md:h-[500px]">
+              <OptimizedImage
                 src="/info1.png"
-                alt="Next.js Logo"
+                alt="Faces we can't forget"
                 width={1920}
                 height={500}
                 sizes="100vw"
@@ -563,9 +553,9 @@ export default function Home() {
           </div>
         </div>
         <div className="join-section relative mt-2">
-          <Image
+          <OptimizedImage
             src="/footer.png"
-            alt="Next.js Logo"
+            alt="Footer banner"
             width={1920}
             height={500}
             sizes="100vw"
