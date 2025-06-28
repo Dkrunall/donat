@@ -24,8 +24,6 @@ export const OptimizedImage = ({
   className,
   ...props
 }) => {
-  console.log('Image source:', src);
-
   const imageProps = {
     src,
     alt,
@@ -45,12 +43,11 @@ export const OptimizedImage = ({
 
   // Check if the URL is already a Cloudinary URL
   if (isCloudinaryUrl(src)) {
-    console.log('Using existing Cloudinary URL');
+    // Handle Cloudinary URL
     const publicId = src.split('/').pop().split('.')[0];
     return <CldImage {...imageProps} src={publicId} />;
   }
 
-  // Fallback to next/image for other cases
-  console.log('Using next/image for local or other image');
+  // Fallback to next/image for local or other cases
   return <Image {...imageProps} />;
 };

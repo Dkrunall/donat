@@ -314,7 +314,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p2.jpg"
+                        src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -327,7 +327,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p3.jpg"
+                        src="/p3.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -340,7 +340,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p4.jpg"
+                        src="/p4.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -354,7 +354,7 @@ export default function Home() {
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p5.jpg"
+                        src="/p5.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -380,7 +380,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p2.jpg"
+                        src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -410,7 +410,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p2.jpg"
+                        src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -423,7 +423,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p3.jpg"
+                        src="/p3.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -436,7 +436,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p4.jpg"
+                        src="/p4.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -450,7 +450,7 @@ export default function Home() {
                     {/* Duplicate set for seamless loop */}
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p5.jpg"
+                        src="/p5.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -476,7 +476,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p2.jpg"
+                        src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -489,7 +489,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p3.jpg"
+                        src="/p3.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -502,7 +502,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
                       <OptimizedImage
-                        src="/p4.jpg"
+                        src="/p4.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}

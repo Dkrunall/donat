@@ -36,7 +36,7 @@ export default function FriendOfAnatAman() {
         </div>
 
         {/* Hero Section */}
-        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/foaa1.jpg)] bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10 relative overflow-hidden">
+        <div className="info min-h-[700px] md:h-[90vh] w-full bg-[url(/foaa1.JPG)] bg-center bg-cover rounded-3xl flex flex-col justify-center -mt-0 md:-mt-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0 relative z-10">
             <div className="text-center max-w-3xl">
@@ -175,7 +175,7 @@ export default function FriendOfAnatAman() {
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
                 <OptimizedImage
-                  src="/foaa7.jpg"
+                  src="/foaa7.JPG"
                   alt="Gallery Image 2"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -329,7 +329,7 @@ export default function FriendOfAnatAman() {
 
           {/* Right Column - Content */}
           <div className="w-full relative h-[400px] md:h-[470px] rounded-3xl overflow-hidden md:w-2/5">
-            <OptimizedImage src="/why-foaa.jpg" alt="Join Us" fill className="object-cover" />
+            <OptimizedImage src="/why-foaa.JPG" alt="Join Us" fill className="object-cover" />
           </div>
         </div>
 
