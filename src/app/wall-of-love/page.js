@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import Gallery from '../components/Gallery';
 
 export default function WallOfLove() {
   const [offset, setOffset] = useState(0);
@@ -45,133 +46,40 @@ export default function WallOfLove() {
               <br />
               but for meaning.
             </h1>
-            <p className="text-lg md:text-xl font-open-sans mb-8 text-center">
-              These are the people we help.
-            </p>
-            <div className="absolute bottom-8 right-8 max-w-xs text-right">
-              <p className="text-sm font-open-sans italic">
-                Every picture tells a story. A memory. A life that was worth
-                saving.
-              </p>
-            </div>
           </div>
         </div>
 
         {/* Gallery Section */}
-        <div className="mx-auto">
-          <h2 className="text-2xl md:text-3xl font-platypi font-bold text-center mb-8">
-            Gallery
-          </h2>
-
-          {/* Category Filters */}
-          <div className="flex justify-center gap-2 md:gap-4 mb-10">
-            <button
+        <div className="px-4 py-16">
+          {/* Category Filters 
+          <div className="flex flex-wrap gap-4 mb-8 justify-center">
+            <button 
               onClick={() => setActiveCategory("All")}
-              className={`px-4 py-2 rounded-full text-sm font-open-sans ${
-                activeCategory === "All"
-                  ? "bg-[#323E7E] text-white"
-                  : "bg-gray-200 text-gray-700"
-              }`}
+              className={`px-6 py-2 rounded-full ${activeCategory === "All" ? "bg-[#39447B] text-white" : "border border-[#39447B] text-[#39447B]"}`}
             >
               All
             </button>
-            <button
-              onClick={() => setActiveCategory("CAPP")}
-              className={`px-4 py-2 rounded-full text-sm font-open-sans ${
-                activeCategory === "CAPP"
-                  ? "bg-[#323E7E] text-white"
-                  : "bg-gray-200 text-gray-700"
-              }`}
-            >
-              CAPP
-            </button>
-            <button
-              onClick={() => setActiveCategory("BKR")}
-              className={`px-4 py-2 rounded-full text-sm font-open-sans ${
-                activeCategory === "BKR"
-                  ? "bg-[#323E7E] text-white"
-                  : "bg-gray-200 text-gray-700"
-              }`}
-            >
-              BKR
-            </button>
-            <button
+            <button 
               onClick={() => setActiveCategory("Events")}
-              className={`px-4 py-2 rounded-full text-sm font-open-sans ${
-                activeCategory === "Events"
-                  ? "bg-[#323E7E] text-white"
-                  : "bg-gray-200 text-gray-700"
-              }`}
+              className={`px-6 py-2 rounded-full ${activeCategory === "Events" ? "bg-[#39447B] text-white" : "border border-[#39447B] text-[#39447B]"}`}
             >
               Events
             </button>
-            <button
-              onClick={() => setActiveCategory("Milestones")}
-              className={`px-4 py-2 rounded-full text-sm font-open-sans ${
-                activeCategory === "Milestones"
-                  ? "bg-[#323E7E] text-white"
-                  : "bg-gray-200 text-gray-700"
-              }`}
+            <button 
+              onClick={() => setActiveCategory("Community")}
+              className={`px-6 py-2 rounded-full ${activeCategory === "Community" ? "bg-[#39447B] text-white" : "border border-[#39447B] text-[#39447B]"}`}
             >
-              Milestones
+              Community
             </button>
-          </div>
+            <button 
+              onClick={() => setActiveCategory("Stories")}
+              className={`px-6 py-2 rounded-full ${activeCategory === "Stories" ? "bg-[#39447B] text-white" : "border border-[#39447B] text-[#39447B]"}`}
+            >
+              Stories
+            </button>
+          </div>*/}
 
-          {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-16">
-            {/* Gallery Item 1 */}
-            <div className="relative rounded-xl overflow-hidden group">
-              <div className="relative h-[320px]">
-                <Image
-                  src="/wol.png"
-                  alt="Gallery Image 1"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            </div>
-
-            {/* Gallery Item 2 */}
-            <div className="relative rounded-xl overflow-hidden group">
-              <div className="relative h-[320px]">
-                <Image
-                  src="/wol.png"
-                  alt="Gallery Image 2"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-center p-4">
-                  <p className="text-white font-open-sans">
-                    He survived cancer. And then gave hope to others.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Gallery Item 3 */}
-            <div className="relative rounded-xl overflow-hidden group">
-              <div className="relative h-[320px]">
-                <Image
-                  src="/wol.png"
-                  alt="Gallery Image 3"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            </div>
-
-            {/* Gallery Item 4 */}
-            <div className="relative rounded-xl overflow-hidden group">
-              <div className="relative h-[320px]">
-                <Image
-                  src="/wol.png"
-                  alt="Gallery Image 4"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
+          <Gallery />
         </div>
 
         {/* Join Us Section */}
