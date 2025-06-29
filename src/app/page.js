@@ -161,27 +161,63 @@ export default function Home() {
             </h3>
           </div>
           <div className="bg-[#E6DDC9] rounded-b-3xl py-8 md:py-20 px-6 md:px-10">
-            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-2">
-              <div className="w-full md:w-auto flex justify-center">
-                <OptimizedImage
-                  src="/work.png"
-                  alt="Work illustration"
-                  width={280}
-                  height={312}
-                  sizes="100vw"
-                  className="md:w-[550px] md:h-[330px]"
-                />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-4">
+              {/* work for needy */}
+              {/* Card 1 */}
+              <div className="bg-white rounded-3xl overflow-hidden shadow-lg group transform transition-transform duration-300 hover:scale-105 -rotate-2">
+                <div className="relative aspect-square">
+                  <OptimizedImage
+                    src="/gallery/File40.jpg"
+                    alt="A child without school"
+                    width={300}
+                    height={300}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-open-sans font-normal text-[#323E7E] text-center">
+                    A child without school.
+                  </h3>
+                </div>
               </div>
-              <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-4 md:gap-2">
-                <h3 className="text-sm md:text-lg font-open-sans font-normal text-[#323E7E] text-center px-2">
-                  -- A child without school. --
-                </h3>
-                <h3 className="text-sm md:text-lg font-open-sans font-normal text-[#323E7E] text-center px-2">
-                  -- A grandma without medicine --
-                </h3>
-                <h3 className="text-sm md:text-lg font-open-sans font-normal text-[#323E7E] text-center px-2">
-                  -- A family with no home. --
-                </h3>
+
+              {/* Card 2 */}
+              <div className="bg-white rounded-3xl overflow-hidden shadow-lg group transform transition-transform duration-300 hover:scale-105 rotate-2">
+                <div className="relative aspect-square">
+                  <OptimizedImage
+                    src="/gallery/File61.jpg"
+                    alt="A grandma without medicine"
+                    width={300}
+                    height={300}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-open-sans font-normal text-[#323E7E] text-center">
+                    A grandma without medicine
+                  </h3>
+                </div>
+              </div>
+
+              {/* Card 3 */}
+              <div className="bg-white rounded-3xl overflow-hidden shadow-lg group transform transition-transform duration-300 hover:scale-105 -rotate-2">
+                <div className="relative aspect-square">
+                  <OptimizedImage
+                    src="/gallery/File138.jpg"
+                    alt="A family with no home"
+                    width={300}
+                    height={300}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-open-sans font-normal text-[#323E7E] text-center">
+                    A family with no home.
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
