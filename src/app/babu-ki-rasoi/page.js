@@ -115,7 +115,7 @@ export default function BabuKiRasoi() {
         {/* Campaigns That Create Change Section */}
         <div className="py-10 md:py-16 px-6 md:px-20">
           <h2 className="text-2xl md:text-4xl font-platypi font-bold text-black mb-12 text-center">
-            Campaigns That <span className="text-[#323E7E] italic">Create Change</span>
+            Impact So <span className="text-[#323E7E] italic">Far</span>
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">

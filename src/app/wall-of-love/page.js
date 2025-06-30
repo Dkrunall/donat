@@ -33,7 +33,7 @@ export default function WallOfLove() {
         </div>
 
         {/* Hero Section */}
-        <div className="relative h-[500px] md:h-[600px] w-full rounded-3xl overflow-hidden mb-16 -mt-0 md:-mt-10">
+        <div className="relative h-[500px] md:h-[650px] w-full rounded-3xl overflow-hidden mb-16 -mt-0 md:-mt-10">
           <Image
             src="/info.png"
             alt="Wall of Love"
@@ -99,78 +99,6 @@ export default function WallOfLove() {
             >
               Join Us (Volunteer)
             </Link>
-          </div>
-        </div>
-
-        {/* You Can Be Part Section */}
-        <div className="md:px-0 mb-16">
-          <h2 className="text-2xl md:text-3xl font-platypi font-bold text-center mb-12">
-            You Can Be Part of the
-            <br />
-            Next Story
-          </h2>
-
-          <div className="text-center mb-12">
-            <Link
-              href="/join-us"
-              className="bg-gray-200 text-[#323E7E] px-6 py-3 rounded-full font-open-sans hover:bg-gray-300 transition duration-300"
-            >
-              Yes, I can
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {/* Option 1 */}
-            <div className="flex flex-col items-center">
-              <div className="relative h-[250px] md:h-[350px] w-full rounded-xl overflow-hidden mb-4">
-                <Image
-                  src="/wol1.png"
-                  alt="Become a volunteer"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm text-gray-600 text-center">
-                Become a volunteer
-              </p>
-            </div>
-
-            {/* Option 2 */}
-            <div className="flex flex-col items-center">
-              <div className="relative h-[250px] md:h-[350px] w-full rounded-xl overflow-hidden mb-4">
-                <Image
-                  src="/wol1.png"
-                  alt="Sponsor a campaign"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm text-gray-600 text-center">
-                Sponsor a campaign
-              </p>
-            </div>
-
-            {/* Option 3 */}
-            <div className="flex flex-col items-center">
-              <div className="relative h-[250px] md:h-[350px] w-full rounded-xl overflow-hidden mb-4">
-                <Image
-                  src="/wol1.png"
-                  alt="Start a fundraiser"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm text-gray-600 text-center">
-                Start a fundraiser
-              </p>
-            </div>
-
-            {/* Option 4 */}
-            <div className="flex flex-col items-center">
-              <div className="h-[250px] md:h-[350px] border border-[#E3E3E3] w-full rounded-xl flex items-center justify-center p-5">
-                <p className="text-xl md:text-3xl text-[#323E7E] font-open-sans font-extrabold">The next number on this page could be because of you.</p>
-              </div>
-            </div>
           </div>
         </div>
         <Footer />

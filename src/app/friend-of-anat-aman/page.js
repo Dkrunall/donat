@@ -192,7 +192,7 @@ export default function FriendOfAnatAman() {
             <div className="relative rounded-xl overflow-hidden group">
               <div className="relative h-[320px]">
                 <OptimizedImage
-                  src="/wol.png"
+                  src="/gallery/file230.jpg"
                   alt="Gallery Image 3"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"

@@ -123,7 +123,7 @@ export default function JoinUs() {
             {/* Right Column - Content */}
             <div className="w-full relative h-[400px] md:h-[470px] rounded-3xl overflow-hidden md:w-2/5">
               <OptimizedImage
-                src="/jus.png"
+                src="/p5.jpg"
                 alt="Join Us"
                 fill
                 className="object-cover"

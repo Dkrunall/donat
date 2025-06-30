@@ -16,16 +16,15 @@ export default function Footer() {
           <hr className="w-full border-[#efefef]" />
           <Link href="/capp" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Cancer Awareness & Prevention Program (CAPP)</Link>
           <hr className="w-full border-[#efefef]" />
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Get Involved</Link>
+          <Link href="/join-us" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Get Involved</Link>
           <hr className="w-full border-[#efefef]" />
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Media & Highlights</Link>
+          <Link href="/media-and-highlights" className="text-sm font-open-sans font-normal text-[#323E7E] py-3">Media & Highlights</Link>
         </div>
 
         {/* Contact and policy links */}
         <div className="flex items-center justify-center gap-4 mb-6">
           <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E]">Contact Us</Link>
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E]">Privacy Policy</Link>
-          <Link href="/" className="text-sm font-open-sans font-normal text-[#323E7E]">Terms & Conditions</Link>
+          <Link href="/privacy-policy" className="text-sm font-open-sans font-normal text-[#323E7E]">Privacy Policy</Link>
         </div>
 
         <div className="flex justify-center mb-4">
@@ -52,8 +51,7 @@ export default function Footer() {
           <hr className="w-full mb-4 md:mb-0" />
           <div className="flex flex-col md:flex-row items-center md:justify-between w-full mt-4 md:mt-5 gap-2 md:gap-0">
             <Link href="/contact-us" className="text-sm md:text-md font-open-sans font-normal">Contact Us</Link>
-            <Link href="/" className="text-sm md:text-md font-open-sans font-normal">Privacy Policy</Link>
-            <Link href="/" className="text-sm md:text-md font-open-sans font-normal">Terms & Conditions</Link>
+            <Link href="/privacy-policy" className="text-sm md:text-md font-open-sans font-normal">Privacy Policy</Link>
           </div>
           <p className="text-xs md:text-sm font-open-sans font-normal mt-6 md:mt-10">
             Design & Developed By Varlyq Technologies 2025
@@ -81,9 +79,9 @@ export default function Footer() {
           <hr className="w-full mb-2 mt-2" />
           <Link href="/capp" className="text-sm md:text-md font-open-sans font-normal mb-2">Cancer Awareness & Prevention Program (CAPP)</Link>
           <hr className="w-full mb-2 mt-2" />
-          <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Get Involved</Link>
+          <Link href="/join-us" className="text-sm md:text-md font-open-sans font-normal mb-2">Get Involved</Link>
           <hr className="w-full mb-2 mt-2" />
-          <Link href="/" className="text-sm md:text-md font-open-sans font-normal mb-2">Media & Highlights</Link>
+          <Link href="/media-and-highlights" className="text-sm md:text-md font-open-sans font-normal mb-2">Media & Highlights</Link>
         </div>
       </div>
     </footer>

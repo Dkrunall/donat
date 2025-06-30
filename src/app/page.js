@@ -36,12 +36,14 @@ export default function Home() {
               transition: "transform 0.2s cubic-bezier(0.2, 0, 0.3, 1)",
             }}
           >
-            <iframe
-              src="https://www.youtube.com/embed/HeOTorjAl0s?autoplay=1&mute=1&loop=1&playlist=HeOTorjAl0s&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+            <video
+              src="/main.MP4"
               title="Hero Video"
               className="w-full h-full object-contain"
-              style={{ border: "none" }}
-              allow="autoplay; encrypted-media"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
           </div>
           {/* Light black overlay for better text visibility */}
@@ -167,7 +169,7 @@ export default function Home() {
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg group transform transition-transform duration-300 hover:scale-105 -rotate-2">
                 <div className="relative aspect-square">
                   <OptimizedImage
-                    src="/gallery/File40.jpg"
+                    src="/gallery/File38.jpg"
                     alt="A child without school"
                     width={300}
                     height={300}
@@ -186,7 +188,7 @@ export default function Home() {
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg group transform transition-transform duration-300 hover:scale-105 rotate-2">
                 <div className="relative aspect-square">
                   <OptimizedImage
-                    src="/gallery/File61.jpg"
+                    src="/gallery/File56.jpg"
                     alt="A grandma without medicine"
                     width={300}
                     height={300}
@@ -205,7 +207,7 @@ export default function Home() {
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg group transform transition-transform duration-300 hover:scale-105 -rotate-2">
                 <div className="relative aspect-square">
                   <OptimizedImage
-                    src="/gallery/File138.jpg"
+                    src="/gallery/File133.jpg"
                     alt="A family with no home"
                     width={300}
                     height={300}
@@ -224,7 +226,7 @@ export default function Home() {
         </div>
 
         <div className="campings py-10 md:py-20">
-          <div className="flex items-center justify-center flex-col py-12 md:py-20 md:px-4 e max-h-[70vh]">
+          <div className="flex items-center justify-center flex-col py-12 md:py-20 md:px-4">
             <h3 className="text-2xl md:text-3xl font-platypi font-bold text-black text-center mb-4">
               This is what we do
               <br /> <i>Every day</i>
@@ -232,7 +234,7 @@ export default function Home() {
             <p className="text-center bg-[#E0E5FF] py-2 px-6 mt-2 md:mt-4 rounded-full text-sm md:text-base font-open-sans font-normal text-[#323E7E] mb-8 md:mb-10">
               Daily Drives For..
             </p>
-            <div className="campings-carousel w-full overflow-x-auto whitespace-nowrap scrollbar-hide md:overflow-x-hidden md:overflow-y-visible md:whitespace-normal md:hidden">
+            <div className="campings-carousel w-full overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-hide md:overflow-x-hidden md:overflow-y-visible md:whitespace-normal md:hidden">
               <div className="inline-flex md:flex md:flex-wrap md:justify-start md:gap-4">
                 <Campings />
               </div>
@@ -335,52 +337,52 @@ export default function Home() {
                   <div className="story-slider">
                     {/* First set of items */}
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p1.png"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p3.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Armaan needs cancer treatment
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p4.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Armaan needs cancer treatment
@@ -388,39 +390,39 @@ export default function Home() {
                     </div>
 
                     {/* Duplicate set for seamless loop */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p5.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Armaan needs cancer treatment
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p1.png"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
@@ -431,52 +433,52 @@ export default function Home() {
                 <div className="story-container reverse mb-4">
                   <div className="story-slider">
                     {/* First set of items */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p1.png"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Armaan needs cancer treatment
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p3.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p4.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Armaan needs cancer treatment
@@ -484,65 +486,65 @@ export default function Home() {
                     </div>
 
                     {/* Duplicate set for seamless loop */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p5.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Armaan needs cancer treatment
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p1.png"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p3.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school
                       </span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full md:w-80 p-2">
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
                         src="/p4.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px]"
+                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
                       />
                       <span className="text-xs md:text-sm">
                         Seema needs books for school

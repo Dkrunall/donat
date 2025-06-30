@@ -13,13 +13,12 @@ const CampingCard = ({ title, subtitle, mealsCount, buttonText, imageSrc, link }
     <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10"></div>
     <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5 text-white z-20">
       <div>
-        <h2 className="text-xl sm:text-2xl font-bold mb-1">{title}</h2>
+        <h2 className="text-xl sm:text-xl font-bold mb-1">{title}</h2>
         <p className="text-sm sm:text-base opacity-90">{subtitle}</p>
       </div>
       <div>
         <div className="mb-2">
-          <span className="text-2xl sm:text-3xl font-bold">{mealsCount}</span>
-          <p className="text-sm sm:text-base">Meals Served</p>
+          <span className="text-xl sm:text-xl font-bold">{mealsCount}</span>
           <Link
             href={link}
             className="mt-4 flex items-center justify-center gap-2 bg-white rounded-full px-4 py-2 shadow-md"
@@ -40,24 +39,24 @@ const Campings = () => {
     {
       title: "Babu Ki Rasoi",
       subtitle: "No one should sleep hungry.",
-      mealsCount: "55k+",
-      buttonText: "Sponsor a meal for them",
+      mealsCount: "55K+",
+      buttonText: "Sponsor a meal",
       imageSrc: "/bkr1.jpg",
       link: "/babu-ki-rasoi",
     },
     {
-      title: "Cancer",
-      subtitle: "No one should sleep hungry.",
-      mealsCount: "55k+",
-      buttonText: "Cancer",
+      title: "Cancer Awareness & Prevention",
+      subtitle: "We go where others don't.",
+      mealsCount: "Early help saves lives",
+      buttonText: "Invite a session",
       imageSrc: "/cancer1.jpg",
       link: "/capp",
     },
     {
-      title: "Friends Of Anat Aman",
-      subtitle: "No one should sleep hungry.",
-      mealsCount: "55k+",
-      buttonText: "Friends Of Anat Aman",
+      title: "Friends of Anant Aman (FAA)",
+      subtitle: "Join the club that cares.",
+      mealsCount: "Young people. Big change",
+      buttonText: "I want to join",
       imageSrc: "/foaa.jpg",
       link: "/friends-of-anat-aman",
     },

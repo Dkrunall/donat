@@ -7,7 +7,6 @@ export default function PopupForm({ isOpen, onClose }) {
     name: '',
     phone: '',
     email: '',
-    subject: '',
     message: ''
   });
 
@@ -73,17 +72,6 @@ export default function PopupForm({ isOpen, onClose }) {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full px-6 py-4 rounded-full border-none shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#323E7E] focus:border-transparent"
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              placeholder="Subject"
               className="w-full px-6 py-4 rounded-full border-none shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#323E7E] focus:border-transparent"
               required
             />

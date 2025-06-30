@@ -22,6 +22,12 @@
   animation: carousel-scroll 30s linear infinite;
 }
 
+@media (max-width: 768px) {
+  .animate-carousel-scroll {
+    animation: carousel-scroll 15s linear infinite;
+  }
+}
+
 @keyframes carousel-scroll-reverse {
   from {
     transform: translateX(-100%);
@@ -33,6 +39,12 @@
 
 .animate-carousel-scroll-reverse {
   animation: carousel-scroll-reverse 30s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-carousel-scroll-reverse {
+    animation: carousel-scroll-reverse 15s linear infinite;
+  }
 }
 
 @keyframes story-slide {
