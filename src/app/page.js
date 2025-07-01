@@ -352,7 +352,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
-                        src="/p2.jpg"
+                        src="/p2.JPG"
                         alt="Profile picture"
                         width={40}
                         height={40}
