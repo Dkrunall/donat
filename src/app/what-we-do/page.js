@@ -52,24 +52,24 @@ export default function WhatWeDo() {
             Campaigns That Create Change
           </h2>
           <p className="text-base md:text-lg font-open-sans text-center max-w-3xl mx-auto mb-8">
-            We don&apos;t just talk about problems, we solve them. One life, one
-            family, one village at a time.
+            We don&apos;t believe in seasonal charity. We believe in continuous
+            change. Over the years, we&apos;ve led campaigns like
           </p>
 
-          {/* Campaign Grid */}
+          {/*Campings Grid*/}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 px-4 md:px-20">
             {/* Campaign 1 */}
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/wwsf1.png"
-                  alt="Feed the hungry"
+                  src="/gallery/File41.JPG"
+                  alt="Cancer awareness drives"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
-                    Feed the hungry
+                    Cancer awareness drives
                   </h3>
                 </div>
               </div>
@@ -79,14 +79,14 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/wwsf2.png"
-                  alt="Child Education Center"
+                  src="/cancer2.jpg"
+                  alt="Blood donation camps"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
-                    Child Education Center
+                    Blood donation camps
                   </h3>
                 </div>
               </div>
@@ -96,14 +96,14 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/wwsf3.png"
-                  alt="Women Empowerment"
+                  src="/gallery/File33.JPG"
+                  alt="Menstrual health sessions"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
-                    Women Empowerment
+                    Menstrual health sessions
                   </h3>
                 </div>
               </div>
@@ -113,14 +113,14 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/wwsf4.png"
-                  alt="Medical Assistance"
+                  src="/gallery/File43.JPG"
+                  alt="Ration distribution during lockdowns"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
-                    Medical Assistance
+                    Ration distribution during lockdowns
                   </h3>
                 </div>
               </div>
@@ -130,14 +130,14 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/wwsf1.png"
-                  alt="Rural Development"
+                  src="/gallery/File7.jpg"
+                  alt="Free education drives"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
-                    Rural Development
+                    Free education drives
                   </h3>
                 </div>
               </div>
@@ -147,28 +147,28 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/wwsf2.png"
-                  alt="Disaster Relief"
+                  src="/gallery/File57.jpg"
+                  alt="Food drives in slum areas"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
-                    Disaster Relief
+                    Food drives in slum areas
                   </h3>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-8">
+          {/*<div className="text-center mt-8">
             <Link
               href="/"
               className="font-platypi text-base bg-[#323E7E] text-white px-8 py-3 rounded-full inline-block"
             >
               View All Campaigns
             </Link>
-          </div>
+          </div>*/}
         </div>
 
         {/* Projects That Run Every Day Section */}
@@ -190,7 +190,7 @@ export default function WhatWeDo() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <OptimizedImage
-                  src="/Babu Ki Rasoi.png"
+                  src="/gallery/File192.jpg"
                   alt="Babu Ki Rasoi"
                   fill
                   className="object-cover"
@@ -232,7 +232,7 @@ export default function WhatWeDo() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <OptimizedImage
-                  src="/Group 83.png"
+                  src="/gallery/File86.jpg"
                   alt="Cancer Awareness & Prevention Program"
                   fill
                   className="object-cover"
@@ -251,7 +251,7 @@ export default function WhatWeDo() {
                     Free health camps in underserved areas
                   </span>
                   <span className="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
-                  Free health camps in underserved areas
+                    Workshops led by doctors & survivors
                   </span>
                 </div>
 

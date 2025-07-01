@@ -20,14 +20,8 @@ export default function Header() {
       <header className="block md:hidden">
         <div className="flex items-center justify-between px-4 py-4">
           <Link href="/">
-            <Image src="/logo.png" alt="hero" height={40} width={120} />
+            <Image src="/logo.png" alt="hero" height={80} width={160} />
           </Link>
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-[#39447B]"
-          >
-            {isMenuOpen ? 'Close' : 'Menu'}
-          </button>
         </div>
 
         {isMenuOpen && (

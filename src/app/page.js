@@ -225,8 +225,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="campings py-10 md:py-20">
-          <div className="flex items-center justify-center flex-col py-12 md:py-20 md:px-4">
+        <div className="campings py-10 md:py-0">
+          <div className="flex items-center justify-center flex-col py-10 md:pt-20 md:px-4">
             <h3 className="text-2xl md:text-3xl font-platypi font-bold text-black text-center mb-4">
               This is what we do
               <br /> <i>Every day</i>
@@ -352,7 +352,7 @@ export default function Home() {
 
                     <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
                       <OptimizedImage
-                        src="/p2.JPG"
+                        src="/p2.jpg"
                         alt="Profile picture"
                         width={40}
                         height={40}
@@ -565,7 +565,7 @@ export default function Home() {
             {/* Right Column - Faces */}
             <div className="bg-gradient-to-b from-[#F6F6F6] to-[#EBEEFF] rounded-3xl overflow-hidden relative min-h-[300px] md:h-[500px]">
               <OptimizedImage
-                src="/info1.png"
+                src="/fnf.png"
                 alt="Faces we can't forget"
                 width={1920}
                 height={500}

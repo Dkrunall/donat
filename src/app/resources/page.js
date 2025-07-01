@@ -164,24 +164,24 @@ export default function Resources() {
         {/* Special Programs & Partnerships Section */}
         <div className="py-10 md:py-14 px-6 md:px-20 bg-gradient-to-r from-[#F8F9FF] to-[#F0F4FF] rounded-3xl my-6">
           <h2 className="text-2xl md:text-3xl font-platypi font-bold text-black text-center mb-10">
-            Special Programs & Partnerships
+            Youth & Educators
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Program 1 */}
             <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all">
               <h3 className="text-lg md:text-xl font-platypi font-bold text-[#323E7E] mb-2">
-                Hospital Partnership Model
+                Workshop Slides: Cancer Awareness in Schools
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                Guide for establishing partnerships with hospitals and healthcare institutions
+                Simplified, engaging slides with voiceover (coming soon).
               </p>
               <Link
                 href="/resources/Hospital Partnership Model - Anantaman SWS.pdf"
                 className="text-sm font-open-sans bg-[#323E7E] text-white px-4 py-2 rounded-full inline-block hover:bg-opacity-90 transition-all"
                 target="_blank"
               >
-                Download PDF
+                Download PPT
               </Link>
             </div>
             
