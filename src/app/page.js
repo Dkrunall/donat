@@ -188,7 +188,7 @@ export default function Home() {
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg group transform transition-transform duration-300 hover:scale-105 rotate-2">
                 <div className="relative aspect-square">
                   <OptimizedImage
-                    src="/gallery/File56.jpg"
+                    src="/gallery/File57.jpg"
                     alt="A grandma without medicine"
                     width={320}
                     height={300}
