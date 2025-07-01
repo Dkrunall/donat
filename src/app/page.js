@@ -190,7 +190,7 @@ export default function Home() {
                   <OptimizedImage
                     src="/gallery/File56.jpg"
                     alt="A grandma without medicine"
-                    width={300}
+                    width={320}
                     height={300}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="w-full h-full object-cover"
