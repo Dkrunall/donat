@@ -39,7 +39,7 @@ export default function Home() {
             <video
               src="/main.MP4"
               title="Hero Video"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover md:object-contain"
               autoPlay
               muted
               loop

@@ -319,58 +319,91 @@ export default function JoinUs() {
                 <div className="story-container mb-4">
                   <div className="story-slider">
                     {/* First set of items */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Certificate of Recognition</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Learn. Execute. Lead.</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Network with doctors, leaders, creators</span>
                     </div>
 
                     {/* Duplicate set for seamless loop */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Direct mentorship from core team</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Be part of something meaningful</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    {/* Duplicate set for seamless loop */}
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Certificate of Recognition</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Learn. Execute. Lead.</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Network with doctors, leaders, creators</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Direct mentorship from core team</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Be part of something meaningful</span>
                     </div>
                   </div>
                 </div>
-                <div className="story-container mb-4">
+                <div className="story-container mb-4 reverse">
                   <div className="story-slider">
-                    {/* First set of items */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                    {/* Second set of items */}
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Certificate of Recognition</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Learn. Execute. Lead.</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Network with doctors, leaders, creators</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Direct mentorship from core team</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Be part of something meaningful</span>
                     </div>
 
                     {/* Duplicate set for seamless loop */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Armaan needs cancer treatment</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Certificate of Recognition</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Learn. Execute. Lead.</span>
                     </div>
 
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2">
-                      <span className="text-xs md:text-sm">Seema needs books for school</span>
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Network with doctors, leaders, creators</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Direct mentorship from core team</span>
+                    </div>
+
+                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-full p-2 md:p-3">
+                      <span className="text-xs md:text-sm">Be part of something meaningful</span>
                     </div>
                   </div>
                 </div>

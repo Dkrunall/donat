@@ -172,7 +172,7 @@ export default function WhoWeAre() {
               <div className="w-full md:w-1/3">
                 <div className="rounded-2xl overflow-hidden">
                   <OptimizedImage 
-                    src="/founder1.png" 
+                    src="/founder-edited.png" 
                     alt="Founder" 
                     width={400} 
                     height={400} 
@@ -210,7 +210,7 @@ export default function WhoWeAre() {
               <div className="relative rounded-2xl overflow-hidden group">
                 <div className="relative h-[450px]">
                   <OptimizedImage 
-                    src="/founder1.png" 
+                    src="/founder-edited.png" 
                     alt="Mr. Hemant Gupta" 
                     fill 
                     className="object-cover bg-bottom"

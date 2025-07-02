@@ -143,7 +143,7 @@ export default function MobileNavigation() {
               </div>
             </Link>
             <Link href="/friend-of-anat-aman" onClick={handleNavigation} className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24">
-              <span className="text-base font-bold text-[#3F3D56]">Friends Of Anat Aman</span>
+              <span className="text-base font-bold text-[#3F3D56]">Friends Of Anant Aman</span>
               <div className="absolute bottom-3 right-3">
                 <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
                   <svg className="w-4 h-4 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
@@ -151,7 +151,7 @@ export default function MobileNavigation() {
               </div>
             </Link>
             <Link href="/kala-darpan" onClick={handleNavigation} className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24">
-              <span className="text-base font-bold text-[#3F3D56]">Kala Darpan</span>
+              <span className="text-base font-bold text-[#3F3D56]">Kaladarpan</span>
               <div className="absolute bottom-3 right-3">
                 <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
                   <svg className="w-4 h-4 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>

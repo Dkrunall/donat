@@ -33,7 +33,7 @@ export default function MediaAndHighlights() {
         </div>
 
         {/* Hero Section */}
-        <div className="relative h-[500px] md:h-[650px] w-full rounded-3xl overflow-hidden mb-16 -mt-0 md:-mt-10">
+        <div className="relative h-[750px] md:h-[650px] w-full rounded-3xl overflow-hidden mb-12 -mt-0 md:-mt-10">
           <Image
             src="/info.png"
             alt="Media & Highlights"
@@ -48,7 +48,7 @@ export default function MediaAndHighlights() {
         </div>
 
         {/* Gallery Section */}
-        <div className="px-4 py-16">
+        <div className="px-4">
           {/* Category Filters 
           <div className="flex flex-wrap gap-4 mb-8 justify-center">
             <button 
