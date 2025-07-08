@@ -67,7 +67,7 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/gallery/File41.JPG"
+                  src="/gallery/File41.jpg"
                   alt="Cancer awareness drives"
                   fill
                   className="object-cover"
@@ -101,7 +101,7 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/gallery/File33.JPG"
+                  src="/gallery/File33.jpg"
                   alt="Menstrual health sessions"
                   fill
                   className="object-cover"
@@ -118,7 +118,7 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/gallery/File43.JPG"
+                  src="/gallery/File43.jpg"
                   alt="Ration distribution during lockdowns"
                   fill
                   className="object-cover"
@@ -152,7 +152,7 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
               <div className="relative h-full">
                 <OptimizedImage
-                  src="/gallery/File57.jpg"
+                  src="/gallery/File57.JPG"
                   alt="Food drives in slum areas"
                   fill
                   className="object-cover"
@@ -328,7 +328,7 @@ export default function WhatWeDo() {
         </div>
 
         {/* Volunteer Section */}
-        <div className="py-12 h-[80vh] md:py-16 bg-[url(/foaa7.jpg)] bg-center bg-cover rounded-3xl my-6 px-6 md:px-20 text-center relative">
+        <div className="py-12 h-[80vh] md:py-16 bg-[url(/foaa7.JPG)] bg-center bg-cover rounded-3xl my-6 px-6 md:px-20 text-center relative">
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
           <div className="rounded-3xl p-8 md:p-16 text-white relative z-10">
@@ -361,7 +361,7 @@ export default function WhatWeDo() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-48 md:h-80">
                 <OptimizedImage
-                  src="/gallery/File221.JPG"
+                  src="/gallery/File221.jpg"
                   alt="Schools and colleges"
                   fill
                   className="object-cover"
