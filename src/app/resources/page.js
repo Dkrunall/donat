@@ -37,7 +37,7 @@ export default function Resources() {
               Tools, materials, and guides to <br /> help you do better.
             </h1>
             <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-[#323E7E] leading-relaxed max-w-3xl mx-auto">
-              Whether you&apos;re a volunteer, educator, NGO, or curious citizen — here&apos;s everything you need to learn, support, and create impact.
+              Whether you&apos;re a volunteer, educator, NGO, or curious citizen, here&apos;s everything you need to learn, support, and create impact.
             </p>
           </div>
         </div>
@@ -290,7 +290,7 @@ export default function Resources() {
                 Brand Guidelines
               </h3>
               <p className="text-sm font-open-sans text-gray-600 mb-4">
-                Colours, fonts, tone — use it right.
+                Colours, fonts, tone, use it right.
               </p>
               <Link
                 href="/"

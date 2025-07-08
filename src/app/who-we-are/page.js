@@ -170,9 +170,9 @@ export default function WhoWeAre() {
           <div className="bg-[#E6DDC9] rounded-3xl p-6 md:p-10">          
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-full md:w-1/3">
-                <div className="rounded-2xl overflow-hidden">
+                <div className="rounded-2xl overflow-hidden bg-[#626365]">
                   <OptimizedImage 
-                    src="/founder-edited.png" 
+                    src="/founder.png" 
                     alt="Founder" 
                     width={400} 
                     height={400} 
@@ -203,10 +203,12 @@ export default function WhoWeAre() {
         </div>
 
         {/* Meet the People Section */}
+        {/* 
+        //
         <div className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              {/* Person 1 */}
+              
               <div className="relative rounded-2xl overflow-hidden group">
                 <div className="relative h-[450px]">
                   <OptimizedImage 
@@ -226,7 +228,7 @@ export default function WhoWeAre() {
                 </div>
               </div>
               
-              {/* Person 2 */}
+              
               <div className="relative rounded-2xl overflow-hidden group">
                 <div className="relative h-[450px]">
                   <OptimizedImage 
@@ -246,7 +248,7 @@ export default function WhoWeAre() {
                 </div>
               </div>
               
-              {/* Person 3 - Volunteers */}
+              
               <div className="relative rounded-2xl overflow-hidden group">
                 <div className="relative h-[450px]">
                   <OptimizedImage 
@@ -268,7 +270,7 @@ export default function WhoWeAre() {
             </div>
           </div>
         </div>
-
+        */}
         <Footer />
       </div>
     </>

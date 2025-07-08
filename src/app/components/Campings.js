@@ -39,7 +39,7 @@ const Campings = () => {
     {
       title: "Babu Ki Rasoi",
       subtitle: "No one should sleep hungry.",
-      mealsCount: "55K+",
+      mealsCount: "55,000+ Meals Served",
       buttonText: "Sponsor a meal",
       imageSrc: "/bkr1.jpg",
       link: "/babu-ki-rasoi",

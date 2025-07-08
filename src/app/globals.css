@@ -52,13 +52,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-20%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes story-slide-reverse {
   0% {
-    transform: translateX(-20%);
+    transform: translateX(-50%);
   }
   100% {
     transform: translateX(0);
@@ -72,7 +72,7 @@
 }
 
 .story-container.reverse .story-slider {
-  animation: story-slide-reverse 30s linear infinite;
+  animation: story-slide-reverse 40s linear infinite;
   float: right;
 }
 
@@ -84,7 +84,7 @@
 
 .story-slider {
   display: inline-flex;
-  animation: story-slide 30s linear infinite;
+  animation: story-slide 40s linear infinite;
   padding: 0 1rem;
 }
 

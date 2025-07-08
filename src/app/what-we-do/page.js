@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 
 export default function WhatWeDo() {
   const [offset, setOffset] = useState(0);
+  const [showAllCampaigns, setShowAllCampaigns] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +23,10 @@ export default function WhatWeDo() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
+  const toggleCampaigns = () => {
+    setShowAllCampaigns(!showAllCampaigns);
+  };
 
   return (
     <>
@@ -159,16 +164,72 @@ export default function WhatWeDo() {
                 </div>
               </div>
             </div>
+            
+            {/* Additional campaigns that show when toggled */}
+            {showAllCampaigns && (
+              <>
+                {/* Campaign 7 - Animal Welfare */}
+                <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
+                  <div className="relative h-full">
+                    <OptimizedImage
+                      src="/animal1.jpg"
+                      alt="Animal Welfare"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                      <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
+                        Animal Welfare
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Campaign 8 - Distribution of Clothes */}
+                <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
+                  <div className="relative h-full">
+                    <OptimizedImage
+                      src="/clothes1.JPG"
+                      alt="Distribution of Clothes"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                      <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
+                        Distribution of Clothes
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Campaign 9 - Gajak Distribution at Slums */}
+                <div className="rounded-2xl overflow-hidden shadow-md relative aspect-square">
+                  <div className="relative h-full">
+                    <OptimizedImage
+                      src="/gds.jpg"
+                      alt="Gajak Distribution at Slums"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                      <h3 className="text-lg md:text-xl font-platypi font-bold text-white px-4 text-center">
+                        Gajak Distribution at Slums
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
 
-          {/*<div className="text-center mt-8">
-            <Link
-              href="/"
+          <div className="text-center mt-8">
+            <button
+              onClick={toggleCampaigns}
               className="font-platypi text-base bg-[#323E7E] text-white px-8 py-3 rounded-full inline-block"
             >
-              View All Campaigns
-            </Link>
-          </div>*/}
+              {showAllCampaigns ? "Show Less" : "View All Campaigns"}
+            </button>
+          </div>
         </div>
 
         {/* Projects That Run Every Day Section */}
@@ -267,15 +328,15 @@ export default function WhatWeDo() {
         </div>
 
         {/* Volunteer Section */}
-        <div className="py-12 h-[80vh] md:py-16 bg-[url(/wwd2.png)] bg-center bg-cover rounded-3xl my-6 px-6 md:px-20 text-center">
-          <div className="rounded-3xl p-8 md:p-16 text-white">
+        <div className="py-12 h-[80vh] md:py-16 bg-[url(/foaa7.jpg)] bg-center bg-cover rounded-3xl my-6 px-6 md:px-20 text-center relative">
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
+          <div className="rounded-3xl p-8 md:p-16 text-white relative z-10">
             <h2 className="text-2xl md:text-4xl font-platypi font-bold mb-4">
-              Volunteers from Across{" "}
-              <span className="text-[#FFDE59]">All Walks</span> of Life
+              Friends of Anant Aman, The Youth Movement
             </h2>
             <p className="text-base md:text-xl font-open-sans mb-8 max-w-3xl mx-auto">
-              Our strength comes from our diverse community of volunteers who
-              dedicate their time, skills, and hearts to our mission.
+              FAA is our youth-powered club that connects passionate individuals aged 16,30 to real-world change through events, volunteering, and community.
             </p>
             <Link
               href="/join-us"
@@ -300,7 +361,7 @@ export default function WhatWeDo() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-48 md:h-80">
                 <OptimizedImage
-                  src="/wwdc1.png"
+                  src="/gallery/File221.JPG"
                   alt="Schools and colleges"
                   fill
                   className="object-cover"
@@ -317,7 +378,7 @@ export default function WhatWeDo() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-48 md:h-80">
                 <OptimizedImage
-                  src="/wwdc2.png"
+                  src="/cancer2.jpg"
                   alt="Hospitals and dispensaries"
                   fill
                   className="object-cover"
@@ -334,7 +395,7 @@ export default function WhatWeDo() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-48 md:h-80">
                 <OptimizedImage
-                  src="/wwdc3.png"
+                  src="/foaa6.jpg"
                   alt="Corporates and businesses"
                   fill
                   className="object-cover"

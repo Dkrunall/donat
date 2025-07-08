@@ -61,7 +61,7 @@ export default function BabuKiRasoi() {
               </h2>
               
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-3">
                   <div className="bg-[#323E7E] rounded-full h-6 w-6 mt-1 flex items-center justify-center">
                     <div className="bg-white rounded-full h-2.5 w-2.5"></div>
                   </div>
@@ -192,7 +192,7 @@ export default function BabuKiRasoi() {
                         <div className="bg-white rounded-full h-2.5 w-2.5"></div>
                       </div>
                       <p className="text-base md:text-lg font-open-sans">
-                        ₹30 = 1 full meal
+                        ₹100 = 1 full meal
                       </p>
                     </div>
                     
@@ -201,7 +201,7 @@ export default function BabuKiRasoi() {
                         <div className="bg-white rounded-full h-2.5 w-2.5"></div>
                       </div>
                       <p className="text-base md:text-lg font-open-sans">
-                        ₹900 = Meals for 1 person for 1 month
+                        ₹3000 = Meals for 1 person for 1 month
                       </p>
                     </div>
                     
@@ -210,7 +210,7 @@ export default function BabuKiRasoi() {
                         <div className="bg-white rounded-full h-2.5 w-2.5"></div>
                       </div>
                       <p className="text-base md:text-lg font-open-sans">
-                        ₹5,000 = Community meal distribution drive
+                        ₹6,000 = Community meal distribution drive
                       </p>
                     </div>
                   </div>

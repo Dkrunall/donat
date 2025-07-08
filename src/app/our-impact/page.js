@@ -233,7 +233,7 @@ export default function OurImpact() {
             <div className="flex flex-row justify-between items-start relative space-x-4">
               {/* Timeline Item 1 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
-                <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
+                <div className="bg-[#E0E5FF] p-6 mb-5 rounded-full w-full">
                   <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Cancer awareness programs launched in rural MP
                   </p>
@@ -246,7 +246,7 @@ export default function OurImpact() {
 
               {/* Timeline Item 2 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
-                <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
+                <div className="bg-[#E0E5FF] p-6 mb-5 rounded-full w-full">
                   <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     COVID lockdown: 10,000+ ration kits distributed.
                   </p>
@@ -259,7 +259,7 @@ export default function OurImpact() {
 
               {/* Timeline Item 3 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
-                <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
+                <div className="bg-[#E0E5FF] p-6 mb-5 rounded-full w-full">
                   <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Anant Aman SWS was born. Started with education drives in
                     slums.
@@ -273,7 +273,7 @@ export default function OurImpact() {
 
               {/* Timeline Item 4 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
-                <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
+                <div className="bg-[#E0E5FF] p-6 mb-5 rounded-full w-full">
                   <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Cancer awareness programs launched in rural MP
                   </p>
@@ -286,7 +286,7 @@ export default function OurImpact() {
 
               {/* Timeline Item 5 */}
               <div className="flex flex-col items-center text-center w-1/5 relative px-2 group">
-                <div className="bg-[#E0E5FF] p-4 mb-5 rounded-full w-full">
+                <div className="bg-[#E0E5FF] p-6 mb-5 rounded-full w-full">
                   <p className="text-[12px] font-platypi text-gray-600 leading-relaxed">
                     Cancer awareness programs in rural MP
                   </p>

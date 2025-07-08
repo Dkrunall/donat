@@ -61,7 +61,7 @@ export default function CancerAwarenessProgram() {
               </h2>
               
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-3">
                   <div className="bg-[#323E7E] rounded-full h-6 w-6 mt-1 flex items-center justify-center">
                     <div className="bg-white rounded-full h-2.5 w-2.5"></div>
                   </div>

@@ -221,10 +221,10 @@ export default function ContactUs() {
           <div className="mt-16 md:mt-24 relative">
             <div className="relative h-[600px] rounded-3xl overflow-hidden">
               <Image
-                src="/wwd2.png"
+                src="/gallery/File41.jpg"
                 alt="Social Media"
                 fill
-                className="object-cover"
+                className="object-cover bg-top"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-center justify-center text-white p-6">
                 <h2 className="text-2xl md:text-4xl font-platypi font-bold mb-8 text-center">

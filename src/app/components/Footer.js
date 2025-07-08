@@ -46,7 +46,7 @@ export default function Footer() {
         <div className="footer-column-1 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <Image src="/footer-logo.png" alt="hero" height={40} width={120} className="mb-4" />
           <p className="text-sm md:text-md font-open-sans font-normal mb-6 md:mb-10">
-            Anant Aman Social Welfare Society isn’t just an NGO. We are a movement, built from 11+ years of walking with those who were left behind. We fight hunger. We spread awareness. We empower people. But more than anything — we show up when no one else does.
+            Anant Aman Social Welfare Society isn’t just an NGO. We are a movement, built from 11+ years of walking with those who were left behind. We fight hunger. We spread awareness. We empower people. But more than anything, We show up when no one else does.
           </p>
           <hr className="w-full mb-4 md:mb-0" />
           <div className="flex flex-col md:flex-row items-center md:justify-between w-full mt-4 md:mt-5 gap-2 md:gap-0">
@@ -65,7 +65,7 @@ export default function Footer() {
             <Link href="https://facebook.com/AnantAmanSws" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Facebook</Link>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-3">
-            <Link href="https://www.linkedin.com/company/anantamansws/" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Linkedin</Link>
+            <Link href="https://www.linkedin.com/company/anantamansws/" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">LinkedIn</Link>
             <Link href="https://www.youtube.com/@anantamansws" className="w-32 md:w-40 text-center font-open-sans text-normal px-4 md:px-6 py-2 text-[14px] md:text-[16px] text-[#323E7E] border border-[#323E7E] rounded-lg">Youtube</Link>
           </div>
         </div>

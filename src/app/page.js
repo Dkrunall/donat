@@ -9,6 +9,21 @@ import InfiniteCarousel from "./components/InfiniteCarousel";
 import Campings from "./components/Campings";
 
 export default function Home() {
+  const storyItems = [
+    { src: "/p1.png", text: "Armaan needs cancer treatment" },
+    { src: "/p2.JPG", text: "Seema needs books for school" },
+    { src: "/p3.JPG", text: "Ravi needs a wheelchair for mobility." },
+    { src: "/p4.JPG", text: "Fatima needs funds for heart surgery." },
+    { src: "/p5.JPG", text: "Anil needs groceries to feed his family." },
+  ];
+
+  const storyItems2 = [
+    { src: "/p5.JPG", text: "Anil needs groceries to feed his family." },
+    { src: "/p1.png", text: "Asha needs support for her child's education" },
+    { src: "/p2.JPG", text: "Sunil needs funds for his mother's medical bills" },
+    { src: "/p3.JPG", text: "Priya needs help to rebuild her home after a flood" },
+  ];
+
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
@@ -28,10 +43,14 @@ export default function Home() {
   return (
     <>
       <div className="p-1.5 md:p-1.5">
+        {/* 
+        // Hero section with a video background and parallax scroll effect 
         <div className="gif-hero relative overflow-hidden h-[85vh] md:h-screen rounded-3xl">
+          // Video container with parallax effect 
           <div
             className="absolute w-full h-[120%] top-0 left-0 transform"
             style={{
+              // Applies a vertical translation based on scroll position for a parallax effect
               transform: `translate3d(0, ${offset}px, 0) scale(1.1)`,
               transition: "transform 0.2s cubic-bezier(0.2, 0, 0.3, 1)",
             }}
@@ -46,8 +65,9 @@ export default function Home() {
               playsInline
             />
           </div>
-          {/* Light black overlay for better text visibility */}
+          // Dark overlay to improve text readability over the video 
           <div className="absolute inset-0 bg-black bg-opacity-30 z-5"></div>
+          // Text content container positioned at the bottom of the hero section 
           <div className="px-6 md:px-14 absolute bottom-0 left-0 w-full p-6 md:p-6 text-white z-10">
             <h1 className="text-2xl md:text-4xl text-center md:text-left font-extrabold font-platypi mb-6 md:mb-10">
               We were born from pain.
@@ -58,6 +78,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+        */}
 
         <div className="sticky top-0 z-50 bg-white">
           <Header />
@@ -265,7 +286,7 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
-                    55k +
+                    55,000
                   </h4>
                   <p className="text-xs md:text-lg">Meals Served</p>
                 </div>
@@ -283,7 +304,7 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
-                    50k +
+                    50,000+
                   </h4>
                   <p className="text-xs md:text-lg">Lives reached</p>
                 </div>
@@ -301,7 +322,7 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <h4 className="text-lg font-bold mb-1 md:text-3xl md:mb-2">
-                    3.5k +
+                    3445
                   </h4>
                   <p className="text-xs md:text-lg">Kids Educated</p>
                 </div>
@@ -335,221 +356,35 @@ export default function Home() {
                 {/* Story Items */}
                 <div className="story-container mb-4">
                   <div className="story-slider">
-                    {/* First set of items */}
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p1.png"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p2.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p3.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Armaan needs cancer treatment
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p4.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Armaan needs cancer treatment
-                      </span>
-                    </div>
-
-                    {/* Duplicate set for seamless loop */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p5.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Armaan needs cancer treatment
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p1.png"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p2.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
+                    {[...storyItems, ...storyItems].map((item, index) => (
+                      <div key={index} className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full p-2" style={{ flexShrink: 0 }}>
+                        <OptimizedImage
+                          src={item.src}
+                          alt="Profile picture"
+                          width={40}
+                          height={40}
+                          className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
+                        />
+                        <span className="text-xs md:text-sm">{item.text}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
+
                 <div className="story-container reverse mb-4">
                   <div className="story-slider">
-                    {/* First set of items */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p1.png"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Armaan needs cancer treatment
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p2.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p3.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p4.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Armaan needs cancer treatment
-                      </span>
-                    </div>
-
-                    {/* Duplicate set for seamless loop */}
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p5.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Armaan needs cancer treatment
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p1.png"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p2.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p3.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
-
-                    <div className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full w-64 md:w-80 p-2">
-                      <OptimizedImage
-                        src="/p4.JPG"
-                        alt="Profile picture"
-                        width={40}
-                        height={40}
-                        className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
-                      />
-                      <span className="text-xs md:text-sm">
-                        Seema needs books for school
-                      </span>
-                    </div>
+                    {[...storyItems2, ...storyItems2].map((item, index) => (
+                      <div key={index} className="story-item flex items-center gap-2 md:gap-3 bg-[#EEF0FF] rounded-full p-2" style={{ flexShrink: 0 }}>
+                        <OptimizedImage
+                          src={item.src}
+                          alt="Profile picture"
+                          width={40}
+                          height={40}
+                          className="rounded-full md:w-[50px] md:h-[50px] h-[50px] w-[50px]"
+                        />
+                        <span className="text-xs md:text-sm">{item.text}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
