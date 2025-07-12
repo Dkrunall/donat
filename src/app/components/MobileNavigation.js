@@ -10,13 +10,10 @@ export default function MobileNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isWhatWeDoMenuOpen, setIsWhatWeDoMenuOpen] = useState(false);
   const [isAboutUsMenuOpen, setIsAboutUsMenuOpen] = useState(false);
-  const [isHomeMenuOpen, setIsHomeMenuOpen] = useState(false);
-
   const isActive = (path) => {
     return pathname === path;
   };
 
-  const isHomeActive = isHomeMenuOpen || pathname === '/';
   const isAboutUsActive = isAboutUsMenuOpen || ['/who-we-are', '/wall-of-love', '/media-and-highlights'].includes(pathname);
   const isWhatWeDoActive = isWhatWeDoMenuOpen || ['/babu-ki-rasoi', '/capp', '/friend-of-anat-aman', '/kala-darpan', '/what-we-do'].includes(pathname);
   const isGetInvolvedActive = isMenuOpen || ['/join-us', '/contact-us', '/resources', '/our-impact'].includes(pathname);
@@ -25,35 +22,25 @@ export default function MobileNavigation() {
     setIsMenuOpen(!isMenuOpen);
     if (isWhatWeDoMenuOpen) setIsWhatWeDoMenuOpen(false);
     if (isAboutUsMenuOpen) setIsAboutUsMenuOpen(false);
-    if (isHomeMenuOpen) setIsHomeMenuOpen(false);
   };
 
   const toggleWhatWeDoMenu = () => {
     setIsWhatWeDoMenuOpen(!isWhatWeDoMenuOpen);
     if (isMenuOpen) setIsMenuOpen(false);
     if (isAboutUsMenuOpen) setIsAboutUsMenuOpen(false);
-    if (isHomeMenuOpen) setIsHomeMenuOpen(false);
   };
 
   const toggleAboutUsMenu = () => {
     setIsAboutUsMenuOpen(!isAboutUsMenuOpen);
     if (isMenuOpen) setIsMenuOpen(false);
     if (isWhatWeDoMenuOpen) setIsWhatWeDoMenuOpen(false);
-    if (isHomeMenuOpen) setIsHomeMenuOpen(false);
-  };
-
-  const toggleHomeMenu = () => {
-    setIsHomeMenuOpen(!isHomeMenuOpen);
-    if (isMenuOpen) setIsMenuOpen(false);
-    if (isWhatWeDoMenuOpen) setIsWhatWeDoMenuOpen(false);
-    if (isAboutUsMenuOpen) setIsAboutUsMenuOpen(false);
   };
 
   const handleNavigation = () => {
     setIsAboutUsMenuOpen(false);
     setIsWhatWeDoMenuOpen(false);
     setIsMenuOpen(false);
-    setIsHomeMenuOpen(false);
+
   };
 
   const menuRef = useRef(null);
@@ -74,9 +61,9 @@ export default function MobileNavigation() {
   return (
     <div ref={menuRef} className="fixed bottom-0 left-0 right-0 bg-[#F8F7FF] shadow-[0_-2px_5px_rgba(0,0,0,0.05)] md:hidden z-50 p-2 m-2 rounded-full">
       <div className="flex justify-around items-center">
-        <button
-          onClick={toggleHomeMenu}
-          className={`relative flex flex-col items-center py-1 ${isHomeActive ? "text-[#6C5DD3]" : "text-gray-500"}`}>
+        <Link
+          href="/"
+          className={`relative flex flex-col items-center py-1 ${pathname === '/' ? "text-[#6C5DD3]" : "text-gray-500"}`}>
           <div className="w-6 h-6 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -86,17 +73,17 @@ export default function MobileNavigation() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className={`w-5 h-5 ${isHomeActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
+              className={`w-5 h-5 ${pathname === '/' ? "text-[#6C5DD3]" : "text-gray-400"}`}>
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             </svg>
           </div>
-          <span className={`text-xs mt-1 ${isHomeActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
+          <span className={`text-xs mt-1 ${pathname === '/' ? "text-[#6C5DD3]" : "text-gray-400"}`}>
             Home
           </span>
-          {isHomeActive && (
+          {pathname === '/' && (
             <div className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-6 h-1 bg-[#3F3D56] rounded-t-sm"></div>
           )}
-        </button>
+        </Link>
 
         <button
           onClick={toggleAboutUsMenu}
@@ -176,35 +163,6 @@ export default function MobileNavigation() {
         </button>
       </div>
 
-      {isHomeMenuOpen && (
-        <div className="absolute bottom-full left-0 right-0 mb-2 p-3 bg-[#F8F7FF] shadow-lg rounded-xl border border-gray-200">
-          <div class="grid grid-cols-2 gap-3">
-            <Link
-              href="/what-we-do"
-              onClick={handleNavigation}
-              className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24"
-            >
-              <span className="text-base font-bold text-[#3F3D56]">
-                What We Do
-              </span>
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
-                <svg
-                  className="w-4 h-4 text-white"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M9 5l7 7-7 7"></path>
-                </svg>
-              </div>
-            </Link>
-          </div>
-        </div>
-      )}
-
       {isAboutUsMenuOpen && (
         <div className="absolute bottom-full left-0 right-0 mb-2 p-3 bg-[#F8F7FF] shadow-lg rounded-xl border border-gray-200">
           <div className="grid grid-cols-2 gap-3">
@@ -278,6 +236,28 @@ export default function MobileNavigation() {
                     <path d="M9 5l7 7-7 7"></path>
                   </svg>
                 </div>
+              </div>
+            </Link>
+            <Link
+              href="/what-we-do"
+              onClick={handleNavigation}
+              className="bg-white p-4 rounded-2xl shadow flex flex-col justify-between relative h-24"
+            >
+              <span className="text-base font-bold text-[#3F3D56]">
+                What We Do
+              </span>
+              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M9 5l7 7-7 7"></path>
+                </svg>
               </div>
             </Link>
           </div>
