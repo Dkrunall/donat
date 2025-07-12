@@ -42,7 +42,7 @@ export default function ContactUs() {
               message might change a life.
             </h1>
             <p className="text-lg md:text-xl font-open-sans text-gray-600">
-              Have a question? An idea? A heart that wants to help?
+              Got a question, a thought, or just the will to help? We&apos;re here. Let&apos;s connect.
             </p>
           </div>
 

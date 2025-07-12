@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function MobileNavigation() {
   const pathname = usePathname();
@@ -13,13 +13,13 @@ export default function MobileNavigation() {
   const [isHomeMenuOpen, setIsHomeMenuOpen] = useState(false);
 
   const isActive = (path) => {
-    // Adjust isActive for the toggle buttons
-    if (path === "/get-involved-trigger") return isMenuOpen;
-    if (path === "/what-we-do-trigger") return isWhatWeDoMenuOpen;
-    if (path === "/about-us-trigger") return isAboutUsMenuOpen;
-    if (path === "/home-trigger") return isHomeMenuOpen;
     return pathname === path;
   };
+
+  const isHomeActive = isHomeMenuOpen || pathname === '/';
+  const isAboutUsActive = isAboutUsMenuOpen || ['/who-we-are', '/wall-of-love', '/media-and-highlights'].includes(pathname);
+  const isWhatWeDoActive = isWhatWeDoMenuOpen || ['/babu-ki-rasoi', '/capp', '/friend-of-anat-aman', '/kala-darpan', '/what-we-do'].includes(pathname);
+  const isGetInvolvedActive = isMenuOpen || ['/join-us', '/contact-us', '/resources', '/our-impact'].includes(pathname);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -56,15 +56,27 @@ export default function MobileNavigation() {
     setIsHomeMenuOpen(false);
   };
 
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        handleNavigation();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-[#F8F7FF] shadow-[0_-2px_5px_rgba(0,0,0,0.05)] md:hidden z-50 p-2 m-2 rounded-full">
+    <div ref={menuRef} className="fixed bottom-0 left-0 right-0 bg-[#F8F7FF] shadow-[0_-2px_5px_rgba(0,0,0,0.05)] md:hidden z-50 p-2 m-2 rounded-full">
       <div className="flex justify-around items-center">
         <button
           onClick={toggleHomeMenu}
-          className={`relative flex flex-col items-center py-1 ${
-            isActive("/home-trigger") ? "text-[#6C5DD3]" : "text-gray-500"
-          }`}
-        >
+          className={`relative flex flex-col items-center py-1 ${isHomeActive ? "text-[#6C5DD3]" : "text-gray-500"}`}>
           <div className="w-6 h-6 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,31 +86,21 @@ export default function MobileNavigation() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className={`w-5 h-5 ${
-                isActive("/home-trigger") ? "text-[#6C5DD3]" : "text-gray-400"
-              }`}
-            >
+              className={`w-5 h-5 ${isHomeActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             </svg>
           </div>
-          <span
-            className={`text-xs mt-1 ${
-              isActive("/home-trigger") ? "text-[#6C5DD3]" : "text-gray-400"
-            }`}
-          >
+          <span className={`text-xs mt-1 ${isHomeActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
             Home
           </span>
-          {isActive("/home-trigger") && (
+          {isHomeActive && (
             <div className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-6 h-1 bg-[#3F3D56] rounded-t-sm"></div>
           )}
         </button>
 
         <button
           onClick={toggleAboutUsMenu}
-          className={`relative flex flex-col items-center py-1 ${
-            isActive("/about-us-trigger") ? "text-[#6C5DD3]" : "text-gray-500"
-          }`}
-        >
+          className={`relative flex flex-col items-center py-1 ${isAboutUsActive ? "text-[#6C5DD3]" : "text-gray-500"}`}>
           <div className="w-6 h-6 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,35 +110,23 @@ export default function MobileNavigation() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className={`w-5 h-5 ${
-                isActive("/about-us-trigger")
-                  ? "text-[#6C5DD3]"
-                  : "text-gray-400"
-              }`}
-            >
+              className={`w-5 h-5 ${isAboutUsActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
               <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
               <path d="M2 17l10 5 10-5"></path>
               <path d="M2 12l10 5 10-5"></path>
             </svg>
           </div>
-          <span
-            className={`text-xs mt-1 ${
-              isActive("/about-us-trigger") ? "text-[#6C5DD3]" : "text-gray-400"
-            }`}
-          >
+          <span className={`text-xs mt-1 ${isAboutUsActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
             About Us
           </span>
-          {isActive("/about-us-trigger") && (
+          {isAboutUsActive && (
             <div className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-6 h-1 bg-[#3F3D56] rounded-t-sm"></div>
           )}
         </button>
 
         <button
           onClick={toggleWhatWeDoMenu}
-          className={`relative flex flex-col items-center py-1 ${
-            isActive("/what-we-do-trigger") ? "text-[#6C5DD3]" : "text-gray-500"
-          }`}
-        >
+          className={`relative flex flex-col items-center py-1 ${isWhatWeDoActive ? "text-[#6C5DD3]" : "text-gray-500"}`}>
           <div className="w-6 h-6 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -146,39 +136,23 @@ export default function MobileNavigation() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className={`w-5 h-5 ${
-                isActive("/what-we-do-trigger")
-                  ? "text-[#6C5DD3]"
-                  : "text-gray-400"
-              }`}
-            >
+              className={`w-5 h-5 ${isWhatWeDoActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
               <circle cx="12" cy="12" r="10"></circle>
               <path d="M12 8v8"></path>
               <path d="M8 12h8"></path>
             </svg>
           </div>
-          <span
-            className={`text-xs mt-1 ${
-              isActive("/what-we-do-trigger")
-                ? "text-[#6C5DD3]"
-                : "text-gray-400"
-            }`}
-          >
+          <span className={`text-xs mt-1 ${isWhatWeDoActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
             What We Do
           </span>
-          {isActive("/what-we-do-trigger") && (
+          {isWhatWeDoActive && (
             <div className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-6 h-1 bg-[#3F3D56] rounded-t-sm"></div>
           )}
         </button>
 
         <button
           onClick={toggleMenu}
-          className={`relative flex flex-col items-center py-1 ${
-            isActive("/get-involved-trigger")
-              ? "text-[#6C5DD3]"
-              : "text-gray-500"
-          }`}
-        >
+          className={`relative flex flex-col items-center py-1 ${isGetInvolvedActive ? "text-[#6C5DD3]" : "text-gray-500"}`}>
           <div className="w-6 h-6 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -188,26 +162,15 @@ export default function MobileNavigation() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className={`w-5 h-5 ${
-                isActive("/get-involved-trigger")
-                  ? "text-[#6C5DD3]"
-                  : "text-gray-400"
-              }`}
-            >
+              className={`w-5 h-5 ${isGetInvolvedActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
           </div>
-          <span
-            className={`text-xs mt-1 ${
-              isActive("/get-involved-trigger")
-                ? "text-[#6C5DD3]"
-                : "text-gray-400"
-            }`}
-          >
+          <span className={`text-xs mt-1 ${isGetInvolvedActive ? "text-[#6C5DD3]" : "text-gray-400"}`}>
             Get Involved
           </span>
-          {isActive("/get-involved-trigger") && (
+          {isGetInvolvedActive && (
             <div className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-6 h-1 bg-[#3F3D56] rounded-t-sm"></div>
           )}
         </button>

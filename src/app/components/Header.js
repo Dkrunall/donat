@@ -15,6 +15,37 @@ export default function Header() {
     return pathname === path;
   };
 
+  const whoWeArePaths = ['/who-we-are', '/wall-of-love', '/media-and-highlights'];
+  const whatWeDoPaths = ['/babu-ki-rasoi', '/capp', '/friend-of-anat-aman', '/kala-darpan', '/what-we-do'];
+  const getInvolvedPaths = ['/join-us', '/contact-us', '/resources', '/our-impact'];
+
+  const handleMenuOpen = () => {
+    if (!isMenuOpen) {
+        if (whoWeArePaths.includes(pathname)) {
+            setShowWhoWeAre(true);
+            setShowWhatWeDo(false);
+            setShowGetInvolved(false);
+            setShowHomeClickItems(false);
+        } else if (whatWeDoPaths.includes(pathname)) {
+            setShowWhoWeAre(false);
+            setShowWhatWeDo(true);
+            setShowGetInvolved(false);
+            setShowHomeClickItems(false);
+        } else if (getInvolvedPaths.includes(pathname)) {
+            setShowWhoWeAre(false);
+            setShowWhatWeDo(false);
+            setShowGetInvolved(true);
+            setShowHomeClickItems(false);
+        } else { // This includes '/' and any other pages not in the arrays
+            setShowWhoWeAre(false);
+            setShowWhatWeDo(false);
+            setShowGetInvolved(false);
+            setShowHomeClickItems(true);
+        }
+    }
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       {/* Mobile Header */}
@@ -98,15 +129,7 @@ export default function Header() {
             <Image src="/logo.png" alt="hero" height={60} width={200} />
           </Link>
           <button
-            onClick={() => {
-              if(!isMenuOpen) {
-                setShowHomeClickItems(true);
-                setShowGetInvolved(false);
-                setShowWhatWeDo(false);
-                setShowWhoWeAre(false);
-              }
-              setIsMenuOpen(!isMenuOpen)
-            }}
+            onClick={handleMenuOpen}
             className="font-platypi text-base bg-white px-6 py-2 rounded-full hover:bg-gray-50 transition-colors"
           >
             Menu
@@ -133,14 +156,13 @@ export default function Header() {
 
             <div className="flex gap-5 h-72">
               <div className="w-1/2 space-y-5 border border-[#E3E3E3] rounded-2xl p-4">
-                <Link href="#" onClick={(e) => {
-                    e.preventDefault();
+                <Link href="/" onClick={() => {
                     setShowHomeClickItems(true);
                     setShowWhoWeAre(false);
                     setShowWhatWeDo(false);
                     setShowGetInvolved(false);
                   }}
-                  className={`block text-[16px] px-6 py-2 rounded-lg ${showHomeClickItems || (isActive('/') && !showWhatWeDo && !showGetInvolved && !showWhoWeAre) ? 'bg-[#39447B] text-white' : 'text-[#39447B] hover:text-white hover:bg-[#39447B]'}`}>
+                  className={`block text-[16px] px-6 py-2 rounded-lg ${showHomeClickItems ? 'bg-[#39447B] text-white' : 'text-[#39447B] hover:text-white hover:bg-[#39447B]'}`}>
                     Home
                 </Link>
                 <Link 
@@ -184,16 +206,6 @@ export default function Header() {
                 </Link>
               </div>
 
-              {/* home click items */}
-              <div className={`w-1/2 grid grid-cols-2 gap-4 ${showHomeClickItems ? '' : 'hidden'}`}>
-                <Link href="/what-we-do" className={`bg-white rounded-xl p-4 border ${isActive('/what-we-do') ? 'border-[#39447B] shadow-lg' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
-                  <h3 className="text-[#39447B] text-lg font-bold mb-2">What We Do</h3>
-                  <div className="absolute bottom-4 right-4">
-                    <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
-                  </div>
-                </Link>
-              </div>
-
               {/* who we are click items */}
               <div className={`w-1/2 grid grid-cols-2 gap-4 ${showWhoWeAre ? '' : 'hidden'}`}>
                 <Link href="/who-we-are" className={`bg-white rounded-xl p-4 border ${isActive('/who-we-are') ? 'border-[#39447B] shadow-lg' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
@@ -212,6 +224,13 @@ export default function Header() {
 
                 <Link href="/media-and-highlights" className={`bg-white rounded-xl p-4 border ${isActive('/media-and-highlights') ? 'border-[#39447B] shadow-lg' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
                   <h3 className="text-[#39447B] text-lg font-bold mb-2">Media & Highlights</h3>
+                  <div className="absolute bottom-4 right-4">
+                    <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
+                  </div>
+                </Link>
+
+                <Link href="/what-we-do" className={`bg-white rounded-xl p-4 border ${isActive('/what-we-do') ? 'border-[#39447B] shadow-lg' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
+                  <h3 className="text-[#39447B] text-lg font-bold mb-2">What We Do</h3>
                   <div className="absolute bottom-4 right-4">
                     <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                   </div>

@@ -37,10 +37,10 @@ export default function JoinUs() {
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0 relative z-10">
             <div className="text-center max-w-3xl">
               <h1 className="text-4xl md:text-6xl font-extrabold font-platypi text-white leading-tight z-20">
-                Want to make a real difference? Start here.
+                Superheroes come in white cape
               </h1>
               <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-                You don{" "}t need superpowers to save lives. Just heart.
+                Where healing begins and hope never ends
               </p>
             </div>
           </div>

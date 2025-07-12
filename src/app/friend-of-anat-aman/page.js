@@ -116,9 +116,7 @@ export default function FriendOfAnatAman() {
               </ul>
 
               <p className="text-lg md:text-xl font-open-sans text-gray-700 mt-8">
-                We show up. Speak up. And stand for something meaningful. The
-                difference between talking about impact, and having impact,
-                it&apos;s in your hands.
+                We show up,speak up, and stand for something.If you&apos;re between 16–30 and want to build your tribe, create impact, and have wild fun
               </p>
             </div>
           </div>
@@ -131,12 +129,12 @@ export default function FriendOfAnatAman() {
             <div className="relative z-10 h-full max-w-7xl mx-auto px-6 md:px-8 flex flex-col items-center justify-center">
               <div className="text-center">
                 <h2 className="text-4xl md:text-5xl font-platypi font-bold mb-6">
-                  Past Events
+                  Why FAA Exists?
                 </h2>
               </div>
               <div className="text-center">
                 <p className="text-lg md:text-xl font-open-sans">
-                  Because the world doesn’t need more followers. It needs
+                  The world doesn’t need more followers. It needs
                   leaders. <br />{" "}
                   <span className="font-extrabold">
                     And we believe leaders are born when they care.

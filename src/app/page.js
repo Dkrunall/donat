@@ -102,7 +102,7 @@ export default function Home() {
                   href="/join-us"
                   className="font-platypi text-lg md:text-base bg-white px-10 py-4 md:px-6 md:py-2 rounded-full inline-block"
                 >
-                  Become Part
+                  Become a Part
                 </Link>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
               href="/"
               className="font-platypi text-lg bg-white px-10 py-4 rounded-full inline-block"
             >
-              Become Part
+              Become a Part
             </Link>
           </div>
         </div>
@@ -129,12 +129,13 @@ export default function Home() {
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0">
             <div className="text-center">
               <h1 className="text-2xl md:text-5xl font-extrabold font-platypi text-white leading-tight">
-                Millions sleep hungry. <br /> Many fights cancer, alone.
+                Millions sleep hungry <br /> Many fights cancer, alone.
               </h1>
-              <p className="text-base md:text-2xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-                And these are just the known stories. So many others suffer.{" "}
-                <br className="hidden md:block" /> Without food. Without care.
-                Without anyone knowing.
+              <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
+                And these are just the known stories. 
+                <br className="hidden md:block" /> 
+                So many others suffer, Without food, 
+                <br className="hidden md:block" />  Without care. Without anyone knowing.
               </p>
             </div>
           </div>
@@ -219,7 +220,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-open-sans font-normal text-[#323E7E] text-center">
-                    A grandma without medicine
+                    A grandma without medicine.
                   </h3>
                 </div>
               </div>
@@ -253,7 +254,7 @@ export default function Home() {
               <br /> <i>Every day</i>
             </h3>
             <p className="text-center bg-[#E0E5FF] py-2 px-6 mt-2 md:mt-4 rounded-full text-sm md:text-base font-open-sans font-normal text-[#323E7E] mb-8 md:mb-10">
-              Daily Drives For..
+              Daily Drives like..
             </p>
             <div className="campings-carousel w-full overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-hide md:overflow-x-hidden md:overflow-y-visible md:whitespace-normal md:hidden">
               <div className="inline-flex md:flex md:flex-wrap md:justify-start md:gap-4">

@@ -47,11 +47,7 @@ export default function OurImpact() {
           {/* Positioned text at bottom right */}
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
             <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
-              Every meal served, every child educated, every life saved,{" "}
-              <span className="font-bold">
-                {" "}
-                was because someone like you chose to care.
-              </span>
+              As someone cared, a child learned, a family ate, and a life was saved.
             </p>
           </div>
         </div>
@@ -426,8 +422,7 @@ export default function OurImpact() {
             {/* Story 3 */}
             <div className="bg-[#F5F7FA] rounded-2xl flex items-end p-6 h-96">
               <p className="text-base md:text-lg font-medium leading-relaxed">
-                <span className="text-[#4A5AAA] font-bold">Neha</span>, 14, goes
-                to school because someone paid her fees.
+                <span className="text-[#4A5AAA] font-bold">14 year old Neha</span>, goes to school because someone paid her fees.
               </p>
             </div>
           </div>

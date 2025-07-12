@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="container mx-auto px-4 py-8 md:py-12">
-        <h1 className="text-3xl md:text-4xl font-platypi text-center mb-8">We respect your privacy. And we protect it.</h1>
+        <h1 className="text-3xl md:text-4xl font-platypi text-center mb-8">Your information stays safe with us, always</h1>
         
         <p className="font-open-sans text-sm md:text-base mb-6">Last Updated: {currentDate}</p>
 

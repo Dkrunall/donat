@@ -41,7 +41,7 @@ const Campings = () => {
       subtitle: "No one should sleep hungry.",
       mealsCount: "55,000+ Meals Served",
       buttonText: "Sponsor a meal",
-      imageSrc: "/bkr1.jpg",
+      imageSrc: "/wwsf1.png",
       link: "/babu-ki-rasoi",
     },
     {

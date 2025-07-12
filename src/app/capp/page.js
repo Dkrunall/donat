@@ -35,7 +35,7 @@ export default function CancerAwarenessProgram() {
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0 relative z-10">
             <div className="text-center max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-extrabold font-platypi text-white leading-tight z-20">
-                Because awareness should come before diagnosis.
+                Prevention is better than Cure
               </h1>
               <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
                 Fighting Cancer with <span className="font-extrabold">Early Awareness</span>
@@ -203,7 +203,7 @@ export default function CancerAwarenessProgram() {
                 {/* Testimonial */}
                 <div className="mb-10">
                   <h2 className="text-2xl md:text-3xl font-platypi font-bold text-[#323E7E] mb-6 leading-tight">
-                    &quot;Because of the free camp, my mother got diagnosed in stage 1. We didn&apos;t even know she had cancer. You saved her.
+                    &quot;Due of the free camp, my mother got diagnosed in stage 1. We didn&apos;t even know she had cancer. You saved her.
                   </h2>
                   <p className="text-lg font-medium text-gray-700 mb-2">Rahul, 21</p>
                   <span className="inline-block bg-[#E6E9F5] text-[#323E7E] text-sm font-medium px-4 py-1 rounded-full">Real Story</span>

@@ -40,14 +40,21 @@ export default function WhatWeDo() {
           <div className="info-content w-full h-full flex items-center justify-center px-6 md:px-8 py-10 md:py-0">
             <div className="text-center">
               <h1 className="text-2xl md:text-5xl font-extrabold font-platypi text-white leading-tight">
-                We don&apos;t just care. We act.
+                It starts with care. It becomes action.
               </h1>
-              <p className="text-base md:text-2xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
-                Every day, we&apos;re on the ground making real change happen.{" "}
+              <p className="text-base md:text-xl font-open-sans font-normal mt-4 md:mt-5 text-white leading-relaxed">
+                From feeding the hungry to fighting cancer, from empowering the youth to changing mindsets{" "}
                 <br className="hidden md:block" />
-                Because words without action are just empty promises.
+                <b>Anant Aman</b> is about showing up where it matters most.
               </p>
             </div>
+          </div>
+
+          {/* Positioned text at bottom right */}
+          <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 max-w-md text-white z-10">
+            <p className="text-sm md:text-base font-open-sans leading-relaxed text-right">
+             We go to the streets, slums, schools, and shelters. <br/><span className="font-bold">We listen, We help, We build,</span> and we keep going.
+            </p>
           </div>
         </div>
 
@@ -233,20 +240,20 @@ export default function WhatWeDo() {
         </div>
 
         {/* Projects That Run Every Day Section */}
-        <div className="py-12 md:py-16 bg-[#F8F9FF] rounded-3xl my-6 px-6 md:px-20 flex items-center gap-5">
-          <div className="mb-10 w-[45%]">
-            <h2 className="text-2xl md:text-4xl font-platypi font-bold text-[#323E7E] mb-6">
+        <div className="py-12 md:py-16 bg-[#F8F9FF] rounded-3xl my-6 px-6 md:px-20 flex flex-col md:flex-row items-center gap-5">
+          <div className="mb-10 w-full md:w-[45%]">
+            <h2 className="text-2xl md:text-4xl font-platypi font-bold text-[#323E7E] mb-6 text-center md:text-left">
               Projects That <br />
               <span className="text-[#323E7E]">Run Every Day</span>
             </h2>
-            <p className="text-base md:text-lg font-open-sans">
-              We&apos;ve built sustainable, ongoing projects that <br />
-              go beyond one-time help. These are the <br /> heartbeats of Anant
+            <p className="text-base md:text-lg font-open-sans text-center md:text-left">
+              We&apos;ve built sustainable, ongoing projects that
+              go beyond one-time help. These are the heartbeats of Anant
               Aman:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
             {/* Babu Ki Rasoi Card */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-64">
@@ -353,7 +360,7 @@ export default function WhatWeDo() {
             Collaborations & Associations
           </h2>
           <p className="text-base md:text-lg font-open-sans text-center max-w-3xl mx-auto mb-8">
-            Because it takes a village to create lasting change.
+            Impact grows when we grow together.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-20">
@@ -431,16 +438,18 @@ export default function WhatWeDo() {
           </div>
 
           {/* Option Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <button className="bg-white text-black py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:shadow-lg transition-all">
-              Intern with us
-            </button>
-            <button className="bg-white text-black py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:shadow-lg transition-all">
-              Volunteer on ground
-            </button>
-            <button className="bg-white text-black py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:shadow-lg transition-all">
-              Help us with funds
-            </button>
+          <div className="overflow-x-auto pb-4 mb-12 -mx-6 px-6">
+            <div className="flex md:flex-wrap md:justify-center gap-4 min-w-max">
+              <button className="bg-white text-black py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:shadow-lg transition-all whitespace-nowrap">
+                Intern with us
+              </button>
+              <button className="bg-white text-black py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:shadow-lg transition-all whitespace-nowrap">
+                Volunteer on ground
+              </button>
+              <button className="bg-white text-black py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:shadow-lg transition-all whitespace-nowrap">
+                Help us with funds
+              </button>
+            </div>
           </div>
 
           {/* Cards */}
