@@ -9,6 +9,19 @@ import InfiniteCarousel from "./components/InfiniteCarousel";
 import Campings from "./components/Campings";
 
 export default function Home() {
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes textCycle {
+        0%, 15% { opacity: 0; }
+        20%, 35% { opacity: 1; }
+        40%, 100% { opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+    return () => document.head.removeChild(style);
+  }, []);
+
   const storyItems = [
     { src: "/p1.png", text: "Armaan needs cancer treatment" },
     { src: "/p2.JPG", text: "Seema needs books for school" },
@@ -92,8 +105,24 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl font-extrabold font-platypi text-[#323E7E] pt-10 mb-2 md:mb-0">
                 India for Everyone
               </h1>
-              <p className="text-2xl md:text-2xl font-open-sans font-normal mt-2 mb-6 md:mb-8">
-                Dream without fear
+              <p className="text-2xl md:text-2xl font-open-sans font-normal mt-2 mb-6 md:mb-8 relative h-8 flex md:block items-center justify-center md:items-start md:justify-start">
+                {[
+                  'Dream without fear',
+                  'Eat healthy food',
+                  'Be yourself',
+                  'Live healthy',
+                  'Enjoy childhood'
+                ].map((text, index) => (
+                  <span
+                    key={index}
+                    className={`absolute transition-opacity duration-500 text-center ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
+                    style={{
+                      animation: `textCycle 10s linear ${index * 2}s infinite`,
+                    }}
+                  >
+                    {text}
+                  </span>
+                ))}
               </p>
               <div className="hidden md:block">
                 {" "}
