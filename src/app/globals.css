@@ -19,12 +19,12 @@
 }
 
 .animate-carousel-scroll {
-  animation: carousel-scroll 30s linear infinite;
+  animation: carousel-scroll 45s linear infinite;
 }
 
 @media (max-width: 768px) {
   .animate-carousel-scroll {
-    animation: carousel-scroll 15s linear infinite;
+    animation: carousel-scroll 20s linear infinite;
   }
 }
 
@@ -38,12 +38,12 @@
 }
 
 .animate-carousel-scroll-reverse {
-  animation: carousel-scroll-reverse 30s linear infinite;
+  animation: carousel-scroll-reverse 45s linear infinite;
 }
 
 @media (max-width: 768px) {
   .animate-carousel-scroll-reverse {
-    animation: carousel-scroll-reverse 15s linear infinite;
+    animation: carousel-scroll-reverse 20s linear infinite;
   }
 }
 
