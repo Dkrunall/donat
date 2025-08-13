@@ -331,14 +331,14 @@ export default function FriendOfAnatAman() {
           </div>
         </div>
 
-        {/* Testimonials Section */}
+        {/* Testimonials Section 
         <div className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-8">
             <h2 className="text-3xl md:text-4xl font-platypi font-bold text-gray-800 text-center mb-12">
               Testimonials
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Testimonial 1 */}
+              
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="p-6">
                   <p className="text-lg font-open-sans text-gray-700 italic mb-4">
@@ -356,7 +356,7 @@ export default function FriendOfAnatAman() {
                 </div>
               </div>
 
-              {/* Testimonial 2 */}
+              
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="p-6">
                   <p className="text-lg font-open-sans text-gray-700 italic mb-4">
@@ -374,7 +374,7 @@ export default function FriendOfAnatAman() {
                 </div>
               </div>
 
-              {/* Testimonial 3 */}
+            
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="p-6">
                   <p className="text-lg font-open-sans text-gray-700 italic mb-4">
@@ -393,7 +393,7 @@ export default function FriendOfAnatAman() {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
 
         <Footer />
       </div>

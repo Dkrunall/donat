@@ -462,13 +462,14 @@ export default function JoinUs() {
         </div>
 
         {/* Testimonials Section */}
+        {/*
         <div id="testimonials" className="py-12 md:py-16 px-6 md:px-20">
           <h2 className="text-2xl md:text-3xl font-platypi font-bold text-black text-center mb-10">
             Volunteer Testimonials
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Testimonial 1 */}
+            
             <div className="bg-[#F8F9FF] rounded-2xl p-6">
               <div className="relative h-40 md:h-48 rounded-xl overflow-hidden mb-6">
                 <OptimizedImage
@@ -489,7 +490,7 @@ export default function JoinUs() {
               </p>
             </div>
 
-            {/* Testimonial 2 */}
+          
             <div className="bg-[#F8F9FF] rounded-2xl p-6">
               <div className="relative h-40 md:h-48 rounded-xl overflow-hidden mb-6">
                 <OptimizedImage
@@ -511,7 +512,7 @@ export default function JoinUs() {
               </p>
             </div>
 
-            {/* Testimonial 3 */}
+        
             <div className="bg-[#F8F9FF] rounded-2xl p-6">
               <div className="relative h-40 md:h-48 rounded-xl overflow-hidden mb-6">
                 <OptimizedImage
@@ -532,7 +533,7 @@ export default function JoinUs() {
               </p>
             </div>
           </div>
-        </div>
+        </div>*/}
         <Footer />
         <PopupForm isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
       </div>

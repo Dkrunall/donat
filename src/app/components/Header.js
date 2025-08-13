@@ -259,13 +259,14 @@ export default function Header() {
                     <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                   </div>
                 </Link>
-
+                {/*
                 <Link href="/kala-darpan" className={`bg-white rounded-xl p-4 border ${isActive('/kala-darpan') ? 'border-[#39447B] shadow-lg' : 'border-[#E3E3E3] shadow-md hover:shadow-lg'} transition-all relative h-[132px]`}>
                   <h3 className="text-[#39447B] text-lg font-bold mb-2">Kaladarpan</h3>
                   <div className="absolute bottom-4 right-4">
                     <span className="text-2xl bg-black h-10 w-10 rounded-full text-white flex items-center justify-center">→</span>
                   </div>
                 </Link>
+                */}
               </div>
 
               {/* get involved click items */}

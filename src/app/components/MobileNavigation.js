@@ -409,6 +409,7 @@ export default function MobileNavigation() {
                 </div>
               </div>
             </Link>
+            {/*
             <Link
               href="/kala-darpan"
               onClick={handleNavigation}
@@ -435,6 +436,7 @@ export default function MobileNavigation() {
                 </div>
               </div>
             </Link>
+            */}
           </div>
         </div>
       )}
