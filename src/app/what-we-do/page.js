@@ -418,7 +418,7 @@ export default function WhatWeDo() {
 
           <div className="text-center mt-8">
             <Link
-              href="/"
+              href="/join-us"
               className="font-platypi text-base bg-[#323E7E] text-white px-8 py-3 rounded-full inline-block"
             >
               Partner With Us
@@ -497,7 +497,7 @@ export default function WhatWeDo() {
                 </div>
               </div>
               <Link
-                href="/"
+                href="/join-us"
                 className="bg-[#323E7E] text-white py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:bg-[#263166] transition-colors"
               >
                 Sponsor
@@ -522,7 +522,7 @@ export default function WhatWeDo() {
                 </div>
               </div>
               <Link
-                href="/"
+                href="/join-us"
                 className="bg-[#323E7E] text-white py-2 px-8 rounded-full shadow-md font-platypi text-sm md:text-base hover:bg-[#263166] transition-colors"
               >
                 Donate

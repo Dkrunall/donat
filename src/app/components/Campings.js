@@ -58,7 +58,7 @@ const Campings = () => {
       mealsCount: "Young people. Big change",
       buttonText: "I want to join",
       imageSrc: "/foaa.jpg",
-      link: "/friends-of-anat-aman",
+      link: "/friend-of-anat-aman",
     },
   ];
 

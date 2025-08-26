@@ -241,17 +241,17 @@ export default function CancerAwarenessProgram() {
                   </div>
                   
                   <div className="flex flex-wrap gap-4">
-                    <Link
+                    {/*<Link
                       href="/"
                       className="font-platypi text-sm md:text-base bg-white text-[#323E7E] px-6 py-2.5 rounded-full inline-block hover:bg-gray-100 transition-colors duration-300 shadow-sm"
                     >
                       Write a CAPP Testimonial
-                    </Link>
+                    </Link>*/}
                     <Link
-                      href="/"
+                      href="/join-us"
                       className="font-platypi text-sm md:text-base bg-white text-[#323E7E] px-6 py-2.5 rounded-full inline-block hover:bg-gray-100 transition-colors duration-300 shadow-sm"
                     >
-                      Contribute to Early Diagnosis
+                      Volunteer
                     </Link>
                   </div>
                 </div>

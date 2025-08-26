@@ -217,13 +217,13 @@ export default function BabuKiRasoi() {
                   
                   <div className="flex flex-wrap gap-4">
                     <Link
-                      href="/"
+                      href="https://wa.me/919007045281"
                       className="font-platypi text-sm md:text-base bg-white text-[#323E7E] px-6 py-2.5 rounded-full inline-block hover:bg-gray-100 transition-colors duration-300 shadow-sm"
                     >
                       Sponsor a Meal
                     </Link>
                     <Link
-                      href="/"
+                      href="https://wa.me/919007045281"
                       className="font-platypi text-sm md:text-base bg-white text-[#323E7E] px-6 py-2.5 rounded-full inline-block hover:bg-gray-100 transition-colors duration-300 shadow-sm"
                     >
                       Volunteer in BKR
