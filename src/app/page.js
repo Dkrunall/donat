@@ -97,7 +97,7 @@ export default function Home() {
           <Header />
         </div>
 
-        <div className="hero min-h-[500px] md:h-[550px] w-full flex flex-col items-center justify-between px-6 md:px-20 bg-[url(/hero-main.png)] bg-bottom bg-cover md:py-0 md:flex-row relative">
+        <div className="hero best min-h-[500px] md:h-[550px] w-full flex flex-col items-center justify-between px-6 md:px-20 bg-[url(/hero-main.png)] bg-bottom bg-cover md:py-0 md:flex-row relative">
           {" "}
           {/* Added relative positioning */}
           <div className="hero-content w-full h-full flex flex-col items-center justify-between md:flex-row">
