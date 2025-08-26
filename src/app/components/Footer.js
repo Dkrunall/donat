@@ -37,7 +37,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center mt-2">
           <p className="text-sm font-open-sans font-semibold text-[#323E7E]">
-            Design & Developed By Varlyq Technologies 2025
+            Design & Developed By Team Anant Aman Social Welfare Society 2025
           </p>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function Footer() {
             <Link href="/privacy-policy" className="text-sm md:text-md font-open-sans font-normal">Privacy Policy</Link>
           </div>
           <p className="text-xs md:text-sm font-open-sans font-normal mt-6 md:mt-10">
-            Design & Developed By Varlyq Technologies 2025
+            Design & Developed By Team Anant Aman Social Welfare Society 2025
           </p>
         </div>
 
